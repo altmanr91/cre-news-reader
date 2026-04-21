@@ -7,6 +7,9 @@ RSS_FEEDS = {
         "https://commercialobserver.com/feed/",
         "https://rebusinessonline.com/feed/",
         "https://rejournals.com/feed/",
+        "https://therealdeal.com/national/feed/",
+        "https://www.connectcre.com/feed/",
+        "https://www.bisnow.com/rss",
     ]
 }
 
