@@ -166,6 +166,7 @@ Set ALL other fields to null or empty:
                 response_mime_type="application/json",
                 response_schema=ArticleSummary,
                 temperature=0,
+                thinking_config=types.ThinkingConfig(thinking_budget=0),
             )
         )
     else:
@@ -179,6 +180,7 @@ Set ALL other fields to null or empty:
                 response_mime_type="application/json",
                 response_schema=ArticleSummary,
                 temperature=0,
+                thinking_config=types.ThinkingConfig(thinking_budget=0),
             )
         )
 
