@@ -148,10 +148,19 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
         sections.append(_collapsible('DATA POINTS', ''.join(dp_lines), expanded))
 
     # COMPANIES/PEOPLE
+    _VALID_LABELS = {
+        'BUYER', 'SELLER', 'SPONSOR', 'LENDER', 'LANDLORD', 'TENANT',
+        'SUBLANDLORD', 'SUBTENANT', 'SELLER BROKER', 'BUYER BROKER',
+        'MORTGAGE BROKER', 'TENANT REP', 'DEVELOPER/SPONSOR', 'OWNER',
+        'GENERAL CONTRACTOR', 'CONSTRUCTION MANAGER', 'ARCHITECT', 'PLANNER',
+        'ENGINEER', 'EQUITY/FINANCING', 'LEASING AGENT', 'PROMOTED',
+    }
     cp_lines = []
     if summary.companies_people and not is_market:
         seen_firms = set()
         for entry in summary.companies_people:
+            if entry.label not in _VALID_LABELS:
+                continue
             if 'undisclosed' in entry.firm_name.lower():
                 continue
             firm_key = entry.firm_name.lower().split()[0]

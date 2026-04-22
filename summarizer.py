@@ -36,6 +36,7 @@ TRANSACTION TYPE / ARTICLE TYPE:
 - Non-transaction articles: set article_type with a descriptive phrase (e.g. "Market Research / Labor Report", "Opinion / Market Commentary", "Infrastructure Investment / Government Policy"). Never use a transaction type keyword (Sale, Acquisition, Lease, Loan, Refinance, Development, Construction, Promotion) as the article_type value
 - If the article is primarily about a non-real estate topic (e.g. military contracts, manufacturing, technology products) with only incidental mention of a property or headquarters, set article_type to exactly "Non-CRE / Business News"
 - If the article is primarily a vendor or company press release promoting a proprietary product, service, platform, or internal white paper (i.e., it exists to market a company's offering rather than report on CRE markets or transactions), set article_type to exactly "Non-CRE / Business News"
+- If the article describes a franchise agreement, brand licensing deal, or corporate partnership (not a direct lease of a specific commercial space by an identified tenant), set article_type to "Non-CRE / Business News" rather than Lease
 - Set transaction_type OR article_type, never both
 - Never invent new transaction types — use only the values listed above
 
@@ -50,8 +51,9 @@ DATA POINTS:
 - size_units: residential unit count for multifamily/condo/apartment projects — use this for any "X-unit" project. If the article states a range (e.g. "between 100 and 130 units"), leave size_units null and capture the range in notable_features instead (e.g. "100-130 units planned")
 - size_beds: student housing bed counts ONLY — never use for residential unit counts
 - size_keys: hotel room/key counts ONLY
-- Never populate size_sf and size_units together for the same property
+- Never populate size_sf and size_units together for the same property. For mixed-use buildings, use only the field matching the primary transaction: size_sf for commercial leases or sales, size_units for residential transactions
 - For REIT or company acquisitions priced per share (corporate M&A), leave size_sf null — the $/SF metric is meaningless when the price represents equity/enterprise value rather than direct asset value
+- For portfolio or multi-asset acquisitions (multiple properties or facilities in a single transaction), leave size_units null — do not use size_units to count the number of buildings, properties, or facilities in the portfolio
 - occupancy: number only, e.g. 94.7 (not "94.7%")
 - address: always format as "Street Address, City, State". Scan the entire article carefully — street addresses are often buried mid-paragraph or in boilerplate at the end. Never include zip code. If the article gives a street address but no city/state, complete it using the article's stated market city and state. Leave null only if no street address exists anywhere in the article.
 - notable_features: property characteristics only — proximity to major employers, highways, or landmarks (e.g. "Adjacent to Tesla Gigafactory"); LEED or sustainability certifications; notable amenities or building specs. Keep to one concise sentence or brief phrase — never reproduce a paragraph from the article. Do NOT use for deal context, financial terms, or acquisition history.
@@ -77,6 +79,7 @@ COMPANIES/PEOPLE:
 - Multiple people from the same firm with the same label: include them all in the people array for that single entry
 - Never list the same firm twice — each firm appears once with the most specific applicable label
 - Omit any party whose identity is explicitly stated as undisclosed or unknown in the article
+- Never include news publications, media outlets, or trade publications (e.g. "The Real Deal", "Bloomberg", "Wall Street Journal") as companies_people entries — these are sources cited in the article, not deal participants
 
 TENANTS: list all named tenants here. Never name individual tenants in the narrative.
 
