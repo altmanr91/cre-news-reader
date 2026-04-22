@@ -46,7 +46,6 @@ RSS_FEEDS = {
         "https://therealdeal.com/national/feed/",
         "https://www.connectcre.com/feed/",
         "https://www.bisnow.com/rss",
-        "https://shoppingcenterbusiness.com/feed/",
     ]
 }
 
