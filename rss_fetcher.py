@@ -1,9 +1,13 @@
 import re
 import time
 import feedparser
+import requests
 from datetime import datetime, timezone, timedelta
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+
+# Feeds that block feedparser's HTTP client — pre-fetch with requests instead
+_PREFETCH_DOMAINS = {'therealdeal.com'}
 
 _STOP_WORDS = {
     'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
@@ -44,9 +48,29 @@ RSS_FEEDS = {
         "https://rebusinessonline.com/feed/",
         "https://rejournals.com/feed/",
         "https://therealdeal.com/national/feed/",
+        "https://therealdeal.com/new-york/feed/",
+        "https://therealdeal.com/miami/feed/",
+        "https://therealdeal.com/chicago/feed/",
+        "https://therealdeal.com/texas/feed/",
+        "https://therealdeal.com/los-angeles/feed/",
+        "https://therealdeal.com/san-francisco/feed/",
+        "https://therealdeal.com/washington-dc/feed/",
+        "https://therealdeal.com/nashville/feed/",
+        "https://therealdeal.com/las-vegas/feed/",
+        "https://therealdeal.com/atlanta/feed/",
+        "https://therealdeal.com/boston/feed/",
+        "https://therealdeal.com/philadelphia/feed/",
+        "https://therealdeal.com/seattle/feed/",
+        "https://therealdeal.com/denver/feed/",
         "https://www.connectcre.com/feed/",
         "https://www.bisnow.com/rss",
     ]
+}
+
+# Per-feed article caps — overrides the default max_articles_per_feed
+_FEED_CAPS = {
+    "https://therealdeal.com/national/feed/": 5,
+    "https://therealdeal.com/new-york/feed/": 5,
 }
 
 LAST_FEED_STATS = []  # populated on each call to fetch_articles
@@ -72,21 +96,29 @@ def fetch_articles(max_articles_per_feed=3):
     for category, feeds in RSS_FEEDS.items():
         for feed_url in feeds:
             try:
+                domain = feed_url.split('/')[2]
+                is_slow_domain = any(d in domain for d in _PREFETCH_DOMAINS)
+                if is_slow_domain:
+                    time.sleep(2)
                 feed = feedparser.parse(feed_url, request_headers=HEADERS)
+                if len(feed.entries) == 0 and is_slow_domain:
+                    raw = requests.get(feed_url, headers=HEADERS, timeout=15).content
+                    feed = feedparser.parse(raw)
                 source = feed.feed.get("title", feed_url)
                 total_in_feed = len(feed.entries)
                 last_24h = sum(
                     1 for e in feed.entries
                     if (h := _entry_age_hours(e)) is None or h <= 24
                 )
+                cap = _FEED_CAPS.get(feed_url, max_articles_per_feed)
                 LAST_FEED_STATS.append({
                     'source': source,
                     'total_in_feed': total_in_feed,
                     'last_24h': last_24h,
-                    'fetched': min(max_articles_per_feed, total_in_feed),
+                    'fetched': min(cap, total_in_feed),
                     'status': getattr(feed, 'status', 200),
                 })
-                for entry in feed.entries[:max_articles_per_feed]:
+                for entry in feed.entries[:cap]:
                     article = {
                         "category": category,
                         "source": source,
