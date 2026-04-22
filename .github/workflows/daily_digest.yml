@@ -29,7 +29,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          DIGEST_BASE_URL: https://cosmic-nasturtium-ca1a3d.netlify.app
+          DIGEST_BASE_URL: https://news-reader-daily-digest.netlify.app
         run: python digest.py
 
       - name: Prepare site for Netlify
