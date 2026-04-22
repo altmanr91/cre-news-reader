@@ -1,5 +1,7 @@
 import re
+import time
 import feedparser
+from datetime import datetime, timezone, timedelta
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
 
@@ -48,17 +50,47 @@ RSS_FEEDS = {
     ]
 }
 
+LAST_FEED_STATS = []  # populated on each call to fetch_articles
+
+
+def _entry_age_hours(entry) -> float | None:
+    """Return how many hours ago the entry was published, or None if unknown."""
+    pub = entry.get('published_parsed') or entry.get('updated_parsed')
+    if not pub:
+        return None
+    try:
+        pub_dt = datetime(*pub[:6], tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - pub_dt).total_seconds() / 3600
+    except Exception:
+        return None
+
+
 def fetch_articles(max_articles_per_feed=3):
+    global LAST_FEED_STATS
+    LAST_FEED_STATS = []
     all_articles = []
 
     for category, feeds in RSS_FEEDS.items():
         for feed_url in feeds:
             try:
                 feed = feedparser.parse(feed_url, request_headers=HEADERS)
+                source = feed.feed.get("title", feed_url)
+                total_in_feed = len(feed.entries)
+                last_24h = sum(
+                    1 for e in feed.entries
+                    if (h := _entry_age_hours(e)) is None or h <= 24
+                )
+                LAST_FEED_STATS.append({
+                    'source': source,
+                    'total_in_feed': total_in_feed,
+                    'last_24h': last_24h,
+                    'fetched': min(max_articles_per_feed, total_in_feed),
+                    'status': getattr(feed, 'status', 200),
+                })
                 for entry in feed.entries[:max_articles_per_feed]:
                     article = {
                         "category": category,
-                        "source": feed.feed.get("title", feed_url),
+                        "source": source,
                         "title": entry.get("title", "No title"),
                         "summary": entry.get("summary", ""),
                         "link": entry.get("link", ""),
@@ -67,6 +99,14 @@ def fetch_articles(max_articles_per_feed=3):
                     all_articles.append(article)
             except Exception as e:
                 print(f"Error fetching {feed_url}: {e}")
+                LAST_FEED_STATS.append({
+                    'source': feed_url,
+                    'total_in_feed': 0,
+                    'last_24h': 0,
+                    'fetched': 0,
+                    'status': 0,
+                    'error': str(e),
+                })
 
     before = len(all_articles)
     all_articles = _deduplicate(all_articles)

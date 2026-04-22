@@ -39,6 +39,13 @@ _TITLE_ASSOCIATION_PATTERNS = [
     r'\bcre[i]?\b.{0,30}\bannounce',
 ]
 
+# Non-CRE content detectable from the title alone
+_TITLE_NONCRE_PATTERNS = [
+    r'\bnational \w[\w ]{0,35}week\b',        # "National Property Managers Week" etc.
+    r'\binvesting.{0,25}\byouth\b',            # City youth investment ("Investing Big In Its Youth")
+    r'\bschool district\b.{0,40}\bbond\b',     # School district bond articles
+]
+
 # Promotion seniority — senior signals (keep)
 _SENIOR_KEYWORDS = [
     'managing director', 'partner', 'principal', 'president', 'chief ',
@@ -85,6 +92,10 @@ def get_title_filter_reason(title: str) -> str | None:
     for pattern in _TITLE_ASSOCIATION_PATTERNS:
         if re.search(pattern, t):
             return "Association News"
+
+    for pattern in _TITLE_NONCRE_PATTERNS:
+        if re.search(pattern, t):
+            return "Non-CRE Content"
 
     return None
 

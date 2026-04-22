@@ -2,8 +2,11 @@ name: Daily CRE Digest
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # 9:00 AM EDT (UTC-4)
+    - cron: '0 9 * * *'  # 5:00 AM EDT (UTC-4); early start accounts for GitHub Actions queue delays
   workflow_dispatch:       # allow manual runs from GitHub UI
+
+permissions:
+  contents: write  # allows deploying to gh-pages branch
 
 jobs:
   digest:
@@ -24,11 +27,23 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install google-genai feedparser python-dotenv pydantic requests "lxml[html_clean]" beautifulsoup4 newspaper3k
-          python -m pip list | grep google
-          python -c "import google.genai; print('google.genai OK')"
 
       - name: Run digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_BASE_URL: https://altmanr91.github.io/CRE-News-Reader
         run: python digest.py
+
+      - name: Prepare site for GitHub Pages
+        run: |
+          mkdir -p _site/articles
+          cp digest_*.html _site/ 2>/dev/null || true
+          cp articles/*.html _site/articles/ 2>/dev/null || true
+
+      - name: Deploy digest to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: true

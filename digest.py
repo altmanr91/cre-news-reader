@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from dotenv import load_dotenv
 
-from rss_fetcher import fetch_articles
+from rss_fetcher import fetch_articles, LAST_FEED_STATS
 from article_scraper import get_full_article_text
 from summarizer import get_summary
 from geocoder import inject_geocoded_address
@@ -682,6 +682,40 @@ def build_browser_html(articles: list, results: list) -> str:
     </style>
     """
 
+    # Feed volume stats (import the module-level list populated during fetch)
+    import rss_fetcher as _rf
+    stats_rows = ''
+    total_24h = 0
+    for s in _rf.LAST_FEED_STATS:
+        status = s.get('status', 200)
+        err = s.get('error', '')
+        flag = ' &#x26A0;' if (status not in (200, 301, 302) or err) else ''
+        last_24h = s['last_24h']
+        total_24h += last_24h
+        stats_rows += (
+            f'<tr><td>{s["source"]}{flag}</td>'
+            f'<td style="text-align:center;">{last_24h}</td>'
+            f'<td style="text-align:center;">{s["total_in_feed"]}</td>'
+            f'<td style="text-align:center;">{s["fetched"]}</td></tr>'
+        )
+    feed_stats_section = ''
+    if stats_rows:
+        feed_stats_section = f"""
+<details style="margin-top:32px;">
+  <summary style="font-size:0.75em;font-weight:bold;letter-spacing:0.05em;color:#bbb;padding:6px 0;font-family:Arial,sans-serif;cursor:pointer;">
+    SOURCE VOLUME (last 24h: {total_24h} articles across all feeds)
+  </summary>
+  <table style="font-size:0.78em;color:#888;border-collapse:collapse;margin-top:6px;width:100%;">
+    <thead><tr style="border-bottom:1px solid #eee;">
+      <th style="text-align:left;padding:3px 8px 3px 0;font-family:Arial,sans-serif;">Source</th>
+      <th style="text-align:center;padding:3px 8px;font-family:Arial,sans-serif;">Last 24h</th>
+      <th style="text-align:center;padding:3px 8px;font-family:Arial,sans-serif;">In Feed</th>
+      <th style="text-align:center;padding:3px 8px;font-family:Arial,sans-serif;">Fetched</th>
+    </tr></thead>
+    <tbody>{stats_rows}</tbody>
+  </table>
+</details>"""
+
     return f"""<!DOCTYPE html>
 <html>
 <head>
@@ -695,6 +729,7 @@ def build_browser_html(articles: list, results: list) -> str:
   <p class="meta">{today} &mdash; {shown_count} articles from {source_count} sources</p>
   {"".join(body_parts)}
   {filtered_section}
+  {feed_stats_section}
   <p style="font-size:0.72em;color:#ccc;margin-top:40px;text-align:center;">CRE News Reader &mdash; {today}</p>
 </body>
 </html>"""
@@ -794,9 +829,9 @@ def main():
 
     today     = datetime.now().strftime('%B %d, %Y')
     date_slug = datetime.now().strftime('%Y-%m-%d')
-    base_dir  = os.path.dirname(__file__)
+    base_dir  = os.path.dirname(__file__) or os.getcwd()
     PORT      = 8787
-    BASE_URL  = f'http://localhost:{PORT}'
+    BASE_URL  = os.getenv('DIGEST_BASE_URL', f'http://localhost:{PORT}')
 
     # Global browser digest
     browser_html = build_browser_html(articles, results)
