@@ -51,6 +51,7 @@ DATA POINTS:
 - size_beds: student housing bed counts ONLY — never use for residential unit counts
 - size_keys: hotel room/key counts ONLY
 - Never populate size_sf and size_units together for the same property
+- For REIT or company acquisitions priced per share (corporate M&A), leave size_sf null — the $/SF metric is meaningless when the price represents equity/enterprise value rather than direct asset value
 - occupancy: number only, e.g. 94.7 (not "94.7%")
 - address: always format as "Street Address, City, State". Scan the entire article carefully — street addresses are often buried mid-paragraph or in boilerplate at the end. Never include zip code. If the article gives a street address but no city/state, complete it using the article's stated market city and state. Leave null only if no street address exists anywhere in the article.
 - notable_features: property characteristics only — proximity to major employers, highways, or landmarks (e.g. "Adjacent to Tesla Gigafactory"); LEED or sustainability certifications; notable amenities or building specs. Keep to one concise sentence or brief phrase — never reproduce a paragraph from the article. Do NOT use for deal context, financial terms, or acquisition history.
