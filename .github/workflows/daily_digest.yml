@@ -5,9 +5,6 @@ on:
     - cron: '0 9 * * *'  # 5:00 AM EDT (UTC-4); early start accounts for GitHub Actions queue delays
   workflow_dispatch:       # allow manual runs from GitHub UI
 
-permissions:
-  contents: write  # allows deploying to gh-pages branch
-
 jobs:
   digest:
     runs-on: ubuntu-latest
@@ -32,18 +29,19 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          DIGEST_BASE_URL: https://altmanr91.github.io/CRE-News-Reader
+          DIGEST_BASE_URL: https://cosmic-nasturtium-ca1a3d.netlify.app
         run: python digest.py
 
-      - name: Prepare site for GitHub Pages
+      - name: Prepare site for Netlify
         run: |
           mkdir -p _site/articles
           cp digest_*.html _site/ 2>/dev/null || true
           cp articles/*.html _site/articles/ 2>/dev/null || true
 
-      - name: Deploy digest to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          keep_files: true
+      - name: Deploy to Netlify
+        run: |
+          npm install -g netlify-cli
+          netlify deploy --prod --dir=_site
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
