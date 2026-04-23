@@ -88,6 +88,9 @@ def _entry_age_hours(entry) -> float | None:
         return None
 
 
+_AGE_LIMIT_HOURS = 30  # ignore articles older than this (prevents yesterday's digest from repeating)
+
+
 def fetch_articles(max_articles_per_feed=3):
     global LAST_FEED_STATS
     LAST_FEED_STATS = []
@@ -111,14 +114,13 @@ def fetch_articles(max_articles_per_feed=3):
                     if (h := _entry_age_hours(e)) is None or h <= 24
                 )
                 cap = _FEED_CAPS.get(feed_url, max_articles_per_feed)
-                LAST_FEED_STATS.append({
-                    'source': source,
-                    'total_in_feed': total_in_feed,
-                    'last_24h': last_24h,
-                    'fetched': min(cap, total_in_feed),
-                    'status': getattr(feed, 'status', 200),
-                })
-                for entry in feed.entries[:cap]:
+                fetched = 0
+                for entry in feed.entries:
+                    if fetched >= cap:
+                        break
+                    age = _entry_age_hours(entry)
+                    if age is not None and age > _AGE_LIMIT_HOURS:
+                        continue
                     article = {
                         "category": category,
                         "source": source,
@@ -128,6 +130,14 @@ def fetch_articles(max_articles_per_feed=3):
                         "published": entry.get("published", "Unknown date")
                     }
                     all_articles.append(article)
+                    fetched += 1
+                LAST_FEED_STATS.append({
+                    'source': source,
+                    'total_in_feed': total_in_feed,
+                    'last_24h': last_24h,
+                    'fetched': fetched,
+                    'status': getattr(feed, 'status', 200),
+                })
             except Exception as e:
                 print(f"Error fetching {feed_url}: {e}")
                 LAST_FEED_STATS.append({
