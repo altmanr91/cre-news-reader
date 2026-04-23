@@ -47,12 +47,13 @@ DATA POINTS:
 - property_name: always include if the building or project has an official name in the article
 - sale_price, loan_amount, total_project_cost: dollar amounts as plain numbers (e.g. 56000000 not "$56M"). Omit entirely if not stated in the article — never use 0 or a placeholder
 - total_project_cost: only if the article explicitly states the cost of the current project. A historical land/site acquisition price is NOT total project cost
+- For Lease articles, leave total_project_cost null even if the article mentions the building's construction or development cost — that figure describes the building's history, not the cost of the lease transaction
 - size_sf: square footage for commercial properties
 - size_units: residential unit count for multifamily/condo/apartment projects — use this for any "X-unit" project. If the article states a range (e.g. "between 100 and 130 units"), leave size_units null and capture the range in notable_features instead (e.g. "100-130 units planned")
 - size_beds: student housing bed counts ONLY — never use for residential unit counts
 - size_keys: hotel room/key counts ONLY
 - Never populate size_sf and size_units together for the same property. For mixed-use buildings, use only the field matching the primary transaction: size_sf for commercial leases or sales, size_units for residential transactions
-- For REIT or company acquisitions priced per share (corporate M&A), leave size_sf null — the $/SF metric is meaningless when the price represents equity/enterprise value rather than direct asset value
+- For REIT or company acquisitions priced per share (corporate M&A), leave size_sf null — the $/SF metric is meaningless when the price represents equity/enterprise value rather than direct asset value. Signal: if the article states a per-share acquisition price or a premium to the target's stock price, this is a corporate acquisition; leave size_sf null even if the portfolio's total square footage is mentioned
 - For portfolio or multi-asset acquisitions (multiple properties or facilities in a single transaction), leave size_units null — do not use size_units to count the number of buildings, properties, or facilities in the portfolio
 - occupancy: number only, e.g. 94.7 (not "94.7%")
 - address: always format as "Street Address, City, State". Scan the entire article carefully — street addresses are often buried mid-paragraph or in boilerplate at the end. Never include zip code. If the article gives a street address but no city/state, complete it using the article's stated market city and state. Leave null only if no street address exists anywhere in the article.
@@ -74,6 +75,7 @@ COMPANIES/PEOPLE:
   * Planner or planning firm = PLANNER
   * Do NOT label architects or contractors as DEVELOPER/SPONSOR
   * The entity that owns or commissioned the building (but is not the developer) gets OWNER — e.g. a hospital system, university, or government body. List each institutional entity only once.
+- Hotel brand rule: Never label a hotel brand or franchisor (e.g., Marriott, Hilton, Hyatt, IHG, Accor) as OWNER solely because their flag appears on the property — hotel brands license their name but typically do not own the asset. Only label OWNER if the article explicitly states the brand holds title to the property
 - Broker roles: a broker who "represented the seller" = SELLER BROKER. A broker who "represented the buyer" = BUYER BROKER. Never use BUYER BROKER unless the article explicitly states they represented the buyer
 - Only include people explicitly named in the article. Include title only if explicitly stated
 - Multiple people from the same firm with the same label: include them all in the people array for that single entry
@@ -135,6 +137,31 @@ def _normalize_occupancy(summary: ArticleSummary) -> ArticleSummary:
     return summary
 
 
+def _normalize_sizes(summary: ArticleSummary) -> ArticleSummary:
+    """When both size_sf and size_units are present, keep only the field that matches the transaction.
+    Multi-use articles with keys or beds (e.g. a hotel+condo tower) are left untouched."""
+    if not summary.data_points:
+        return summary
+    dp = summary.data_points
+    if not (dp.size_sf and dp.size_units):
+        return summary
+    # Three or more size dimensions — clearly a multi-use development, leave all fields in place
+    if dp.size_beds or dp.size_keys:
+        return summary
+    tx = (summary.transaction_type or '').lower()
+    prop = (dp.property_type or '').lower()
+    is_residential = any(t in prop for t in (
+        'multifamily', 'condo', 'apartment', 'residential', 'senior', 'student', 'townhome'
+    ))
+    # Commercial leases and non-residential sales/acquisitions: primary dimension is SF
+    if tx == 'lease' or (tx in ('sale', 'acquisition') and not is_residential):
+        dp.size_units = None
+    else:
+        # Residential sales and all development/construction: primary dimension is units
+        dp.size_sf = None
+    return summary
+
+
 def get_summary(title, content, published=None) -> ArticleSummary:
     pub_line = f"\nArticle Published: {published}" if published else ""
 
@@ -191,4 +218,5 @@ Set ALL other fields to null or empty:
     summary = ArticleSummary.model_validate_json(response.text)
     summary = _normalize_tx_type(summary)
     summary = _normalize_occupancy(summary)
+    summary = _normalize_sizes(summary)
     return summary

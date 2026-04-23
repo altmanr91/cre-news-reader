@@ -128,6 +128,14 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
     if any(kw in article_type for kw in ('event', 'conference', 'expo', 'symposium', 'webinar')):
         return "Industry Event"
 
+    # Single-family residential and ranch properties — not CRE
+    if summary.data_points:
+        prop_type = (summary.data_points.property_type or '').lower()
+        if any(t in prop_type for t in ('single family', 'single-family')):
+            return "Non-CRE Content"
+        if prop_type == 'ranch':
+            return "Non-CRE Content"
+
     # All promotions are kept — display is compact (name/title/company/link only)
     if tx_type == 'promotion':
         return None
