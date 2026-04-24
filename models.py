@@ -41,6 +41,7 @@ class DataPoints(BaseModel):
     phase_1: Optional[str] = None
     total_project_all_phases: Optional[str] = None
     original_plan: Optional[str] = None
+    land_area_acres: Optional[float] = None
     notable_features: Optional[str] = None
     project_notes: Optional[str] = None
 

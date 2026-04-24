@@ -25,6 +25,21 @@ def _is_duplicate(tokens_a: set, tokens_b: set, threshold: float = 0.6) -> bool:
     # Overlap coefficient: how much of the smaller set appears in the larger
     return len(tokens_a & tokens_b) / min(len(tokens_a), len(tokens_b)) >= threshold
 
+def _extract_dollar_millions(text: str) -> set[int]:
+    """Extract dollar amounts >= $5M from text, normalized to nearest $1M bucket."""
+    results = set()
+    for m in re.finditer(r'\$([\d,]+(?:\.\d+)?)\s*(million|billion|[MB])\b', text, re.IGNORECASE):
+        try:
+            val = float(m.group(1).replace(',', ''))
+            unit = m.group(2).lower()
+            if unit in ('billion', 'b'):
+                val *= 1000  # convert to millions
+            if val >= 5:
+                results.add(round(val))
+        except ValueError:
+            pass
+    return results
+
 def _deduplicate(articles: list) -> list:
     # Pass 1: exact URL dedup
     seen_urls, unique = set(), []
@@ -40,7 +55,27 @@ def _deduplicate(articles: list) -> list:
         if not any(_is_duplicate(tokens, kt) for kt in kept_tokens):
             result.append(article)
             kept_tokens.append(tokens)
-    return result
+
+    # Pass 3: dollar-amount fingerprint dedup — catches same-deal coverage from multiple outlets
+    # when titles differ enough to beat the overlap threshold (e.g. "$360M Hollywood loan" from CO + TRD)
+    result2, kept_prints = [], []
+    for article in result:
+        combined = article['title'] + ' ' + article.get('summary', '')
+        dollars = _extract_dollar_millions(combined)
+        tokens  = _title_tokens(article['title'])
+        is_dup  = False
+        for kept_dollars, kept_tokens_fp in kept_prints:
+            shared_dollars = dollars & kept_dollars
+            if shared_dollars:
+                # Same dollar amount — check for meaningful title token overlap
+                overlap = len(tokens & kept_tokens_fp) / min(len(tokens), len(kept_tokens_fp), 1)
+                if overlap >= 0.3:
+                    is_dup = True
+                    break
+        if not is_dup:
+            result2.append(article)
+            kept_prints.append((dollars, tokens))
+    return result2
 
 RSS_FEEDS = {
     "Commercial Real Estate": [

@@ -19,6 +19,11 @@ _TITLE_AWARD_PATTERNS = [
     r'best transaction',
     r'regional winner',
     r'international winner',
+    r'excellence award',         # "Chicagoland Apartment Marketing and Management Excellence Awards"
+    r'\bcamme\b',                # Chicagoland Apartment Marketing & Management Excellence
+    r'\bamma\b',                 # Apartment Association awards
+    r'takes home.{0,30}honor',  # "takes home several honors"
+    r'\bhonored.{0,20}award',
 ]
 
 _TITLE_EVENT_PATTERNS = [
@@ -44,6 +49,12 @@ _TITLE_NONCRE_PATTERNS = [
     r'\bnational \w[\w ]{0,35}week\b',        # "National Property Managers Week" etc.
     r'\binvesting.{0,25}\byouth\b',            # City youth investment ("Investing Big In Its Youth")
     r'\bschool district\b.{0,40}\bbond\b',     # School district bond articles
+]
+
+# Vendor/advisory list content — opinion pieces structured as numbered tips/issues lists
+_TITLE_ADVISORY_PATTERNS = [
+    r'^\d+\s+(issues?|tips?|ways?|steps?|reasons?|things?|mistakes?|strategies?|factors?)\b',
+    r'^(how|why|what).{0,60}\?.*hint\b',       # clickbait editorial with "Hint:" subhead
 ]
 
 # Promotion seniority — senior signals (keep)
@@ -97,6 +108,10 @@ def get_title_filter_reason(title: str) -> str | None:
         if re.search(pattern, t):
             return "Non-CRE Content"
 
+    for pattern in _TITLE_ADVISORY_PATTERNS:
+        if re.search(pattern, t):
+            return "Vendor/Advisory Content"
+
     return None
 
 
@@ -116,6 +131,14 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
     if 'non-cre' in article_type:
         return "Non-CRE Content"
 
+    # Government/civic property use (city halls, courthouses, etc.)
+    if any(kw in article_type for kw in ('government use', 'civic', 'government / civic')):
+        return "Non-CRE Content"
+
+    # Crime, arrest, or political protest articles
+    if any(kw in article_type for kw in ('crime', 'arrest', 'political protest', 'political / crime')):
+        return "Non-CRE Content"
+
     # Award articles the model caught
     if 'award' in article_type:
         return "Property/Deal Award"
@@ -128,10 +151,10 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
     if any(kw in article_type for kw in ('event', 'conference', 'expo', 'symposium', 'webinar')):
         return "Industry Event"
 
-    # Single-family residential and ranch properties — not CRE
+    # Single-family residential, estates, ranches — individual home transactions, not CRE asset class
     if summary.data_points:
         prop_type = (summary.data_points.property_type or '').lower()
-        if any(t in prop_type for t in ('single family', 'single-family')):
+        if any(t in prop_type for t in ('single family', 'single-family', 'estate', 'mansion')):
             return "Non-CRE Content"
         if prop_type == 'ranch':
             return "Non-CRE Content"

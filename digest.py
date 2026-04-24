@@ -34,7 +34,15 @@ def _fmt_dollars(value: float) -> str:
 
 
 def _line(text: str) -> str:
-    return f'<p style="margin:2px 0 2px 14px;font-size:0.88em;">{text}</p>'
+    if ':' in text:
+        label, _, value = text.partition(':')
+        inner = f'<strong style="font-weight:600;">{label}:</strong>{value}'
+    else:
+        inner = text
+    return (
+        f'<p style="margin:0;padding:5px 14px;font-size:0.88em;'
+        f'border-bottom:1px solid #f0f0f0;">{inner}</p>'
+    )
 
 
 def _collapsible(label: str, content: str, expanded: bool = False) -> str:
@@ -49,6 +57,60 @@ def _collapsible(label: str, content: str, expanded: bool = False) -> str:
     )
 
 
+_TYPE_COLORS = {
+    'Sale': '#1a4a8c', 'Acquisition': '#1a4a8c',
+    'Loan': '#1a5c38', 'Refinance': '#1a5c38',
+    'Development': '#7a3500', 'Construction': '#7a3500',
+    'Lease': '#4a1a7a',
+}
+_TYPE_BG = {
+    'Sale': '#deeaf8', 'Acquisition': '#deeaf8',
+    'Loan': '#daf0e5', 'Refinance': '#daf0e5',
+    'Development': '#f8ede2', 'Construction': '#f8ede2',
+    'Lease': '#ede5f8',
+}
+
+
+def _type_badge(tx: str) -> str:
+    """Colored transaction type pill for browser and email."""
+    if not tx or tx.lower() == 'promotion':
+        return ''
+    color = _TYPE_COLORS.get(tx, '#444')
+    bg    = _TYPE_BG.get(tx, '#eee')
+    return (
+        f'<span style="display:inline-block;background:{bg};color:{color};'
+        f'font-family:Arial,sans-serif;font-size:0.66em;font-weight:bold;'
+        f'letter-spacing:0.06em;padding:2px 7px;border-radius:3px;'
+        f'text-transform:uppercase;vertical-align:middle;margin-right:6px;">'
+        f'{tx.upper()}</span>'
+    )
+
+
+def _key_metrics_line(summary: ArticleSummary) -> str:
+    """One-line key financial metrics surfaced in the email listing."""
+    tx = (summary.transaction_type or '').lower()
+    dp = summary.data_points
+    if not dp:
+        return ''
+    parts = []
+    if dp.sale_price and tx in ('sale', 'acquisition'):
+        parts.append(_fmt_dollars(dp.sale_price))
+    elif dp.loan_amount and tx in ('loan', 'refinance'):
+        parts.append(_fmt_dollars(dp.loan_amount) + ' loan')
+    elif tx in ('development', 'construction'):
+        if dp.total_project_cost:
+            parts.append(_fmt_dollars(dp.total_project_cost))
+        elif dp.loan_amount:
+            parts.append(_fmt_dollars(dp.loan_amount) + ' construction loan')
+    if dp.size_sf:
+        parts.append(f'{dp.size_sf:,.0f} SF')
+    elif dp.size_units:
+        parts.append(f'{dp.size_units:,} units')
+    elif dp.size_keys:
+        parts.append(f'{dp.size_keys:,} keys')
+    return ' · '.join(parts)
+
+
 def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool = False) -> str:
     is_promotion = (summary.transaction_type or '').lower() == 'promotion'
     is_market    = bool(summary.article_type) and not summary.transaction_type
@@ -58,10 +120,17 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
     source    = article.get('source', '')
     published = article.get('published', '')
 
+    badge = _type_badge(summary.transaction_type or '') if not is_market and not is_promotion else ''
+    badge_line = (
+        f'<p style="margin:4px 0 3px;line-height:1;">{badge}</p>'
+        if badge else ''
+    )
     header = (
-        f'<h3 style="margin:0 0 2px;font-size:1em;">'
+        f'<h3 style="margin:0 0 2px;font-size:1.08em;line-height:1.38;">'
         f'<a href="{link}" style="color:#1a1a1a;text-decoration:none;">{title}</a></h3>'
-        f'<p style="color:#777;font-size:0.8em;margin:0 0 6px;">{source} &mdash; {published}</p>'
+        f'{badge_line}'
+        f'<p style="margin:0 0 16px;font-size:0.76em;font-family:Arial,sans-serif;color:#999;">'
+        f'{source} &mdash; {published}</p>'
     )
 
     if is_promotion:
@@ -71,7 +140,7 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
 
     # SUMMARY
     if summary.narrative:
-        narrative_html = f'<p style="margin:0;line-height:1.55;font-size:0.9em;">{summary.narrative}</p>'
+        narrative_html = f'<p style="margin:0;line-height:1.55;font-size:0.95em;">{summary.narrative}</p>'
         # Article type label for non-transaction articles
         if summary.article_type:
             narrative_html = (
@@ -129,6 +198,8 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
             dp_lines.append(_line(f'Total Project (All Phases): {dp.total_project_all_phases}'))
         if dp.original_plan:
             dp_lines.append(_line(f'Original Plan: {dp.original_plan}'))
+        if dp.land_area_acres:
+            dp_lines.append(_line(f'Site Area: {dp.land_area_acres:g} acres'))
         if dp.notable_features:
             dp_lines.append(_line(f'Notable Features: {dp.notable_features}'))
         if dp.project_notes:
@@ -454,18 +525,31 @@ def _render_article_email(article: dict, summary: ArticleSummary) -> str:
     source    = article.get('source', '')
     published = article.get('published', '')
 
-    header = (
-        f'<h3 style="margin:0 0 2px;font-size:1em;">'
-        f'<a href="{link}" style="color:#1a1a1a;text-decoration:none;">{title}</a></h3>'
-        f'<p style="color:#777;font-size:0.8em;margin:0 0 5px;">{source} &mdash; {published}</p>'
+    badge   = _type_badge(summary.transaction_type or '') if not is_promotion else ''
+    metrics = _key_metrics_line(summary) if not is_promotion else ''
+    badge_line = (
+        f'<p style="margin:4px 0 3px;line-height:1;">{badge}</p>'
+        if badge else ''
     )
+    header  = (
+        f'<h3 style="margin:0 0 2px;font-size:1.05em;line-height:1.38;font-family:Georgia,serif;">'
+        f'<a href="{link}" style="color:#1a1a1a;text-decoration:none;">{title}</a></h3>'
+        f'{badge_line}'
+        f'<p style="margin:0 0 16px;font-size:0.78em;font-family:Arial,sans-serif;color:#999;">'
+        f'{source} &mdash; {published}</p>'
+    )
+    if metrics:
+        header += (
+            f'<p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:0.82em;'
+            f'font-weight:bold;color:#1a2e3b;">{metrics}</p>'
+        )
 
     if is_promotion:
         return header
 
     if summary.narrative:
         return header + (
-            f'<p style="margin:0;line-height:1.55;font-size:0.9em;">{summary.narrative}</p>'
+            f'<p style="margin:0;line-height:1.55;font-size:0.95em;">{summary.narrative}</p>'
         )
     return header
 
@@ -508,8 +592,9 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
             continue
 
         body_parts.append(
-            f'<h2 style="font-size:1em;letter-spacing:0.06em;margin:32px 0 12px;'
-            f'padding-bottom:6px;border-bottom:2px solid #1a1a1a;">'
+            f'<h2 style="font-family:Georgia,serif;font-size:0.85em;font-weight:700;'
+            f'letter-spacing:0.08em;margin:28px 0 0;padding:10px 16px;'
+            f'background:#2567a4;color:#ffffff;text-transform:uppercase;">'
             f'{type_cat.upper()}</h2>'
         )
 
@@ -524,8 +609,9 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
                 if not markets:
                     continue
                 body_parts.append(
-                    f'<h3 style="font-size:0.82em;letter-spacing:0.05em;color:#555;'
-                    f'margin:20px 0 6px;font-family:Arial,sans-serif;">'
+                    f'<h3 style="font-family:Georgia,serif;font-size:0.78em;font-weight:700;'
+                    f'letter-spacing:0.07em;color:#1c2e3d;margin:18px 0 6px;'
+                    f'padding-bottom:4px;border-bottom:1px solid #ddd;text-transform:uppercase;">'
                     f'{region.upper()}</h3>'
                 )
                 for market in sorted(markets.keys(), key=_market_sort_key):
@@ -549,14 +635,32 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
                             f'<hr style="border:none;border-top:1px solid #e8e8e8;margin:4px 0 16px;">'
                         )
 
+    masthead = (
+        f'<table width="100%" cellpadding="0" cellspacing="0" border="0" '
+        f'style="background:#1c2e3d;margin-bottom:0;">'
+        f'<tr><td style="padding:20px 16px 18px;">'
+        f'<div style="font-family:Georgia,serif;font-size:1.5em;font-weight:900;'
+        f'letter-spacing:0.04em;color:#ffffff;line-height:1;text-transform:uppercase;">CRE News Digest</div>'
+        f'<div style="font-family:Arial,sans-serif;font-size:0.74em;color:rgba(255,255,255,0.55);margin-top:6px;">'
+        f'{today} &nbsp;&mdash;&nbsp; {shown_count} articles from {source_count} sources</div>'
+        f'</td></tr></table>'
+    )
+    view_link = (
+        f'<p style="font-size:0.82em;color:#555;margin:0 0 20px;padding:9px 12px;'
+        f'background:#f5f5f5;border-left:3px solid #c9a538;">'
+        f'<a href="{global_url}" style="color:#1a2e3b;font-weight:bold;">View Full Digest</a>'
+        f' &mdash; data points, companies &amp; market intelligence for all articles.</p>'
+    )
     return f"""<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="font-family:Georgia,serif;max-width:680px;margin:0 auto;padding:24px 16px;color:#1a1a1a;background:#ffffff;-webkit-text-size-adjust:100%;">
-  <h1 style="font-size:1.35em;margin:0 0 2px;padding-bottom:8px;border-bottom:2px solid #1a1a1a;">CRE News Digest</h1>
-  <p style="color:#777;font-size:0.85em;margin:6px 0 16px;">{today} &mdash; {shown_count} articles from {source_count} sources</p>
+<body style="font-family:Georgia,serif;font-size:16px;max-width:680px;margin:0 auto;padding:0;color:#1a1a1a;background:#ffffff;-webkit-text-size-adjust:100%;">
+  {masthead}
+  <div style="padding:0 16px 32px;">
+  {view_link}
   {"".join(body_parts)}
-  <p style="font-size:0.72em;color:#bbb;margin-top:36px;text-align:center;">CRE News Reader &mdash; {today}</p>
+  <p style="font-size:0.7em;color:#ccc;margin-top:36px;text-align:center;font-family:Arial,sans-serif;">CRE News Reader &mdash; {today}</p>
+  </div>
 </body>
 </html>"""
 
@@ -647,47 +751,42 @@ def build_browser_html(articles: list, results: list) -> str:
 
     css = """
     <style>
-      body { font-family: Georgia, serif; max-width: 780px; margin: 0 auto; padding: 24px 20px; color: #1a1a1a; background: #fff; }
-      h1 { font-size: 1.4em; margin: 0 0 4px; padding-bottom: 10px; border-bottom: 2px solid #1a1a1a; }
-      .meta { color: #777; font-size: 0.85em; margin: 6px 0 20px; }
+      * { box-sizing: border-box; }
+      body { font-family: Georgia, serif; font-size: 16px; max-width: 760px; margin: 0 auto; padding: 0 0 48px; color: #222; background: #fff; }
+
+      .masthead { background: #1c2e3d; padding: 22px 24px 20px; }
+      .masthead-title { font-family: Georgia, serif; font-size: 1.75em; font-weight: 900; letter-spacing: 0.02em; color: #fff; line-height: 1; }
+      .masthead-meta { font-family: Arial, sans-serif; font-size: 0.75em; color: rgba(255,255,255,0.5); margin-top: 8px; letter-spacing: 0.02em; }
 
       details { margin: 0; }
       details > summary { list-style: none; cursor: pointer; user-select: none; }
       details > summary::-webkit-details-marker { display: none; }
-      details > summary::before { content: '▶ '; font-size: 0.7em; color: #888; transition: transform 0.15s; display: inline-block; }
-      details[open] > summary::before { content: '▼ '; }
+      details > summary::before { content: '▶  '; font-size: 0.62em; color: #bbb; display: inline-block; font-family: Arial, sans-serif; }
+      details[open] > summary::before { content: '▼  '; }
 
-      .type-header { font-size: 0.95em; font-weight: bold; letter-spacing: 0.07em; padding: 10px 0 8px; border-bottom: 2px solid #1a1a1a; margin: 28px 0 0; display: block; }
-      .type-body { padding: 4px 0 0 0; }
+      .type-header { font-family: Georgia, serif; font-size: 0.9em; font-weight: 700; letter-spacing: 0.06em; padding: 10px 24px; background: #2567a4; color: #fff; margin: 28px 0 0; display: block; text-transform: uppercase; }
+      .type-body { padding: 0 24px; }
 
-      .region-header { font-size: 0.78em; font-weight: bold; letter-spacing: 0.06em; color: #444; padding: 12px 0 6px; border-bottom: 1px solid #ccc; margin: 0; display: block; font-family: Arial, sans-serif; }
-      .region-body { padding: 4px 0 0 12px; }
+      .region-header { font-family: Georgia, serif; font-size: 0.78em; font-weight: 700; letter-spacing: 0.06em; color: #1c2e3d; padding: 15px 0 4px; border-bottom: 1px solid #ddd; margin: 0; display: block; text-transform: uppercase; }
+      .region-body { padding: 0; }
 
-      .market-header { font-size: 0.72em; font-weight: bold; letter-spacing: 0.05em; color: #888; padding: 8px 0 4px; display: block; font-family: Arial, sans-serif; }
-      .market-body { padding: 0 0 0 12px; }
+      .market-header { font-family: Arial, sans-serif; font-size: 0.7em; font-weight: 600; letter-spacing: 0.05em; color: #666; padding: 10px 0 2px; display: block; text-transform: uppercase; }
+      .market-body { }
 
-      .article { border-bottom: 1px solid #eee; padding: 10px 0 10px; margin-bottom: 0; }
+      .article { border-bottom: 1px solid #eee; padding: 12px 0 10px; }
       .article:last-child { border-bottom: none; }
-      .article h3 { font-size: 0.98em; margin: 0 0 2px; }
-      .article h3 a { color: #1a1a1a; text-decoration: none; }
-      .article h3 a:hover { text-decoration: underline; }
-      .article .pub { color: #888; font-size: 0.78em; margin: 0 0 5px; }
+      .article h3 { font-size: 1.08em; margin: 0 0 5px; line-height: 1.38; font-weight: 700; }
+      .article h3 a { color: #1c2e3d; text-decoration: none; }
+      .article h3 a:hover { color: #2567a4; text-decoration: underline; }
 
-      details.section-detail { margin: 3px 0; }
-      details.section-detail > summary { font-size: 0.8em; font-weight: bold; letter-spacing: 0.03em; color: #333; padding: 2px 0; font-family: Arial, sans-serif; }
-      details.section-detail > div { padding: 4px 0 4px 8px; font-size: 0.88em; }
-      .dp-line { margin: 2px 0 2px 10px; font-size: 0.88em; }
-      .dp-line a { color: #1a1a1a; }
-      .footnote { font-size: 0.78em; font-style: italic; margin: 3px 0 0 10px; color: #666; }
-      .article-type-label { font-size: 0.8em; color: #555; font-style: italic; margin: 0 0 5px; }
+      details.section-detail { margin: 2px 0; }
+      details.section-detail > summary { font-family: Arial, sans-serif; font-size: 0.8em; font-weight: 700; letter-spacing: 0.04em; color: #2567a4; padding: 2px 0; }
+      details.section-detail > div { padding: 4px 0 4px 8px; font-size: 0.92em; }
 
-      .filter-header { font-size: 0.75em; font-weight: bold; letter-spacing: 0.05em; color: #bbb; padding: 6px 0; font-family: Arial, sans-serif; margin-top: 32px; display: block; }
-      .filter-list { font-size: 0.82em; color: #aaa; padding-left: 18px; margin: 4px 0; }
-      .filter-list a { color: #aaa; }
+      .filter-header { font-family: Arial, sans-serif; font-size: 0.68em; font-weight: bold; letter-spacing: 0.05em; color: #ccc; padding: 6px 0; margin-top: 32px; display: block; }
+      .filter-list { font-size: 0.82em; color: #bbb; padding-left: 18px; margin: 4px 0; }
+      .filter-list a { color: #bbb; }
       .filter-reason { font-size: 0.88em; }
-
-      .people-line { margin: 4px 0; font-size: 0.9em; }
-      .people-line a { color: #aaa; font-size: 0.82em; }
     </style>
     """
 
@@ -734,12 +833,16 @@ def build_browser_html(articles: list, results: list) -> str:
   {css}
 </head>
 <body>
-  <h1>CRE News Digest</h1>
-  <p class="meta">{today} &mdash; {shown_count} articles from {source_count} sources</p>
+  <div class="masthead">
+    <div class="masthead-title">CRE News Digest</div>
+    <div class="masthead-meta">{today} &nbsp;&mdash;&nbsp; {shown_count} articles from {source_count} sources</div>
+  </div>
   {"".join(body_parts)}
+  <div style="padding:0 24px;">
   {filtered_section}
   {feed_stats_section}
-  <p style="font-size:0.72em;color:#ccc;margin-top:40px;text-align:center;">CRE News Reader &mdash; {today}</p>
+  <p style="font-size:0.7em;color:#ccc;margin-top:40px;text-align:center;font-family:Arial,sans-serif;">CRE News Reader &mdash; {today}</p>
+  </div>
 </body>
 </html>"""
 

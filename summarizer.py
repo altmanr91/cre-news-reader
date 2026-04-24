@@ -35,19 +35,24 @@ TRANSACTION TYPE / ARTICLE TYPE:
 - If the article's primary news is a loan or financing event (e.g., a construction loan closing, bridge loan origination, credit facility), use Loan — not Construction or Development. Use Construction or Development only when the primary news is a project breaking ground, being planned, or under construction
 - Non-transaction articles: set article_type with a descriptive phrase (e.g. "Market Research / Labor Report", "Opinion / Market Commentary", "Infrastructure Investment / Government Policy"). Never use a transaction type keyword (Sale, Acquisition, Lease, Loan, Refinance, Development, Construction, Promotion) as the article_type value
 - If the article is primarily about a non-real estate topic (e.g. military contracts, manufacturing, technology products) with only incidental mention of a property or headquarters, set article_type to exactly "Non-CRE / Business News"
-- If the article is primarily a vendor or company press release promoting a proprietary product, service, platform, or internal white paper (i.e., it exists to market a company's offering rather than report on CRE markets or transactions), set article_type to exactly "Non-CRE / Business News"
+- If the article is primarily a vendor or company press release promoting a proprietary product, service, platform, or internal white paper (i.e., it exists to market a company's offering rather than report on CRE markets or transactions), set article_type to exactly "Non-CRE / Business News". This includes opinion pieces written by executives to promote their company's approach or platform (e.g. a proptech CEO arguing why their product category matters)
 - If the article describes a franchise agreement, brand licensing deal, or corporate partnership (not a direct lease of a specific commercial space by an identified tenant), set article_type to "Non-CRE / Business News" rather than Lease
+- If the article is primarily about an insurance product, catastrophe bond, insurance-linked security, or investment fund structure that is only tangentially related to real estate (e.g., insurance-linked securities for data center risk), set article_type to exactly "Non-CRE / Business News"
+- If the article's primary subject is a crime, arrest, political protest, or civil dispute where real estate is incidental (e.g., a council member arrested at an eviction protest, property fraud involving a private residence), set article_type to "Non-CRE / Political & Crime News"
+- If a government body or municipality is purchasing property solely for its own administrative use (city hall, police station, courthouse), set article_type to "Non-CRE / Government Use"
 - Set transaction_type OR article_type, never both
 - Never invent new transaction types — use only the values listed above
 
 MARKET: city and state/region if mentioned
 
 DATA POINTS:
-- property_type: use "condo" for for-sale residential, "multifamily" for rental only
+- property_type: use "condo" for for-sale residential units in a multi-unit building, "multifamily" for rental only. For a sale or flip of a single detached home, estate, or mansion by a private owner (not a portfolio, not a build-to-rent fund or SFR investment), use "single family"
 - property_name: always include if the building or project has an official name in the article
 - sale_price, loan_amount, total_project_cost: dollar amounts as plain numbers (e.g. 56000000 not "$56M"). Omit entirely if not stated in the article — never use 0 or a placeholder
 - total_project_cost: only if the article explicitly states the cost of the current project. A historical land/site acquisition price is NOT total project cost
 - For Lease articles, leave total_project_cost null even if the article mentions the building's construction or development cost — that figure describes the building's history, not the cost of the lease transaction
+- If the article reports on an individual component (e.g., a hotel, a residential tower) within a larger named master-planned district or development (e.g., "the $5 billion Centennial Yards development"), do not set total_project_cost using the cost of the overall district — that figure belongs to the whole project, not this asset. Leave total_project_cost null unless the article explicitly states the cost of the specific component being reported on
+- land_area_acres: for development land purchases or undeveloped sites, record the site acreage if explicitly stated in the article (e.g. "2.2-acre parcel" → 2.2). Do not use for articles about completed buildings
 - size_sf: square footage for commercial properties
 - size_units: residential unit count for multifamily/condo/apartment projects — use this for any "X-unit" project. If the article states a range (e.g. "between 100 and 130 units"), leave size_units null and capture the range in notable_features instead (e.g. "100-130 units planned")
 - size_beds: student housing bed counts ONLY — never use for residential unit counts
@@ -77,6 +82,8 @@ COMPANIES/PEOPLE:
   * The entity that owns or commissioned the building (but is not the developer) gets OWNER — e.g. a hospital system, university, or government body. List each institutional entity only once.
 - Hotel brand rule: Never label a hotel brand or franchisor (e.g., Marriott, Hilton, Hyatt, IHG, Accor) as OWNER solely because their flag appears on the property — hotel brands license their name but typically do not own the asset. Only label OWNER if the article explicitly states the brand holds title to the property
 - Broker roles: a broker who "represented the seller" = SELLER BROKER. A broker who "represented the buyer" = BUYER BROKER. Never use BUYER BROKER unless the article explicitly states they represented the buyer
+- Only include companies and people explicitly named in the article you are analyzing. Never add parties from outside knowledge — if a company's involvement is not stated in the article text, do not include them
+- The corporate parent, PE sponsor, or financial investor that merely owns a tenant, borrower, or buyer is NOT a transaction party — do not label them BUYER, SELLER, OWNER, or any other role solely because they own the participating company. Only include them if the article explicitly describes them as a direct participant in the real estate transaction
 - Only include people explicitly named in the article. Include title only if explicitly stated
 - Multiple people from the same firm with the same label: include them all in the people array for that single entry
 - Never list the same firm twice — each firm appears once with the most specific applicable label
@@ -139,25 +146,26 @@ def _normalize_occupancy(summary: ArticleSummary) -> ArticleSummary:
 
 def _normalize_sizes(summary: ArticleSummary) -> ArticleSummary:
     """When both size_sf and size_units are present, keep only the field that matches the transaction.
-    Multi-use articles with keys or beds (e.g. a hotel+condo tower) are left untouched."""
+    Development/Construction and multi-dimension articles are left untouched."""
     if not summary.data_points:
         return summary
     dp = summary.data_points
     if not (dp.size_sf and dp.size_units):
         return summary
-    # Three or more size dimensions — clearly a multi-use development, leave all fields in place
     if dp.size_beds or dp.size_keys:
         return summary
     tx = (summary.transaction_type or '').lower()
+    # Development and construction legitimately show both SF (commercial component)
+    # and units (residential component) — leave both in place
+    if tx in ('development', 'construction'):
+        return summary
     prop = (dp.property_type or '').lower()
     is_residential = any(t in prop for t in (
         'multifamily', 'condo', 'apartment', 'residential', 'senior', 'student', 'townhome'
     ))
-    # Commercial leases and non-residential sales/acquisitions: primary dimension is SF
     if tx == 'lease' or (tx in ('sale', 'acquisition') and not is_residential):
         dp.size_units = None
     else:
-        # Residential sales and all development/construction: primary dimension is units
         dp.size_sf = None
     return summary
 
@@ -178,6 +186,7 @@ Fill in ONLY the following fields:
   * firm_name: the company they are at or joining
   * people: list of PersonEntry with name (full name) and title (their new role/title)
   * Group multiple people at the same firm into a single entry
+  * IMPORTANT: only include the person(s) being newly hired, promoted, or appointed — do NOT include existing colleagues, supervisors, or team members mentioned only as context (e.g. "joining the team of X and Y" — X and Y should not be included)
 
 Set ALL other fields to null or empty:
 - narrative: empty string
