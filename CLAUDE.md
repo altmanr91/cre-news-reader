@@ -1,7 +1,7 @@
 # CRE News Reader — App 1 (Daily Digest)
 
 ## Project Overview
-A Python-based commercial real estate news aggregation and summarization tool. Fetches articles from RSS feeds, scrapes full article text, and uses Google's Gemini API to generate structured summaries with narratives, key data points, transaction details, companies/people, and market intelligence. Delivered as a daily HTML email digest with linked detail pages hosted on Netlify.
+A Python-based commercial real estate news aggregation and summarization tool. Fetches articles from RSS feeds, scrapes full article text, and uses Google's Gemini API to generate structured summaries with narratives, key data points, transaction details, companies/people, and market intelligence. Delivered as a daily HTML email digest with linked detail pages hosted on GitHub Pages.
 
 ## Tech Stack
 - **Python 3.12** (GitHub Actions) / **3.13.7** (local)
@@ -10,7 +10,7 @@ A Python-based commercial real estate news aggregation and summarization tool. F
 - **newspaper3k** — full article text scraping
 - **python-dotenv** — environment variable management
 - **smtplib / Gmail SMTP** — email delivery
-- **Netlify** — static hosting for digest HTML and per-article detail pages
+- **GitHub Pages** — static hosting for digest HTML and per-article detail pages
 
 ## Project Structure
 ```
@@ -28,7 +28,7 @@ News_Reader LIVE/
 ├── main.py            # Legacy terminal pipeline runner (not used in production)
 ├── run_digest.bat     # Local batch file wrapper (for manual runs only)
 ├── .github/workflows/
-│   └── daily_digest.yml  # GitHub Actions: runs at 5 AM EDT, deploys to Netlify
+│   └── daily_digest.yml  # GitHub Actions: runs at 5 AM EDT, deploys to GitHub Pages
 ├── .env               # API keys (never commit)
 ├── .gitignore
 └── requirements.txt
@@ -38,7 +38,7 @@ News_Reader LIVE/
 ```
 GEMINI_API_KEY=...          # Google Gemini API
 GMAIL_APP_PASSWORD=...      # Gmail app password for SMTP sending
-DIGEST_BASE_URL=...         # Set by GitHub Actions to Netlify URL; localhost:8787 locally
+DIGEST_BASE_URL=...         # Set by GitHub Actions to GitHub Pages URL; localhost:8787 locally
 SERPER_API_KEY=...          # Optional: Serper web search for property address geocoding
 GOOGLE_MAPS_API_KEY=...     # Optional: Google Maps validation for geocoded addresses
 ```
@@ -47,8 +47,8 @@ GOOGLE_MAPS_API_KEY=...     # Optional: Google Maps validation for geocoded addr
 - **GitHub Actions** runs the digest daily at 5:00 AM EDT (`cron: '0 9 * * *'` UTC)
 - GitHub Actions queue delays mean email typically arrives between 7:00–8:00 AM EDT
 - Email sent via Gmail SMTP to `altmanr91@gmail.com`
-- HTML digest and per-article pages deployed to **Netlify** after each run
-- Netlify site: `https://news-reader-daily-digest.netlify.app`
+- HTML digest and per-article pages deployed to **GitHub Pages** after each run
+- GitHub Pages site: `https://altmanr91.github.io/CRE-News-Reader`
 - Windows Task Scheduler task ("CRE Daily Digest") exists locally but is **disabled** — GitHub Actions is authoritative
 
 ## RSS Feed Sources
@@ -89,8 +89,8 @@ All feeds are CRE publications. Per-feed article caps override the default (5 pe
 5. `geocoder.inject_geocoded_address()` — look up street address if not in article
 6. `filter.get_summary_filter_reason()` — post-summary filter on article_type/transaction_type
 7. `digest.build_browser_html()` — full browser digest with collapsible sections, feed stats
-8. `digest.build_email_html()` — narrative-only email with Details links to Netlify pages
-9. Per-article HTML pages saved and deployed to Netlify via `peaceiris/actions-gh-pages`
+8. `digest.build_email_html()` — narrative-only email with Details links to GitHub Pages
+9. Per-article HTML pages saved and deployed to GitHub Pages via `peaceiris/actions-gh-pages`
 10. Email sent via Gmail SMTP
 
 ## Filtering Logic (filter.py)
@@ -153,15 +153,15 @@ When an article has a property name but no street address:
 **Email** (narrative-only, sent via Gmail):
 - Grouped by: transaction type → region → market
 - Regions: National/Multi-Market, Northeast, Mid-Atlantic, Southeast, Midwest, Texas, Mountain West, West Coast
-- Shows: article title (linked), source, date, narrative, "Details →" link to Netlify page
+- Shows: article title (linked), source, date, narrative, "Details →" link to GitHub Pages
 
-**Browser digest** (full detail, hosted on Netlify):
+**Browser digest** (full detail, hosted on GitHub Pages):
 - Same grouping as email
 - Per-article collapsible sections: SUMMARY, DATA POINTS, COMPANIES/PEOPLE, TENANTS, FINANCING, SPONSOR PIPELINE, MARKET INTELLIGENCE
 - Bottom: FILTERED (N) — collapsed list of filtered articles with reasons
 - Bottom: SOURCE VOLUME — per-feed stats (last 24h articles, total in feed, fetched count)
 
-**Per-article detail pages** (Netlify `/articles/YYYY-MM-DD-NNN.html`):
+**Per-article detail pages** (GitHub Pages `/articles/YYYY-MM-DD-NNN.html`):
 - All sections expanded
 - "← Full Digest" back link
 
@@ -224,8 +224,8 @@ GOOGLE_MAPS_API_KEY=...     # optional
 ## GitHub Actions Workflow
 File: `.github/workflows/daily_digest.yml`
 - Runs on `ubuntu-latest`
-- Installs: `google-genai feedparser python-dotenv pydantic requests lxml[html_clean] beautifulsoup4 newspaper3k netlify-cli`
-- Secrets required: `GEMINI_API_KEY`, `GMAIL_APP_PASSWORD`, `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`
-- `DIGEST_BASE_URL` set to `https://news-reader-daily-digest.netlify.app`
-- After digest runs: copies HTML to `_site/`, deploys to Netlify via CLI
+- Installs: `google-genai feedparser python-dotenv pydantic requests lxml[html_clean] beautifulsoup4 newspaper3k`
+- Secrets required: `GEMINI_API_KEY`, `GMAIL_APP_PASSWORD`, `SERPER_API_KEY`, `GOOGLE_MAPS_API_KEY`
+- `DIGEST_BASE_URL` set to `https://altmanr91.github.io/CRE-News-Reader`
+- After digest runs: copies HTML to `_site/`, deploys to GitHub Pages via `peaceiris/actions-gh-pages`
 - Server restart is skipped in CI (`if not os.getenv('CI')`)

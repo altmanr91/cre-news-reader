@@ -5,6 +5,9 @@ on:
     - cron: '0 9 * * *'  # 5:00 AM EDT (UTC-4); early start accounts for GitHub Actions queue delays
   workflow_dispatch:       # allow manual runs from GitHub UI
 
+permissions:
+  contents: write
+
 jobs:
   digest:
     runs-on: ubuntu-latest
@@ -25,25 +28,102 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install google-genai feedparser python-dotenv pydantic requests "lxml[html_clean]" beautifulsoup4 newspaper3k
 
+      - name: Restore previous site archive
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: site-archive
+          path: _site/
+
+      - name: Restore seen articles for cross-day dedup
+        run: cp _site/seen_articles.json . 2>/dev/null || true
+
       - name: Run digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
-          DIGEST_BASE_URL: https://news-reader-daily-digest.netlify.app
+          DIGEST_BASE_URL: https://altmanr91.github.io/CRE-News-Reader
         run: python digest.py
 
-      - name: Prepare site for Netlify
+      - name: Prepare site for GitHub Pages
         run: |
           mkdir -p _site/articles
           cp digest_*.html _site/ 2>/dev/null || true
           cp articles/*.html _site/articles/ 2>/dev/null || true
+          cp seen_articles.json _site/ 2>/dev/null || true
 
-      - name: Deploy to Netlify
+      - name: Prune files older than 100 days
         run: |
-          npm install -g netlify-cli
-          netlify deploy --prod --dir=_site
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          python - <<'EOF'
+          import os, glob
+          from datetime import date, timedelta
+          cutoff = (date.today() - timedelta(days=100)).strftime('%Y-%m-%d')
+          removed = 0
+          for f in glob.glob('_site/digest_*.html'):
+              if os.path.basename(f)[7:17] < cutoff:
+                  os.remove(f); removed += 1
+          for f in glob.glob('_site/articles/*.html'):
+              if os.path.basename(f)[:10] < cutoff:
+                  os.remove(f); removed += 1
+          print(f"Pruned {removed} file(s) older than {cutoff}")
+          EOF
+
+      - name: Generate archive index
+        run: |
+          python - <<'EOF'
+          import os, glob, re
+          from datetime import datetime
+          dates = sorted(
+              (re.search(r'digest_(\d{4}-\d{2}-\d{2})\.html', f).group(1)
+               for f in glob.glob('_site/digest_*.html')
+               if re.search(r'digest_(\d{4}-\d{2}-\d{2})\.html', f)),
+              reverse=True
+          )
+          items = ''.join(
+              f'<li><a href="/digest_{d}.html">'
+              f'{datetime.strptime(d, "%Y-%m-%d").strftime("%B %d, %Y")}'
+              f'</a></li>'
+              for d in dates
+          )
+          html = f"""<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <title>CRE News Digest — Archive</title>
+          <style>
+            body {{ font-family: Arial, sans-serif; max-width: 600px;
+                   margin: 40px auto; padding: 0 20px; color: #222; }}
+            h1   {{ font-size: 1.4em; border-bottom: 2px solid #1a4a8c;
+                   padding-bottom: 8px; color: #1a4a8c; }}
+            ul   {{ list-style: none; padding: 0; }}
+            li   {{ padding: 6px 0; border-bottom: 1px solid #eee; }}
+            a    {{ color: #1a4a8c; text-decoration: none; }}
+            a:hover {{ text-decoration: underline; }}
+          </style>
+          </head>
+          <body>
+          <h1>CRE News Digest &mdash; Archive</h1>
+          <ul>{items}</ul>
+          </body>
+          </html>"""
+          with open('_site/archive.html', 'w') as f:
+              f.write(html)
+          print(f"Archive index generated: {len(dates)} digest(s) listed")
+          EOF
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: true
+
+      - name: Upload site archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-archive
+          path: _site/
+          retention-days: 90
+          overwrite: true
