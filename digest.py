@@ -425,9 +425,38 @@ _NATIONAL_MARKET_VARIANTS = frozenset([
     'u.s. markets', 'us', 'usa', 'u.s.a.', 'the u.s.', 'the us',
 ])
 
+_FULL_STATE_TO_ABBR = {
+    'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
+    'california': 'CA', 'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE',
+    'florida': 'FL', 'georgia': 'GA', 'hawaii': 'HI', 'idaho': 'ID',
+    'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS',
+    'kentucky': 'KY', 'louisiana': 'LA', 'maine': 'ME', 'maryland': 'MD',
+    'massachusetts': 'MA', 'michigan': 'MI', 'minnesota': 'MN', 'mississippi': 'MS',
+    'missouri': 'MO', 'montana': 'MT', 'nebraska': 'NE', 'nevada': 'NV',
+    'new hampshire': 'NH', 'new jersey': 'NJ', 'new mexico': 'NM', 'new york': 'NY',
+    'north carolina': 'NC', 'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK',
+    'oregon': 'OR', 'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC',
+    'south dakota': 'SD', 'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT',
+    'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA', 'west virginia': 'WV',
+    'wisconsin': 'WI', 'wyoming': 'WY', 'district of columbia': 'DC',
+}
+# Sorted longest-first so multi-word names (e.g. "New York") match before substrings
+_FULL_STATE_TO_ABBR_SORTED = sorted(_FULL_STATE_TO_ABBR.items(), key=lambda x: -len(x[0]))
+
+
+def _abbreviate_state(market: str) -> str:
+    """Replace a spelled-out state name at the end of a market string with its 2-letter code."""
+    lower = market.lower()
+    for state_name, abbr in _FULL_STATE_TO_ABBR_SORTED:
+        pattern = r',\s*' + re.escape(state_name) + r'\s*$'
+        if re.search(pattern, lower):
+            return re.sub(pattern, f', {abbr}', market, flags=re.IGNORECASE)
+    return market
+
 
 def _normalize_market(market: str | None) -> str | None:
-    """Collapse national-variant labels to None; expand bare state names to 'State (Statewide)'."""
+    """Collapse national-variant labels to None; expand bare state names to 'State (Statewide)';
+    normalize full state names to 2-letter abbreviations for consistent grouping."""
     if not market:
         return None
     stripped = market.strip()
@@ -436,7 +465,7 @@ def _normalize_market(market: str | None) -> str | None:
         return None
     if lower in _STATE_NAMES_TO_REGION:
         return f'{stripped.title()} (Statewide)'
-    return stripped
+    return _abbreviate_state(stripped)
 
 
 def _market_to_region(market: str | None) -> str:

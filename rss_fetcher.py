@@ -9,6 +9,25 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 # Feeds that block feedparser's HTTP client — pre-fetch with requests instead
 _PREFETCH_DOMAINS = {'therealdeal.com'}
 
+# Display name overrides — shown even when the feed returns 0 entries (e.g. TRD CDN blocking)
+_FEED_DISPLAY_NAMES = {
+    "https://therealdeal.com/national/feed/":      "The Real Deal — National",
+    "https://therealdeal.com/new-york/feed/":      "The Real Deal — New York",
+    "https://therealdeal.com/miami/feed/":         "The Real Deal — Miami",
+    "https://therealdeal.com/chicago/feed/":       "The Real Deal — Chicago",
+    "https://therealdeal.com/texas/feed/":         "The Real Deal — Texas",
+    "https://therealdeal.com/los-angeles/feed/":   "The Real Deal — Los Angeles",
+    "https://therealdeal.com/san-francisco/feed/": "The Real Deal — San Francisco",
+    "https://therealdeal.com/washington-dc/feed/": "The Real Deal — Washington DC",
+    "https://therealdeal.com/nashville/feed/":     "The Real Deal — Nashville",
+    "https://therealdeal.com/las-vegas/feed/":     "The Real Deal — Las Vegas",
+    "https://therealdeal.com/atlanta/feed/":       "The Real Deal — Atlanta",
+    "https://therealdeal.com/boston/feed/":        "The Real Deal — Boston",
+    "https://therealdeal.com/philadelphia/feed/":  "The Real Deal — Philadelphia",
+    "https://therealdeal.com/seattle/feed/":       "The Real Deal — Seattle",
+    "https://therealdeal.com/denver/feed/":        "The Real Deal — Denver",
+}
+
 _STOP_WORDS = {
     'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
     'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been',
@@ -41,20 +60,42 @@ def _extract_dollar_millions(text: str) -> set[int]:
     return results
 
 def _deduplicate(articles: list) -> list:
-    # Pass 1: exact URL dedup
-    seen_urls, unique = set(), []
+    # Pass 1: exact URL dedup — also excludes URLs seen in the previous run
+    seen_urls = {a['url'] for a in PREV_SEEN_ARTICLES}
+    unique = []
     for a in articles:
         if a['link'] not in seen_urls:
             seen_urls.add(a['link'])
             unique.append(a)
 
-    # Pass 2: title similarity dedup (keep first occurrence per story)
-    result, kept_tokens = [], []
+    # Pass 2: title + summary similarity dedup
+    # Seeded with prev-run tokens so cross-day duplicates are caught even after
+    # the original article has rolled off its source's RSS feed.
+    result = []
+    kept_title   = [set(a['title_tokens'])              for a in PREV_SEEN_ARTICLES]
+    kept_summary = [set(a.get('summary_tokens', []))    for a in PREV_SEEN_ARTICLES]
     for article in unique:
-        tokens = _title_tokens(article['title'])
-        if not any(_is_duplicate(tokens, kt) for kt in kept_tokens):
+        t_tok = _title_tokens(article['title'])
+        s_tok = _title_tokens(article.get('summary', ''))
+        is_dup = False
+        for kt, ks in zip(kept_title, kept_summary):
+            # Title similarity (original check)
+            if _is_duplicate(t_tok, kt):
+                is_dup = True
+                break
+            # Summary similarity — catches same-event articles with dissimilar headlines
+            # (e.g. two outlets covering the same earnings report with different titles)
+            if ks and s_tok:
+                denom = min(len(s_tok), len(ks)) or 1
+                if len(s_tok & ks) / denom >= 0.5:
+                    t_denom = min(len(t_tok), len(kt)) or 1
+                    if len(t_tok & kt) / t_denom >= 0.2:
+                        is_dup = True
+                        break
+        if not is_dup:
             result.append(article)
-            kept_tokens.append(tokens)
+            kept_title.append(t_tok)
+            kept_summary.append(s_tok)
 
     # Pass 3: dollar-amount fingerprint dedup — catches same-deal coverage from multiple outlets
     # when titles differ enough to beat the overlap threshold (e.g. "$360M Hollywood loan" from CO + TRD)
@@ -110,6 +151,29 @@ _FEED_CAPS = {
 
 LAST_FEED_STATS = []  # populated on each call to fetch_articles
 
+# Set by digest.py before calling fetch_articles() to enable cross-day dedup.
+# Each entry: {"url": str, "title_tokens": list[str], "summary_tokens": list[str]}
+PREV_SEEN_ARTICLES: list[dict] = []
+
+
+def get_seen_articles(articles: list) -> list[dict]:
+    """Serialize this run's articles for cross-day dedup on the next run.
+
+    Uses the AI-generated narrative (stored in article['ai_narrative'] by digest.py)
+    for summary_tokens when available — promotions have an empty narrative, so they
+    won't create false cross-day matches against follow-up articles about the same company.
+    """
+    return [
+        {
+            "url": a['link'],
+            "title_tokens":   list(_title_tokens(a['title'])),
+            "summary_tokens": list(_title_tokens(
+                a.get('ai_narrative') or a.get('summary', '')
+            )),
+        }
+        for a in articles
+    ]
+
 
 def _entry_age_hours(entry) -> float | None:
     """Return how many hours ago the entry was published, or None if unknown."""
@@ -142,8 +206,10 @@ def fetch_articles(max_articles_per_feed=3):
                 if len(feed.entries) == 0 and is_slow_domain:
                     raw = requests.get(feed_url, headers=HEADERS, timeout=15).content
                     feed = feedparser.parse(raw)
-                source = feed.feed.get("title", feed_url)
+                source = _FEED_DISPLAY_NAMES.get(feed_url) or feed.feed.get("title") or feed_url
                 total_in_feed = len(feed.entries)
+                if total_in_feed == 0:
+                    print(f"  [warn] Feed returned 0 entries: {source}")
                 last_24h = sum(
                     1 for e in feed.entries
                     if (h := _entry_age_hours(e)) is None or h <= 24
@@ -176,7 +242,7 @@ def fetch_articles(max_articles_per_feed=3):
             except Exception as e:
                 print(f"Error fetching {feed_url}: {e}")
                 LAST_FEED_STATS.append({
-                    'source': feed_url,
+                    'source': _FEED_DISPLAY_NAMES.get(feed_url, feed_url),
                     'total_in_feed': 0,
                     'last_24h': 0,
                     'fetched': 0,
