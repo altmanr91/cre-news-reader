@@ -57,7 +57,7 @@ TRANSACTION TYPE / ARTICLE TYPE:
 - Set transaction_type OR article_type, never both
 - Never invent new transaction types — use only the values listed above
 
-MARKET: always use the specific city and state where the property is physically located (e.g., "Austin, TX"). For articles covering exactly two distinct markets, list both separated by " / " (e.g., "Dallas / Houston, TX"). For national reports or articles spanning three or more markets, leave null. Never use vague labels like "National", "Multi-Market", "United States", or a bare state name alone (e.g., "Texas") — leave null instead
+MARKET: always use the specific city and state where the property is physically located (e.g., "Austin, TX"). For articles covering exactly two distinct markets, list both separated by " / " (e.g., "Dallas / Houston, TX"). For articles covering multiple locations all within the same state, use just the state name (e.g., "Virginia", "Texas"). For national reports or articles spanning three or more markets across different states, leave null. Never use vague labels like "National", "Multi-Market", "United States" — leave null instead
 
 DATA POINTS:
 - property_type: use "multifamily" for rental apartment buildings. Use "single family" for the sale of any personal residential property — whether a detached house, condo unit, co-op, or townhome — sold by a named private individual acting as a homeowner for personal use (not as an investor, fund, or developer). Use "condo" only for commercial condo transactions (e.g. office condos, retail condos, hotel-branded residential sold as investment product)
