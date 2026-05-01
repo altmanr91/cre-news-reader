@@ -1,25 +1,25 @@
-# CRE News Reader — App 2 (Comps & Contacts Pipeline)
+# The Quarry — CRE Comps & Contacts Pipeline
 
 ## Purpose
-App 2 consumes the structured JSON handoff produced by App 1's daily digest and writes it into two persistent Excel workbooks: a **Comps database** (Sales, Leases, Loans tabs) and a **Contacts database** (upsert with change-flagging and deal notes). It runs as a separate GitHub Actions workflow triggered after App 1 completes.
+The Quarry consumes the structured JSON handoff produced by App 1's daily digest and writes it into two persistent Excel workbooks: a **Comps database** (Sales, Leases, Loans tabs) and a **Contacts database** (upsert with change-flagging and deal notes). It runs as a separate GitHub Actions workflow triggered after App 1 completes.
 
 ## Relationship to App 1
-- App 2 is **read-only with respect to App 1** — it never modifies App 1 files.
+- The Quarry is **read-only with respect to App 1** — it never modifies App 1 files.
 - Input: `articles_handoff.json` written by App 1's `digest.py` and deployed to GitHub Pages at `https://altmanr91.github.io/CRE-News-Reader/articles_handoff.json`
-- App 2 fetches this file at runtime; no shared filesystem required.
-- Future changes to App 1's pipeline are automatically captured as long as the JSON schema is maintained. If App 1 adds new fields to `ArticleSummary`, App 2 picks them up on next run without code changes.
+- The Quarry fetches this file at runtime; no shared filesystem required.
+- Future changes to App 1's pipeline are automatically captured as long as the JSON schema is maintained. If App 1 adds new fields to `ArticleSummary`, The Quarry picks them up on next run without code changes.
 
 ## Directory Structure
 ```
-app2/
+quarry/
 ├── CLAUDE.md              # This file
-├── app2_pipeline.py       # Main entry point: fetch handoff → write comps → write contacts
+├── quarry_pipeline.py     # Main entry point: fetch handoff → write comps → write contacts
 ├── comps_writer.py        # Append to Excel comps workbook (Sales/Leases/Loans tabs)
 ├── contacts_writer.py     # Upsert Excel contacts workbook with change-flagging
 └── requirements.txt       # openpyxl (+ requests, python-dotenv)
 ```
 
-GitHub Actions workflow: `.github/workflows/app2_pipeline.yml`
+GitHub Actions workflow: `.github/workflows/quarry_pipeline.yml`
 
 ## Input: articles_handoff.json Schema
 App 1 writes this file after each digest run. Schema per article record:
@@ -73,7 +73,7 @@ App 1 writes this file after each digest run. Schema per article record:
 ```
 
 `transaction_type` values from App 1: Sale, Acquisition, Lease, Loan, Refinance, Development, Construction, Promotion
-`article_type` is set for non-transaction articles (market research, policy, etc.) — App 2 ignores these for comps.
+`article_type` is set for non-transaction articles (market research, policy, etc.) — The Quarry ignores these for comps.
 
 ## Output: Comps Workbook (comps.xlsx)
 
@@ -195,7 +195,7 @@ Match key: **Name + Company** (case-insensitive, stripped).
 
 ## GitHub Actions Workflow
 
-File: `.github/workflows/app2_pipeline.yml`
+File: `.github/workflows/quarry_pipeline.yml`
 
 Trigger: `workflow_run` on completion of "Daily CRE Digest" workflow (App 1).
 
@@ -210,12 +210,12 @@ on:
 The workflow:
 1. Checks out repo
 2. Fetches `articles_handoff.json` from GitHub Pages
-3. Downloads `comps.xlsx` and `contacts.xlsx` from the `app2-data` artifact (previous run)
-4. Runs `app2_pipeline.py` to update both workbooks
-5. Uploads updated workbooks as `app2-data` artifact (retention: 365 days)
+3. Downloads `comps.xlsx` and `contacts.xlsx` from the `quarry-data` artifact (previous run)
+4. Runs `quarry_pipeline.py` to update both workbooks
+5. Uploads updated workbooks as `quarry-data` artifact (retention: 365 days)
 6. Emails updated workbooks as attachments (same Gmail SMTP as App 1)
 
-**Note:** The workbooks live entirely in GitHub Actions artifacts — they are not committed to the repo (binary files). The `app2-data` artifact accumulates all history.
+**Note:** The workbooks live entirely in GitHub Actions artifacts — they are not committed to the repo (binary files). The `quarry-data` artifact accumulates all history.
 
 ## Traded.co Scraper (Deferred)
 A separate, independent scraper for `traded.co` sale data. Not part of this pipeline. Will run on its own schedule and write to the Sales tab of comps.xlsx using the same append + duplicate-address-highlighting logic. Will be built once the App 1 handoff pipeline is stable.
@@ -225,11 +225,11 @@ Aggregation of `market_intelligence` and `key_data_points` fields from App 1 art
 
 ## Local Development
 ```bash
-# Activate App 1's venv (App 2 shares it for now)
+# Activate App 1's venv (The Quarry shares it for now)
 venv\Scripts\activate
 
-# Run App 2 manually (requires articles_handoff.json in project root)
-python app2/app2_pipeline.py
+# Run The Quarry manually (requires articles_handoff.json in project root)
+python quarry/quarry_pipeline.py
 
 # Required env vars (same .env file as App 1)
 GMAIL_APP_PASSWORD=...   # for emailing workbooks
