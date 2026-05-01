@@ -4,7 +4,7 @@ from models import ArticleSummary
 # Individual publication honors — always exempt from award/promotion filtering
 _HONOR_PATTERNS = [
     'power 100', '30 under 30', '40 under 40', '50 under 40', '20 under 40',
-    'broker of the year', 'executive of the year', 'hall of fame',
+    'broker of the year', 'executive of the year',
     'most influential', 'top broker', 'top producer', 'rising star',
 ]
 
@@ -24,6 +24,7 @@ _TITLE_AWARD_PATTERNS = [
     r'\bamma\b',                 # Apartment Association awards
     r'takes home.{0,30}honor',  # "takes home several honors"
     r'\bhonored.{0,20}award',
+    r'\bhall of fame\b',         # Career induction awards (e.g. "CRE Hall of Fame: Sal Caldarone")
 ]
 
 _TITLE_EVENT_PATTERNS = [
@@ -57,24 +58,44 @@ _TITLE_ADVISORY_PATTERNS = [
     r'^(how|why|what).{0,60}\?.*hint\b',       # clickbait editorial with "Hint:" subhead
 ]
 
-# Promotion seniority — senior signals (keep)
-_SENIOR_KEYWORDS = [
-    'managing director', 'partner', 'principal', 'president', 'chief ',
-    'ceo', 'cfo', 'coo', 'cio', 'cto',
-    'executive vice president', 'evp',
-    'senior vice president', 'svp',
-    'head of ', 'chairman', 'chairwoman',
-    'founder', 'co-founder', 'managing partner',
-    'market leader', 'office head', 'regional director',
-    'power 100', '30 under 30', '40 under 40', '50 under 40', '20 under 40',
+# Celebrity personal residential transactions — athlete/entertainer buying or listing their home
+_TITLE_CELEBRITY_RESIDENTIAL_PATTERNS = [
+    # Casual residential slang that only appears in celebrity home coverage
+    r'\b(his|her|their)\b.{0,40}\b(pad|digs|crib)\b',
+    # Sports league affiliation + residential listing/sale action
+    r'\b(nba|nfl|nhl|mlb|mls|wnba)\b.{0,80}\b(relists?|lists?\s+\w{0,30}\s*(pad|condo|home|penthouse|apartment|house)|buys?\s+\w{0,30}\s*(pad|condo|home|penthouse|apartment))\b',
 ]
 
-# Promotion seniority — junior signals (filter if no senior signal present)
-_JUNIOR_KEYWORDS = [
-    'associate ', 'associates', 'analyst ', 'coordinator', 'specialist',
-    'assistant ', 'administrator', 'director of marketing',
-    'director of operations', 'property manager',
-]
+# Non-US/Canada location markers — single-country non-US/CA stories are filtered
+_NON_US_CA_MARKERS = frozenset([
+    'uk', 'u.k.', 'united kingdom', 'england', 'scotland', 'wales',
+    'ireland', 'germany', 'france', 'spain', 'italy', 'portugal',
+    'netherlands', 'belgium', 'switzerland', 'austria', 'poland',
+    'sweden', 'norway', 'denmark', 'finland', 'czech',
+    'australia', 'new zealand', 'china', 'japan', 'south korea',
+    'singapore', 'hong kong', 'india', 'uae', 'dubai',
+    'saudi arabia', 'saudi', 'mexico', 'brazil', 'argentina',
+    'colombia', 'chile', 'peru', 'israel', 'turkey',
+    'london', 'paris', 'berlin', 'amsterdam', 'madrid', 'rome',
+    'barcelona', 'lisbon', 'dublin', 'tokyo', 'sydney', 'melbourne',
+    'zurich', 'munich', 'frankfurt',
+])
+
+
+def _is_non_us_canada_market(market: str | None) -> bool:
+    if not market:
+        return False
+    m = market.lower()
+    # Keep broad multi-market or international stories
+    if any(x in m for x in ('international', 'global', 'north america', 'multi-market', 'national')):
+        return False
+    # London, Ontario is Canadian — keep
+    if 'london' in m and ('ontario' in m or ', on' in m):
+        return False
+    # Amsterdam, New York is a US city — keep
+    if 'amsterdam' in m and ('new york' in m or ', ny' in m):
+        return False
+    return any(marker in m for marker in _NON_US_CA_MARKERS)
 
 
 def _has_honor_exemption(title: str) -> bool:
@@ -112,6 +133,10 @@ def get_title_filter_reason(title: str) -> str | None:
         if re.search(pattern, t):
             return "Vendor/Advisory Content"
 
+    for pattern in _TITLE_CELEBRITY_RESIDENTIAL_PATTERNS:
+        if re.search(pattern, t):
+            return "Non-CRE Content"
+
     return None
 
 
@@ -131,12 +156,24 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
     if 'non-cre' in article_type:
         return "Non-CRE Content"
 
+    # Celebrity individual residential transactions (athlete/entertainer buying or selling personal home)
+    if 'celebrity residential' in article_type:
+        return "Non-CRE Content"
+
+    # Pure opinion/editorial columns with no market data or reporting
+    if 'opinion / editorial' in article_type:
+        return "Opinion/Editorial Content"
+
     # Government/civic property use (city halls, courthouses, etc.)
     if any(kw in article_type for kw in ('government use', 'civic', 'government / civic')):
         return "Non-CRE Content"
 
     # Crime, arrest, or political protest articles
     if any(kw in article_type for kw in ('crime', 'arrest', 'political protest', 'political / crime')):
+        return "Non-CRE Content"
+
+    # Obituaries
+    if 'obituary' in article_type:
         return "Non-CRE Content"
 
     # Award articles the model caught
@@ -159,8 +196,21 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
         if prop_type == 'ranch':
             return "Non-CRE Content"
 
-    # All promotions are kept — display is compact (name/title/company/link only)
-    if tx_type == 'promotion':
-        return None
+    # Non-US/Canada single-country stories
+    if _is_non_us_canada_market(summary.market):
+        return "Non-US Market"
+
+    # Soft feature / profile / Q&A content
+    if any(kw in article_type for kw in ('feature / profile', 'q&a', 'interview', 'profile / q&a')):
+        return "Feature/Profile Content"
+
+    # Minimum deal size — only applied when a price is explicitly stated
+    _MIN_DEAL_DOLLARS = 1_000_000
+    if summary.data_points:
+        dp = summary.data_points
+        if tx_type in ('sale', 'acquisition') and dp.sale_price and dp.sale_price < _MIN_DEAL_DOLLARS:
+            return "Below Minimum Deal Size"
+        if tx_type in ('loan', 'refinance') and dp.loan_amount and dp.loan_amount < _MIN_DEAL_DOLLARS:
+            return "Below Minimum Deal Size"
 
     return None

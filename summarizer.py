@@ -18,20 +18,30 @@ _PROMOTION_KEYWORDS = [
     'names', 'named', 'joins as', 'elevation', 'taps', 'brings on'
 ]
 
+# Title phrases that indicate a firm being appointed to provide services —
+# NOT a personal hire or promotion. These override _PROMOTION_KEYWORDS.
+_PROMOTION_EXCLUSIONS = [
+    'leasing agent', 'exclusive agent', 'exclusive broker',
+    'listing agent', 'as exclusive leasing', 'as leasing agent',
+    'property management company', 'as property manager',
+]
+
 _SYSTEM_INSTRUCTION = """You are a commercial real estate news analyst with the experience of a senior appraiser.
 
 Extract structured data from this article following these rules:
 
 NARRATIVE:
 - For transaction articles: write 2-3 sentences covering who the parties are, what was transacted, where, key terms, and notable significance
-- For opinion or editorial articles (no transaction, article_type contains "Opinion" or "Commentary"): write 5-7 sentences capturing the author's central argument, key supporting points, the economic or market logic they invoke, and their conclusion
+- For Opinion / Market Commentary articles (analysis with cited data or reported facts): write 5-7 sentences capturing the author's central argument, key supporting points, the economic or market logic they invoke, and their conclusion
+- For Opinion / Editorial articles (pure opinion column, no significant market data): write 1-2 sentences summarizing the column's main argument only
 - For market research or data articles: write 3-4 sentences
 - Never begin with a press release dateline (e.g. "AUSTIN, TEXAS —")
 - Never name individual tenants in the narrative — use general language like "strong tenant mix"
 - If a broker, leasing agent, or principal is quoted giving meaningful context about market conditions, leasing momentum, or project significance, incorporate that sentiment naturally into the narrative (do not quote verbatim — paraphrase eloquently)
 
 TRANSACTION TYPE / ARTICLE TYPE:
-- transaction_type must be exactly one of: Sale, Acquisition, Lease, Refinance, Loan, Construction, Development, Promotion
+- transaction_type must be exactly one of: Sale, Acquisition, Lease, Refinance, Loan, Construction, Development, Promotion, REO, Foreclosure
+- Use Sale or Acquisition only when a transaction has closed or a buyer has been identified and is under contract. If a property is being marketed for sale, going to auction with no identified buyer, or an asking price is announced with no buyer named, set article_type to "Property Listing / For Sale" instead — do not use transaction_type Sale or Acquisition
 - If the article's primary news is a loan or financing event (e.g., a construction loan closing, bridge loan origination, credit facility), use Loan — not Construction or Development. Use Construction or Development only when the primary news is a project breaking ground, being planned, or under construction
 - Non-transaction articles: set article_type with a descriptive phrase (e.g. "Market Research / Labor Report", "Opinion / Market Commentary", "Infrastructure Investment / Government Policy"). Never use a transaction type keyword (Sale, Acquisition, Lease, Loan, Refinance, Development, Construction, Promotion) as the article_type value
 - If the article is primarily about a non-real estate topic (e.g. military contracts, manufacturing, technology products) with only incidental mention of a property or headquarters, set article_type to exactly "Non-CRE / Business News"
@@ -39,14 +49,18 @@ TRANSACTION TYPE / ARTICLE TYPE:
 - If the article describes a franchise agreement, brand licensing deal, or corporate partnership (not a direct lease of a specific commercial space by an identified tenant), set article_type to "Non-CRE / Business News" rather than Lease
 - If the article is primarily about an insurance product, catastrophe bond, insurance-linked security, or investment fund structure that is only tangentially related to real estate (e.g., insurance-linked securities for data center risk), set article_type to exactly "Non-CRE / Business News"
 - If the article's primary subject is a crime, arrest, political protest, or civil dispute where real estate is incidental (e.g., a council member arrested at an eviction protest, property fraud involving a private residence), set article_type to "Non-CRE / Political & Crime News"
+- If the article's primary subject is a named public figure (professional athlete, entertainer, politician, or celebrity) buying, selling, or listing their personal residence — and the article's news value derives from who the person is rather than the property's market significance — set article_type to exactly "Celebrity Residential / Non-CRE". Do NOT use this for large-scale residential communities, build-to-rent portfolios, or condo buildings with multiple units even if a notable person is involved
+- If the article is primarily an obituary or death notice reporting on the passing of an individual, set article_type to "Non-CRE / Obituary" regardless of the person's CRE career or prominence
+- For non-transaction articles with an editorial perspective: use article_type "Opinion / Editorial" when the piece is primarily an author's opinion column or argument with little or no market data cited (e.g. a columnist criticizing a policy, an op-ed advocating a position). Use "Opinion / Market Commentary" when the piece provides market analysis, cites specific data, statistics, or reported facts, even if it has an editorial angle
+- If the article is primarily a Q&A interview, a personality profile, or a "day in the life" / "spotlight" feature focused on an individual rather than a transaction or market event, set article_type to "Feature / Profile"
 - If a government body or municipality is purchasing property solely for its own administrative use (city hall, police station, courthouse), set article_type to "Non-CRE / Government Use"
 - Set transaction_type OR article_type, never both
 - Never invent new transaction types — use only the values listed above
 
-MARKET: city and state/region if mentioned
+MARKET: always use the specific city and state where the property is physically located (e.g., "Austin, TX"). For articles covering exactly two distinct markets, list both separated by " / " (e.g., "Dallas / Houston, TX"). For national reports or articles spanning three or more markets, leave null. Never use vague labels like "National", "Multi-Market", "United States", or a bare state name alone (e.g., "Texas") — leave null instead
 
 DATA POINTS:
-- property_type: use "condo" for for-sale residential units in a multi-unit building, "multifamily" for rental only. For a sale or flip of a single detached home, estate, or mansion by a private owner (not a portfolio, not a build-to-rent fund or SFR investment), use "single family"
+- property_type: use "multifamily" for rental apartment buildings. Use "single family" for the sale of any personal residential property — whether a detached house, condo unit, co-op, or townhome — sold by a named private individual acting as a homeowner for personal use (not as an investor, fund, or developer). Use "condo" only for commercial condo transactions (e.g. office condos, retail condos, hotel-branded residential sold as investment product)
 - property_name: always include if the building or project has an official name in the article
 - sale_price, loan_amount, total_project_cost: dollar amounts as plain numbers (e.g. 56000000 not "$56M"). Omit entirely if not stated in the article — never use 0 or a placeholder
 - total_project_cost: only if the article explicitly states the cost of the current project. A historical land/site acquisition price is NOT total project cost
@@ -69,7 +83,7 @@ DATA POINTS:
 COMPANIES/PEOPLE:
 - Valid label values (use ONLY these exact strings): BUYER, SELLER, SPONSOR, LENDER, LANDLORD, TENANT, SUBLANDLORD, SUBTENANT, SELLER BROKER, BUYER BROKER, MORTGAGE BROKER, TENANT REP, DEVELOPER/SPONSOR, OWNER, GENERAL CONTRACTOR, CONSTRUCTION MANAGER, ARCHITECT, PLANNER, ENGINEER, EQUITY/FINANCING, LEASING AGENT
 - Sale or Acquisition: BUYER and SELLER
-- Loan or Refinance: use SPONSOR (never DEVELOPER/SPONSOR) for the borrower or entity on whose behalf the loan was made; use LENDER for the lending institution. Always scan the full article for phrases like "on behalf of," "for the benefit of," or "for [entity]" to identify the SPONSOR — it is often named at the end of a sentence describing the lender's actions
+- Loan or Refinance: use SPONSOR (never DEVELOPER/SPONSOR) for the borrower or entity on whose behalf the loan was made; use LENDER for the lending institution. Always scan the full article for phrases like "on behalf of," "for the benefit of," or "for [entity]" to identify the SPONSOR — it is often named at the end of a sentence describing the lender's actions. To identify the LENDER, scan for phrases like "provided by," "originated by," "arranged by," "from [bank]," "[bank] provided," "[bank] closed," or "[bank] funded"
 - Lease: LANDLORD, TENANT
 - Sublease: the entity vacating and subletting the space = SUBLANDLORD; the incoming occupant = SUBTENANT; the building owner (if named) = LANDLORD. Never label a subletting entity as TENANT.
 - Development or Construction: assign each firm its specific role:
@@ -79,6 +93,7 @@ COMPANIES/PEOPLE:
   * Construction manager = CONSTRUCTION MANAGER (do NOT substitute GENERAL CONTRACTOR)
   * Planner or planning firm = PLANNER
   * Do NOT label architects or contractors as DEVELOPER/SPONSOR
+  * A hotel management company (entity contracted to operate the hotel after opening, e.g. "managed by X") is not a construction participant — do not assign them GENERAL CONTRACTOR or any other construction label; omit them entirely unless the article explicitly states they have a construction or development role
   * The entity that owns or commissioned the building (but is not the developer) gets OWNER — e.g. a hospital system, university, or government body. List each institutional entity only once.
 - Hotel brand rule: Never label a hotel brand or franchisor (e.g., Marriott, Hilton, Hyatt, IHG, Accor) as OWNER solely because their flag appears on the property — hotel brands license their name but typically do not own the asset. Only label OWNER if the article explicitly states the brand holds title to the property
 - Broker roles: a broker who "represented the seller" = SELLER BROKER. A broker who "represented the buyer" = BUYER BROKER. Never use BUYER BROKER unless the article explicitly states they represented the buyer
@@ -87,6 +102,7 @@ COMPANIES/PEOPLE:
 - Only include people explicitly named in the article. Include title only if explicitly stated
 - Multiple people from the same firm with the same label: include them all in the people array for that single entry
 - Never list the same firm twice — each firm appears once with the most specific applicable label
+- Every entry MUST have a label from the valid list above — never leave label null or use a value not in that list. If a named firm's role does not fit any label exactly, assign the closest match or omit the entry entirely
 - Omit any party whose identity is explicitly stated as undisclosed or unknown in the article
 - Never include news publications, media outlets, or trade publications (e.g. "The Real Deal", "Bloomberg", "Wall Street Journal") as companies_people entries — these are sources cited in the article, not deal participants
 
@@ -123,7 +139,10 @@ def _get_cache():
 
 
 def _is_promotion(title, content):
-    return any(k in title.lower() for k in _PROMOTION_KEYWORDS)
+    t = title.lower()
+    if any(excl in t for excl in _PROMOTION_EXCLUSIONS):
+        return False
+    return any(k in t for k in _PROMOTION_KEYWORDS)
 
 
 def _normalize_tx_type(summary: ArticleSummary) -> ArticleSummary:
@@ -187,6 +206,10 @@ Fill in ONLY the following fields:
   * people: list of PersonEntry with name (full name) and title (their new role/title)
   * Group multiple people at the same firm into a single entry
   * IMPORTANT: only include the person(s) being newly hired, promoted, or appointed — do NOT include existing colleagues, supervisors, or team members mentioned only as context (e.g. "joining the team of X and Y" — X and Y should not be included)
+  * IMPORTANT: only include people at firms that are direct CRE principals — developers, owners/investors, brokers/advisors, lenders, asset managers, REITs, or CRE-focused private equity. Do NOT include people at proptech, parking, mobility, data/analytics, or other technology or service companies that sell products or services to CRE clients but are not themselves real estate principals — if the firm is not a CRE principal, leave companies_people empty and set transaction_type to null
+  * IMPORTANT: only include people in direct commercial real estate roles (broker, asset manager, investment manager, development, capital markets, leasing, property management, acquisitions, etc.). Do NOT include people in HR, IT, marketing, legal, architecture/design, or other support functions at a CRE firm — if the person's new role is not a CRE function, leave companies_people empty and set transaction_type to null
+  * IMPORTANT: if the article is about a firm being appointed or selected to provide services (e.g. appointed as leasing agent, selected as property manager, awarded a management contract) rather than an individual being hired or promoted, this is not a Promotion — leave companies_people empty and set transaction_type to null
+  * IMPORTANT: a "brokerage engagement" or "listing appointment" — where a property owner hires a broker to represent a sale or listing — is not a Promotion. If the article is about an individual being retained/engaged to broker a specific deal, leave companies_people empty and set transaction_type to null
 
 Set ALL other fields to null or empty:
 - narrative: empty string

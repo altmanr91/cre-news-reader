@@ -107,7 +107,7 @@ Filtering runs at two points to minimize unnecessary API calls.
 - `article_type` contains "award" → "Property/Deal Award"
 - `article_type` contains "association/membership/organization" → "Association News"
 - `article_type` contains "event/conference/expo/webinar" → "Industry Event"
-- Promotions: always kept, displayed compactly (name/title/company/link only)
+- Promotions: always kept regardless of seniority level, displayed compactly (name/title/company/link only). Excluded at the model prompt level: people at proptech/tech/service companies (not CRE principals), non-CRE support roles (HR, IT, marketing, legal), brokerage engagement/listing appointments (not personal hires)
 
 Filtered articles appear in a collapsed "FILTERED (N)" section at the bottom of the browser digest. They do not appear in the email.
 
