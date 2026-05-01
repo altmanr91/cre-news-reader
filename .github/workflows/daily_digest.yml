@@ -53,6 +53,7 @@ jobs:
           cp digest_*.html _site/ 2>/dev/null || true
           cp articles/*.html _site/articles/ 2>/dev/null || true
           cp seen_articles.json _site/ 2>/dev/null || true
+          cp articles_handoff.json _site/ 2>/dev/null || true
 
       - name: Prune files older than 100 days
         run: |

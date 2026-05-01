@@ -1072,6 +1072,33 @@ def main():
         json.dump(seen, f)
     print(f"  [dedup] Saved {len(seen)} seen articles for next run")
 
+    # Save structured handoff for App 2 (comps + contacts pipeline)
+    handoff_records = []
+    for article, result in zip(articles, results):
+        if not result.get('summary'):
+            continue
+        summary = result['summary']
+        handoff_records.append({
+            "title":            article['title'],
+            "source":           article['source'],
+            "link":             article['link'],
+            "published":        article.get('published', ''),
+            "page_url":         article.get('page_url', ''),
+            "transaction_type": summary.transaction_type,
+            "article_type":     summary.article_type,
+            "market":           summary.market,
+            "narrative":        summary.narrative,
+            "data_points":      summary.data_points.model_dump() if summary.data_points else None,
+            "companies_people": [cp.model_dump() for cp in summary.companies_people],
+            "tenants":          summary.tenants,
+            "financing":        summary.financing,
+            "market_intelligence": summary.market_intelligence,
+        })
+    handoff_path = os.path.join(base_dir, 'articles_handoff.json')
+    with open(handoff_path, 'w') as f:
+        json.dump({"date": date_slug, "articles": handoff_records}, f, indent=2)
+    print(f"  [app2] Saved {len(handoff_records)} articles to articles_handoff.json")
+
     # Start/restart local HTTP server (skip in CI — no display/Windows flags)
     if not os.getenv('CI'):
         _restart_server(base_dir, PORT)
