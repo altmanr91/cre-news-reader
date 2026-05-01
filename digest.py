@@ -1,13 +1,16 @@
+import json
 import os
 import re
 import smtplib
 import urllib.parse
+import urllib.request
 import webbrowser
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from dotenv import load_dotenv
 
+import rss_fetcher
 from rss_fetcher import fetch_articles, LAST_FEED_STATS
 from article_scraper import get_full_article_text
 from summarizer import get_summary
@@ -312,6 +315,7 @@ def _market_sort_key(market: str) -> int:
 _TYPE_ORDER = [
     'Market Intelligence',
     'Sales & Acquisitions',
+    'REO & Foreclosure',
     'Financing',
     'Development & Construction',
     'Leases',
@@ -414,6 +418,27 @@ _CITY_TO_REGION = {
 }
 
 
+_NATIONAL_MARKET_VARIANTS = frozenset([
+    'national', 'multi-market', 'multi market', 'national/multi-market',
+    'national / multi-market', 'various', 'multiple markets', 'nationwide',
+    'united states', 'u.s.', 'us market', 'us markets', 'u.s. market',
+    'u.s. markets', 'us', 'usa', 'u.s.a.', 'the u.s.', 'the us',
+])
+
+
+def _normalize_market(market: str | None) -> str | None:
+    """Collapse national-variant labels to None; expand bare state names to 'State (Statewide)'."""
+    if not market:
+        return None
+    stripped = market.strip()
+    lower = stripped.lower()
+    if lower in _NATIONAL_MARKET_VARIANTS:
+        return None
+    if lower in _STATE_NAMES_TO_REGION:
+        return f'{stripped.title()} (Statewide)'
+    return stripped
+
+
 def _market_to_region(market: str | None) -> str:
     if not market:
         return 'National / Multi-Market'
@@ -448,6 +473,8 @@ def _type_category(summary: ArticleSummary) -> str:
     tx = (summary.transaction_type or '').lower()
     if tx in ('sale', 'acquisition'):
         return 'Sales & Acquisitions'
+    if tx in ('reo', 'foreclosure'):
+        return 'REO & Foreclosure'
     if tx in ('loan', 'refinance'):
         return 'Financing'
     if tx in ('development', 'construction'):
@@ -569,7 +596,7 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
             grouped[type_cat].setdefault('_people', {}).setdefault('_all', []).append((article, summary))
         else:
             region = _market_to_region(summary.market)
-            market = summary.market or 'National / Multi-Market'
+            market = _normalize_market(summary.market) or 'National / Multi-Market'
             grouped[type_cat].setdefault(region, {}).setdefault(market, []).append((article, summary))
 
     shown_count = sum(
@@ -579,12 +606,7 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
         for items in markets.values()
     )
 
-    body_parts = [
-        f'<p style="font-size:0.85em;color:#555;margin:0 0 20px;padding:10px 14px;'
-        f'background:#f5f5f5;border-left:3px solid #ccc;">'
-        f'<a href="{global_url}" style="color:#1a1a1a;font-weight:bold;">View Full Digest</a> '
-        f'&mdash; data points, companies &amp; market intelligence for all articles.</p>'
-    ]
+    body_parts = []
 
     for type_cat in _TYPE_ORDER:
         type_data = grouped[type_cat]
@@ -616,11 +638,12 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
                 )
                 for market in sorted(markets.keys(), key=_market_sort_key):
                     items = markets[market]
-                    body_parts.append(
-                        f'<p style="font-size:0.78em;font-weight:bold;letter-spacing:0.04em;'
-                        f'color:#888;margin:10px 0 8px;font-family:Arial,sans-serif;">'
-                        f'MARKET: {market.upper()}</p>'
-                    )
+                    if region != 'National / Multi-Market':
+                        body_parts.append(
+                            f'<p style="font-size:0.78em;font-weight:bold;letter-spacing:0.04em;'
+                            f'color:#888;margin:10px 0 8px;font-family:Arial,sans-serif;">'
+                            f'MARKET: {market.upper()}</p>'
+                        )
                     for article, summary in items:
                         page_url = article.get('page_url', '')
                         detail_link = (
@@ -651,10 +674,16 @@ def build_email_html(articles: list, results: list, global_url: str) -> str:
         f'<a href="{global_url}" style="color:#1a2e3b;font-weight:bold;">View Full Digest</a>'
         f' &mdash; data points, companies &amp; market intelligence for all articles.</p>'
     )
+    preheader = (
+        f'<span style="display:none;font-size:1px;color:#ffffff;max-height:0;'
+        f'max-width:0;opacity:0;overflow:hidden;">'
+        f'CRE News Digest &mdash; {today} &mdash; {shown_count} articles</span>'
+    )
     return f"""<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="font-family:Georgia,serif;font-size:16px;max-width:680px;margin:0 auto;padding:0;color:#1a1a1a;background:#ffffff;-webkit-text-size-adjust:100%;">
+  {preheader}
   {masthead}
   <div style="padding:0 16px 32px;">
   {view_link}
@@ -685,7 +714,7 @@ def build_browser_html(articles: list, results: list) -> str:
             grouped[type_cat].setdefault('_people', {}).setdefault('_all', []).append((article, summary))
         else:
             region = _market_to_region(summary.market)
-            market = summary.market or 'National / Multi-Market'
+            market = _normalize_market(summary.market) or 'National / Multi-Market'
             grouped[type_cat].setdefault(region, {}).setdefault(market, []).append((article, summary))
 
     shown_count = sum(
@@ -724,8 +753,12 @@ def build_browser_html(articles: list, results: list) -> str:
                         article_parts.append(
                             f'<div class="article">{_render_article_html(article, summary)}</div>'
                         )
-                    market_parts.append(
+                    market_header = (
                         f'<p class="market-header">MARKET: {market.upper()}</p>'
+                        if region != 'National / Multi-Market' else ''
+                    )
+                    market_parts.append(
+                        f'{market_header}'
                         f'<div class="market-body">{"".join(article_parts)}</div>'
                     )
                 region_parts.append(
@@ -797,7 +830,7 @@ def build_browser_html(articles: list, results: list) -> str:
     for s in _rf.LAST_FEED_STATS:
         status = s.get('status', 200)
         err = s.get('error', '')
-        flag = ' &#x26A0;' if (status not in (200, 301, 302) or err) else ''
+        flag = ' &#x26A0;' if (status not in (200, 301, 302) or err or s['total_in_feed'] == 0) else ''
         last_24h = s['last_24h']
         total_24h += last_24h
         stats_rows += (
@@ -845,6 +878,30 @@ def build_browser_html(articles: list, results: list) -> str:
   </div>
 </body>
 </html>"""
+
+
+def _load_prev_seen(base_dir: str, base_url: str) -> list[dict]:
+    """Load seen-article records from the previous run for cross-day dedup."""
+    local_path = os.path.join(base_dir, 'seen_articles.json')
+    if os.path.exists(local_path):
+        try:
+            with open(local_path) as f:
+                data = json.load(f)
+            print(f"  [dedup] Loaded {len(data)} seen articles from local file")
+            return data
+        except Exception:
+            pass
+    if base_url.startswith('https://'):
+        try:
+            url = f'{base_url}/seen_articles.json'
+            with urllib.request.urlopen(url, timeout=5) as r:
+                data = json.loads(r.read())
+            print(f"  [dedup] Loaded {len(data)} seen articles from {url}")
+            return data
+        except Exception:
+            pass
+    print("  [dedup] No previous seen articles found — cross-day dedup disabled for this run")
+    return []
 
 
 def run_pipeline(articles_per_feed: int = ARTICLES_PER_FEED) -> tuple[list, list]:
@@ -937,13 +994,16 @@ def _restart_server(directory: str, port: int) -> None:
 
 
 def main():
-    articles, results = run_pipeline()
-
     today     = datetime.now().strftime('%B %d, %Y')
     date_slug = datetime.now().strftime('%Y-%m-%d')
     base_dir  = os.path.dirname(__file__) or os.getcwd()
     PORT      = 8787
     BASE_URL  = os.getenv('DIGEST_BASE_URL', f'http://localhost:{PORT}')
+
+    # Load previous run's articles to enable cross-day dedup
+    rss_fetcher.PREV_SEEN_ARTICLES = _load_prev_seen(base_dir, BASE_URL)
+
+    articles, results = run_pipeline()
 
     # Global browser digest
     browser_html = build_browser_html(articles, results)
@@ -968,6 +1028,20 @@ def main():
             f.write(page_html)
         article['page_url'] = f'{BASE_URL}/articles/{filename}'
     print(f"  {article_idx} article pages saved to articles/")
+
+    # Annotate articles with AI narrative so get_seen_articles uses structured
+    # text rather than raw RSS snippets (promotions have empty narrative, preventing
+    # their dense RSS summaries from causing false cross-day dedup matches)
+    for article, result in zip(articles, results):
+        if result.get('summary'):
+            article['ai_narrative'] = result['summary'].narrative or ''
+
+    # Save seen-article records for next run's cross-day dedup
+    seen = rss_fetcher.get_seen_articles(articles)
+    seen_path = os.path.join(base_dir, 'seen_articles.json')
+    with open(seen_path, 'w') as f:
+        json.dump(seen, f)
+    print(f"  [dedup] Saved {len(seen)} seen articles for next run")
 
     # Start/restart local HTTP server (skip in CI — no display/Windows flags)
     if not os.getenv('CI'):
