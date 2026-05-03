@@ -28,6 +28,20 @@ _FEED_DISPLAY_NAMES = {
     "https://therealdeal.com/denver/feed/":        "The Real Deal — Denver",
 }
 
+# Editorial series prefixes that appear verbatim in feed titles — strip before use
+_TITLE_PREFIXES_TO_STRIP = [
+    r'^FIRST DRAFT LIVE:\s*',
+    r'^FIRST DRAFT:\s*',
+    r'^EXCLUSIVE:\s*',
+    r'^BREAKING:\s*',
+]
+
+def _clean_title(title: str) -> str:
+    for pattern in _TITLE_PREFIXES_TO_STRIP:
+        title = re.sub(pattern, '', title, flags=re.IGNORECASE)
+    return title.strip()
+
+
 _STOP_WORDS = {
     'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
     'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been',
@@ -225,7 +239,7 @@ def fetch_articles(max_articles_per_feed=3):
                     article = {
                         "category": category,
                         "source": source,
-                        "title": entry.get("title", "No title"),
+                        "title": _clean_title(entry.get("title", "No title")),
                         "summary": entry.get("summary", ""),
                         "link": entry.get("link", ""),
                         "published": entry.get("published", "Unknown date")

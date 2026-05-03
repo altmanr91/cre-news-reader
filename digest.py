@@ -169,7 +169,7 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
         if dp.size_sf:
             dp_lines.append(_line(f'Size: {dp.size_sf:,.0f} SF'))
         if dp.size_units:
-            dp_lines.append(_line(f'Size: {dp.size_units:,} units'))
+            dp_lines.append(_line(f'Units: {dp.size_units:,}'))
         if dp.size_beds:
             dp_lines.append(_line(f'Beds: {dp.size_beds:,}'))
         if dp.size_keys:
@@ -471,6 +471,16 @@ def _normalize_market(market: str | None) -> str | None:
 def _market_to_region(market: str | None) -> str:
     if not market:
         return 'National / Multi-Market'
+
+    # Multi-market strings (e.g. "New York City, NY / San Francisco, CA") — split and
+    # return National/Multi-Market if parts span different regions, else the common region.
+    if ' / ' in market:
+        parts = [p.strip() for p in market.split(' / ')]
+        regions = {_market_to_region(p) for p in parts if p}
+        if len(regions) == 1:
+            return regions.pop()
+        return 'National / Multi-Market'
+
     m = market.lower()
 
     # DC check before generic "washington" (which maps to WA state)

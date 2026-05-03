@@ -58,6 +58,20 @@ _TITLE_ADVISORY_PATTERNS = [
     r'^(how|why|what).{0,60}\?.*hint\b',       # clickbait editorial with "Hint:" subhead
 ]
 
+# Contractor/vendor PR announcements — trade press completion notices of low editorial value
+_TITLE_CONTRACTOR_PR_PATTERNS = [
+    r'\bcompletes?\b.{0,60}\binterior\s+(construction|renovation|buildout|build-out)\b',
+    r'\bcompletes?\b.{0,60}\boffice\s+interior\b',
+]
+
+# REIT/CRE corporate governance — shareholder votes, activist campaigns, board elections
+_TITLE_CORPORATE_GOVERNANCE_PATTERNS = [
+    r'\bboard\b.{0,40}\breelected\b',
+    r'\bproxy\s+fight\b',
+    r'\bactivist\b.{0,40}\b(campaign|investor)\b.{0,40}\b(reit|fund|trust|board)\b',
+    r'\bshareholder\s+vote\b.{0,40}\b(reit|board|director)\b',
+]
+
 # Celebrity personal residential transactions — athlete/entertainer buying or listing their home
 _TITLE_CELEBRITY_RESIDENTIAL_PATTERNS = [
     # Casual residential slang that only appears in celebrity home coverage
@@ -81,6 +95,18 @@ _NON_US_CA_MARKERS = frozenset([
     'zurich', 'munich', 'frankfurt',
 ])
 
+# Whole-word regex — prevents "india" matching "Indianapolis", "peru" matching "Perth Amboy", etc.
+_NON_US_CA_RE = re.compile(
+    r'\b(?:' + '|'.join(re.escape(m) for m in sorted(_NON_US_CA_MARKERS, key=len, reverse=True)) + r')\b'
+)
+
+# US cities that share names with non-US markers
+_US_CITY_MARKET_EXCEPTIONS = frozenset([
+    'rome, ga', 'rome, ny', 'berlin, nh', 'berlin, wi', 'berlin, md',
+    'dublin, ca', 'dublin, oh', 'dublin, tx', 'dublin, pa',
+    'peru, in', 'turkey, tx', 'china, tx', 'india, in',
+])
+
 
 def _is_non_us_canada_market(market: str | None) -> bool:
     if not market:
@@ -95,7 +121,10 @@ def _is_non_us_canada_market(market: str | None) -> bool:
     # Amsterdam, New York is a US city — keep
     if 'amsterdam' in m and ('new york' in m or ', ny' in m):
         return False
-    return any(marker in m for marker in _NON_US_CA_MARKERS)
+    # US cities whose names overlap with non-US markers
+    if any(exc in m for exc in _US_CITY_MARKET_EXCEPTIONS):
+        return False
+    return bool(_NON_US_CA_RE.search(m))
 
 
 def _has_honor_exemption(title: str) -> bool:
@@ -132,6 +161,14 @@ def get_title_filter_reason(title: str) -> str | None:
     for pattern in _TITLE_ADVISORY_PATTERNS:
         if re.search(pattern, t):
             return "Vendor/Advisory Content"
+
+    for pattern in _TITLE_CONTRACTOR_PR_PATTERNS:
+        if re.search(pattern, t):
+            return "Vendor/Advisory Content"
+
+    for pattern in _TITLE_CORPORATE_GOVERNANCE_PATTERNS:
+        if re.search(pattern, t):
+            return "Non-CRE Content"
 
     for pattern in _TITLE_CELEBRITY_RESIDENTIAL_PATTERNS:
         if re.search(pattern, t):

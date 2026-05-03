@@ -69,8 +69,10 @@ def inject_calculated_metrics(summary: ArticleSummary) -> dict:
         for attr, unit_cap, unit_lower in active_sizes:
             _add_metric(metrics, dp, attr, unit_cap, unit_lower, price, is_loan, is_land)
 
-    # Land area metrics — $/acre and $/land SF when site acreage is known
-    if is_land and dp.land_area_acres and price:
+    # Land area metrics — $/acre and $/land SF when site acreage is known.
+    # Suppressed for built properties (year_built present) — acreage on existing buildings
+    # is context, not a pricing basis.
+    if is_land and dp.land_area_acres and price and not dp.year_built:
         acres = dp.land_area_acres
         per_acre    = price / acres
         per_land_sf = price / (acres * 43_560)
