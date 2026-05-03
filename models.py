@@ -32,6 +32,7 @@ class DataPoints(BaseModel):
     size_units: Optional[int] = None
     size_beds: Optional[int] = None
     size_keys: Optional[int] = None
+    rental_rate: Optional[float] = None   # $/SF/year for leases
     sale_price: Optional[float] = None
     loan_amount: Optional[float] = None
     total_project_cost: Optional[float] = None
@@ -42,6 +43,7 @@ class DataPoints(BaseModel):
     total_project_all_phases: Optional[str] = None
     original_plan: Optional[str] = None
     land_area_acres: Optional[float] = None
+    multi_asset_purchase: bool = False
     notable_features: Optional[str] = None
     project_notes: Optional[str] = None
 

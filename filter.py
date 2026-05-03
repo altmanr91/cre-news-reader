@@ -250,4 +250,17 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
         if tx_type in ('loan', 'refinance') and dp.loan_amount and dp.loan_amount < _MIN_DEAL_DOLLARS:
             return "Below Minimum Deal Size"
 
+    # Low-value lease — two independent rules:
+    # 1. Too small to matter regardless of other data
+    # 2. No rate and no named tenant — no comp value at any size
+    if tx_type == 'lease':
+        dp = summary.data_points
+        sf = dp.size_sf if dp else None
+        has_rate = bool(dp and dp.rental_rate)
+        has_tenant = bool(summary.tenants)
+        if sf is not None and sf < 1000:
+            return "Low-Value Lease"
+        if not has_rate and not has_tenant:
+            return "Low-Value Lease"
+
     return None

@@ -30,6 +30,10 @@ def inject_calculated_metrics(summary: ArticleSummary) -> dict:
     if not price:
         return {}
 
+    # Multi-asset purchases: price spans multiple distinct buildings/parcels — $/SF is meaningless
+    if dp.multi_asset_purchase:
+        return {}
+
     size_config = [
         ('size_sf',    'SF',   'SF'),
         ('size_units', 'Unit', 'unit'),
@@ -68,6 +72,11 @@ def inject_calculated_metrics(summary: ArticleSummary) -> dict:
     else:
         for attr, unit_cap, unit_lower in active_sizes:
             _add_metric(metrics, dp, attr, unit_cap, unit_lower, price, is_loan, is_land)
+
+    # Annual rent from rental rate × SF
+    if dp.rental_rate and dp.size_sf:
+        annual = dp.rental_rate * dp.size_sf
+        metrics['Annual Rent'] = f'${annual:,.0f}/yr (calculated)'
 
     # Land area metrics — $/acre and $/land SF when site acreage is known.
     # Suppressed for built properties (year_built present) — acreage on existing buildings

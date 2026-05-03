@@ -174,6 +174,8 @@ def _render_article_html(article: dict, summary: ArticleSummary, expanded: bool 
             dp_lines.append(_line(f'Beds: {dp.size_beds:,}'))
         if dp.size_keys:
             dp_lines.append(_line(f'Keys: {dp.size_keys:,}'))
+        if dp.rental_rate:
+            dp_lines.append(_line(f'Rental Rate: ${dp.rental_rate:,.2f}/SF/yr'))
         if dp.sale_price:
             dp_lines.append(_line(f'Sale Price: {_fmt_dollars(dp.sale_price)}'))
         if dp.loan_amount:
@@ -971,7 +973,7 @@ def run_pipeline(articles_per_feed: int = ARTICLES_PER_FEED) -> tuple[list, list
             post_filter = get_summary_filter_reason(article, summary)
             if post_filter:
                 print(f"    -> Filtered (summary): {post_filter}")
-                results.append({'filtered': True, 'filter_reason': post_filter})
+                results.append({'filtered': True, 'filter_reason': post_filter, 'summary': summary})
             else:
                 results.append({'summary': summary})
         except Exception as e:
