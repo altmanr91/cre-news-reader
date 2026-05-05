@@ -261,10 +261,23 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
         dp = summary.data_points
         sf = dp.size_sf if dp else None
         has_rate = bool(dp and dp.rental_rate)
-        has_tenant = bool(summary.tenants)
+        # Check both the dedicated tenants list and companies_people TENANT/SUBTENANT labels —
+        # the model sometimes puts the tenant in companies_people but not the tenants list
+        has_tenant = bool(summary.tenants) or any(
+            (e.label or '').upper() in ('TENANT', 'SUBTENANT')
+            for e in (summary.companies_people or [])
+        )
         if sf is not None and sf < 1000:
             return "Low-Value Lease"
+        # Large leases always pass — extraction failures shouldn't suppress significant deals
+        if sf is not None and sf >= 25000:
+            return None
         if not has_rate and not has_tenant:
             return "Low-Value Lease"
+
+    # Promotions with no CRE companies extracted — model correctly identified a non-CRE firm
+    # and left companies_people empty per prompt rules, but transaction_type was still set
+    if tx_type == 'promotion' and not summary.companies_people:
+        return "Non-CRE Promotion"
 
     return None

@@ -22,7 +22,7 @@ def inject_calculated_metrics(summary: ArticleSummary) -> dict:
     if dp.loan_amount:
         price = dp.loan_amount
         is_loan = True
-    elif dp.total_project_cost:
+    elif dp.total_project_cost and tt != 'lease':
         price = dp.total_project_cost
     elif dp.sale_price and not is_development:
         price = dp.sale_price
