@@ -39,10 +39,10 @@ _TITLE_EVENT_PATTERNS = [
 ]
 
 _TITLE_ASSOCIATION_PATTERNS = [
-    r'\bboma\b.{0,30}\bannounce',
-    r'\bnaiop\b.{0,30}\bannounce',
-    r'\bnar\b.{0,30}\bannounce',
-    r'\bcre[i]?\b.{0,30}\bannounce',
+    r'\bboma\b.{0,40}\b(announce|elect|appoint|name)s?\b',
+    r'\bnaiop\b.{0,40}\b(announce|elect|appoint|name)s?\b',
+    r'\bnar\b.{0,40}\b(announce|elect|appoint|name)s?\b',
+    r'\bcre[i]?\b.{0,40}\b(announce|elect|appoint|name)s?\b',
 ]
 
 # Non-CRE content detectable from the title alone
@@ -224,6 +224,10 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
     # Event/conference announcements
     if any(kw in article_type for kw in ('event', 'conference', 'expo', 'symposium', 'webinar')):
         return "Industry Event"
+
+    # Political, electoral, or campaign finance articles
+    if any(kw in article_type for kw in ('political', 'campaign finance', 'electoral')):
+        return "Non-CRE Content"
 
     # Single-family residential, estates, ranches — individual home transactions, not CRE asset class
     if summary.data_points:
