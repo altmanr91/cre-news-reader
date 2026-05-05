@@ -1122,6 +1122,13 @@ def main():
     status = send_digest(email_html, subject)
     print(f"Done. Status: {status}")
 
+    # Automated post-digest review (non-fatal — never blocks delivery)
+    try:
+        from review import run_review
+        run_review(articles, results, date_slug)
+    except Exception as e:
+        print(f"  [review] Review failed (non-fatal): {e}")
+
 
 if __name__ == '__main__':
     main()
