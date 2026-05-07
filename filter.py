@@ -50,7 +50,15 @@ _TITLE_NONCRE_PATTERNS = [
     r'\bnational \w[\w ]{0,35}week\b',        # "National Property Managers Week" etc.
     r'\binvesting.{0,25}\byouth\b',            # City youth investment ("Investing Big In Its Youth")
     r'\bschool district\b.{0,40}\bbond\b',     # School district bond articles
+    r'\bconnect\s+media\b',                   # Connect CRE parent company self-promotion
 ]
+
+# TIC/1031 exchange articles are CRE content even when model flags them as crime/non-CRE
+# (regulatory probes, fraud investigations targeting CRE investment vehicles)
+_TIC_TITLE_RE = re.compile(
+    r'\b(tenant.in.common|tic\s+(deal|investment|offering|fund|probe|scheme|fraud)|1031\s+(exchange|deal|fraud|probe))\b',
+    re.IGNORECASE
+)
 
 # Vendor/advisory list content — opinion pieces structured as numbered tips/issues lists
 _TITLE_ADVISORY_PATTERNS = [
@@ -191,7 +199,8 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
 
     # Non-CRE content
     if 'non-cre' in article_type:
-        return "Non-CRE Content"
+        if not _TIC_TITLE_RE.search(title):
+            return "Non-CRE Content"
 
     # Celebrity individual residential transactions (athlete/entertainer buying or selling personal home)
     if 'celebrity residential' in article_type:
@@ -206,8 +215,10 @@ def get_summary_filter_reason(article: dict, summary: ArticleSummary) -> str | N
         return "Non-CRE Content"
 
     # Crime, arrest, or political protest articles
+    # Exception: TIC/1031 regulatory probes are CRE investment vehicle enforcement — keep
     if any(kw in article_type for kw in ('crime', 'arrest', 'political protest', 'political / crime')):
-        return "Non-CRE Content"
+        if not _TIC_TITLE_RE.search(title):
+            return "Non-CRE Content"
 
     # Obituaries
     if 'obituary' in article_type:

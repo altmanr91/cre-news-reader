@@ -980,7 +980,29 @@ def run_pipeline(articles_per_feed: int = ARTICLES_PER_FEED) -> tuple[list, list
             print(f"    -> Error: {e}")
             results.append({'error': str(e)})
 
-    shown = sum(1 for r in results if r.get('summary'))
+    # Post-summary dedup: catches same-deal multi-outlet coverage where RSS titles
+    # differ enough to beat the pre-summary overlap threshold (e.g. full company name
+    # vs. abbreviation). Fingerprints on (size_sf_bucket, property_type, tx_type)
+    # for large assets only (≥500k SF) to avoid false positives on smaller deals.
+    seen_fp: dict = {}
+    for i, (article, result) in enumerate(zip(articles, results)):
+        if result.get('filtered') or not result.get('summary'):
+            continue
+        s = result['summary']
+        dp = s.data_points
+        if not dp or not dp.size_sf or dp.size_sf < 500_000:
+            continue
+        tx   = (s.transaction_type or '').lower()
+        prop = (dp.property_type or '').lower()[:20]
+        key  = (round(dp.size_sf / 50_000), prop, tx)
+        if key in seen_fp:
+            result['filtered'] = True
+            result['filter_reason'] = 'Duplicate (same deal, multi-outlet coverage)'
+            print(f"    -> Post-dedup: '{article['title'][:60]}' duplicates article #{seen_fp[key]+1}")
+        else:
+            seen_fp[key] = i
+
+    shown = sum(1 for r in results if r.get('summary') and not r.get('filtered'))
     filtered = sum(1 for r in results if r.get('filtered'))
     print(f"\nPipeline complete: {shown} articles to send, {filtered} filtered")
     return articles, results
