@@ -76,7 +76,7 @@ def run_review(articles: list, results: list, date_slug: str) -> None:
             )
 
         # Sponsor pipeline — show first 4 entries
-        pipeline = [p[:80] for p in (summary.sponsor_pipeline or [])]
+        pipeline = [f"{p.name_or_address}: {p.description}"[:80] for p in (summary.sponsor_pipeline or [])]
 
         line_parts = [f'- "{title}" | {source} | {type_label} | {market}']
         if dp_parts:

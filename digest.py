@@ -1127,7 +1127,9 @@ def main():
         from review import run_review
         run_review(articles, results, date_slug)
     except Exception as e:
+        import traceback
         print(f"  [review] Review failed (non-fatal): {e}")
+        traceback.print_exc()
 
 
 if __name__ == '__main__':
