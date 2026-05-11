@@ -1,27 +1,27 @@
 {
-  "date": "2026-05-10",
+  "date": "2026-05-11",
   "articles": [
     {
-      "title": "\u201cAgents can get lost in the sauce\u201d: NYC\u2019s indie firms push back on consolidation",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/09/new-york-citys-indie-firms-push-back-on-rising-consolidation/",
-      "published": "Sat, 09 May 2026 14:49:57 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-10-001.html",
+      "title": "A Rare Offering of Scale: 325,000 RSF at 1285 Avenue of the Americas",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/a-rare-offering-of-scale-325000-rsf-at-1285-avenue-of-the-americas/",
+      "published": "Mon, 11 May 2026 04:00:40 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-001.html",
       "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
+      "article_type": "Property Listing / For Lease",
       "market": "New York City, NY",
-      "narrative": "This article discusses the challenges and strategies of smaller independent residential real estate firms in New York City amidst increasing industry consolidation. It highlights how some firms are positioning themselves as alternatives to larger corporate brokerages, emphasizing personalized service and niche expertise. Other smaller firms are opting for strategic acquisitions or joining global networks to enhance their market presence and compete more effectively. The piece also touches on concerns regarding the growing popularity of private exclusive listings and its potential impact on smaller players.",
+      "narrative": "RXR is marketing a rare, large-scale office leasing opportunity at 1285 Avenue of the Americas in Midtown Manhattan. The offering comprises approximately 325,000 rentable square feet of contiguous space across five floors, providing a unique chance for global firms to establish a significant corporate presence in a prime business corridor. The building, designed by Skidmore, Owings & Merrill, offers expansive and flexible floor plates, high ceilings, and direct connectivity to Rockefeller Center, catering to the evolving needs of large tenants seeking a dominant headquarters in a prestigious location with extensive transit access.",
       "data_points": {
-        "property_type": "condo",
-        "property_name": "16 Fifth Avenue",
-        "address": "16 Fifth Avenue, New York City, NY",
+        "property_type": "office",
+        "property_name": "1285 Avenue of the Americas",
+        "address": "1285 Avenue of the Americas, New York City, NY",
         "address_sourced_separately": false,
-        "size_sf": 6800.0,
+        "size_sf": 325000.0,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 32500000.0,
+        "sale_price": null,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -32,51 +32,374 @@
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Duplex penthouse with five bedrooms, seven bathrooms, an elevator, and two terraces.",
-        "project_notes": "Sold at a significant discount from its last asking price of $45 million."
+        "notable_features": "Located on Corporate Row between 51st and 52nd streets, offering concourse-level connectivity to Rockefeller Center and proximity to major transit hubs.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "RXR",
+          "people": []
+        },
+        {
+          "label": "ARCHITECT",
+          "firm_name": "Skidmore, Owings & Merrill",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "Chop't",
+        "Naya",
+        "Mastro's Steakhouse"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Sunday Summary: Gary Barnett Has Only Just Begun!",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/sunday-summary-gary-barnett-has-only-just-begun/",
+      "published": "Sun, 10 May 2026 13:00:31 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-002.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Extell Development has acquired a significant development site at 405-417 Park Avenue in New York City for $500 million, with plans to potentially expand by acquiring two adjacent buildings. The developer is considering a project that could yield up to 700,000 square feet of rentable office space with air rights, or 527,000 square feet of as-of-right development. This acquisition underscores continued confidence in prime Manhattan development opportunities.",
+      "data_points": {
+        "property_type": "development site",
+        "property_name": null,
+        "address": "405-417 Park Avenue, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 500000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Block-long development site between East 54th and East 55th streets.",
+        "project_notes": "Developer is also pursuing two adjacent buildings: 110 East 55th Street and potentially 111 East 54th Street."
       },
       "companies_people": [
         {
           "label": "BUYER",
-          "firm_name": "Anonymous",
+          "firm_name": "Extell Development",
           "people": []
         },
         {
           "label": "OWNER",
-          "firm_name": "Madison Realty Capital",
+          "firm_name": "Parkoff Organization",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Baltimore Industrial Recalibration: Driven by New Supply and Selective Leasing",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/baltimore-industrial-recalibration-driven-by-new-supply-and-selective-leasing/",
+      "published": "Mon, 11 May 2026 11:47:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-003.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Baltimore, MD",
+      "narrative": "Baltimore's industrial market is undergoing a recalibration rather than a contraction, characterized by rising vacancy and elevated supply, yet sustained demand for high-quality assets. The market is exhibiting a 'barbell dynamic,' with strong performance in bulk logistics facilities in premier submarkets like Baltimore County East and smaller infill properties under 100,000 square feet. This divergence indicates that demand is becoming more selective, with capital increasingly disciplined and performance tied to asset quality and strategic positioning within the region's evolving logistics network. Despite broader market headwinds, institutional capital continues to invest, as evidenced by a significant portfolio acquisition, underscoring confidence in Baltimore's long-term strategic advantages as an East Coast logistics hub.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Camber Real Estate Partners",
           "people": []
         },
         {
-          "label": "SELLER BROKER",
-          "firm_name": "Corcoran",
+          "label": "EQUITY/FINANCING",
+          "firm_name": "PGIM Real Estate",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Starwood Capital Group",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Mako Freight",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Thuma",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Lucern Capital Partners",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "MacKenzie Commercial Real Estate Services",
           "people": [
             {
-              "name": "Tara King-Brown",
+              "name": "Oliver Fryer",
+              "title": "Vice President"
+            },
+            {
+              "name": "Bryan Herr",
+              "title": "Vice President"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "CoStar Group characterizes the Baltimore industrial market as undergoing a 'sharp correction' due to rising vacancy, elevated supply, and slower leasing activity. The market's vacancy rate is approximately 9.7%, with 3.2 million square feet of new deliveries over the past 12 months and negative trailing absorption of 2.4 million square feet. The new development pipeline stands at 2.1 million square feet. Baltimore County East leads the region with approximately 660,000 square feet of positive absorption over the trailing 12 months, holds 16.2% of market inventory, and has the most active construction pipeline at 664,000 square feet. Industrial transaction volume is holding near $1.1 billion, with pricing averaging approximately $142 per square foot and cap rates around 7.7%."
+    },
+    {
+      "title": "Triten Real Estate Partners completes 400,000-square-foot distribution center in Humble",
+      "source": "REJournals",
+      "link": "https://rejournals.com/triten-real-estate-partners-completes-400000-square-foot-distribution-center-in-humble/?utm_source=rss&utm_medium=rss&utm_campaign=triten-real-estate-partners-completes-400000-square-foot-distribution-center-in-humble",
+      "published": "Mon, 11 May 2026 09:57:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-004.html",
+      "transaction_type": "Construction",
+      "article_type": null,
+      "market": "Humble, TX",
+      "narrative": "Triten Real Estate Partners has completed Kenswick at 1960, a two-building, Class-A distribution center totaling nearly 400,000 square feet in Humble, Texas. The development is strategically located near George Bush Intercontinental Airport and major freight corridors, offering efficient access to the Houston metropolitan area and beyond. The project features a campus-style layout, 36-foot clear heights, extensive trailer parking, and the potential for over five acres of secured outdoor storage, catering to a diverse range of industrial users.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": "Kenswick at 1960",
+        "address": "8311 FM 1960 Bypass Road, Humble, TX",
+        "address_sourced_separately": false,
+        "size_sf": 400000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Dual-building campus-style environment with 36-foot clear heights, ample dock-door count, approximately 9,000 square feet of Class A office space, and above-standard trailer parking with potential for over five acres of secured outdoor storage. Located approximately one-half mile from George Bush Intercontinental Airport's air cargo facilities, with immediate connectivity to U.S. Highway 59 (Interstate 69), Beltway 8, and Grand Parkway (SH 99).",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Triten Real Estate Partners",
+          "people": []
+        },
+        {
+          "label": "ARCHITECT",
+          "firm_name": "Method Architecture",
+          "people": []
+        },
+        {
+          "label": "ENGINEER",
+          "firm_name": "Grey Wolf",
+          "people": []
+        },
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "Harvey Cleary",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "CBRE",
+          "people": [
+            {
+              "name": "Jason Dillee",
               "title": null
             },
             {
-              "name": "Ryan Kaplan",
+              "name": "Cape Bell",
+              "title": null
+            },
+            {
+              "name": "Savannah Smith",
               "title": null
             }
           ]
         },
         {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Cantor Pecorella",
+          "label": "OWNER",
+          "firm_name": "Triten Real Estate Partners",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "All that new supply? It\u2019s suppressing apartment rent growth",
+      "source": "REJournals",
+      "link": "https://rejournals.com/all-that-new-supply-its-suppressing-apartment-rent-growth/?utm_source=rss&utm_medium=rss&utm_campaign=all-that-new-supply-its-suppressing-apartment-rent-growth",
+      "published": "Mon, 11 May 2026 09:56:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-005.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Multifamily Report",
+      "market": null,
+      "narrative": "A new report indicates that U.S. multifamily rent growth remains sluggish due to a historic wave of new supply, particularly in Sun Belt and Mountain West markets. While national average advertised rents saw a modest $4 increase in April to $1,758, year-over-year growth was negative 0.2%, and year-to-date growth was only 0.4%. Gateway and Midwest markets, including New York City, San Francisco, Chicago, and Minneapolis-St. Paul, are outperforming, with the Twin Cities projected for strong year-end growth due to more restrained new supply. Despite economic headwinds and moderating demand, opportunities may exist for investors in distressed assets and for operators focusing on expense reductions.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Yardi Matrix",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "National multifamily advertised rents increased by $4 in April 2026 to $1,758, marking the second consecutive month of growth after winter declines. However, national rents were down 0.2% year-over-year and up only 0.4% year-to-date through April, which is about one-third of the average growth pace seen between 2012 and 2019. High-supply markets like Austin (-4.3%), Denver (-3.6%), Tampa (-3.4%), and Phoenix (-2.7%) continued to show weak annual rent growth. In contrast, Gateway and Midwest markets like New York City (4.8%), San Francisco (4.1%), Chicago (3.3%), and Minneapolis-St. Paul (2.4%) outperformed. The national multifamily occupancy rate stood at 94.2% in March, down 0.5% year-over-year. Nearly 480,000 rental units are forecast to be delivered nationally in 2026, followed by about 450,000 units annually thereafter."
+    },
+    {
+      "title": "Marcus & Millichap closes sale of 36-unit apartment property in Falcon Heights",
+      "source": "REJournals",
+      "link": "https://rejournals.com/marcus-millichap-closes-sale-of-36-unit-apartment-property-in-falcon-heights/?utm_source=rss&utm_medium=rss&utm_campaign=marcus-millichap-closes-sale-of-36-unit-apartment-property-in-falcon-heights",
+      "published": "Mon, 11 May 2026 09:49:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-006.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Falcon Heights, MN",
+      "narrative": "Marcus & Millichap has brokered the sale of Falcon View Apartments, a 36-unit multifamily property in Falcon Heights, Minnesota, which traded for $5.09 million. The property, consisting of two buildings, offers a mix of one-, two-, and three-bedroom floor plans.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": "Falcon View Apartments",
+        "address": "1800-1818 Larpenteur Ave. W., Falcon Heights, MN",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 36,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 5090000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 1968,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 1.56,
+        "multi_asset_purchase": false,
+        "notable_features": "Located near the University of Minnesota's St. Paul campus.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "A Local Ownership Group",
           "people": []
         },
         {
-          "label": "OWNER",
-          "firm_name": "Leslie J. Garfield",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Platinum Forbes Global Properties",
+          "label": "SELLER BROKER",
+          "firm_name": "Marcus & Millichap",
           "people": [
             {
-              "name": "Dezireh Eyn",
-              "title": "CEO and co-founder"
+              "name": "Michael Jacobs",
+              "title": "Investment Specialist"
+            },
+            {
+              "name": "Abe Roberts",
+              "title": "Investment Specialist"
+            },
+            {
+              "name": "Tommy Hartwell",
+              "title": "Investment Specialist"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Texas Icon Ford Noe: Resetting brokerage growth through systems and talent development",
+      "source": "REJournals",
+      "link": "https://rejournals.com/texas-icon-ford-noe-resetting-brokerage-growth-through-systems-and-talent-development/?utm_source=rss&utm_medium=rss&utm_campaign=texas-icon-ford-noe-resetting-brokerage-growth-through-systems-and-talent-development",
+      "published": "Mon, 11 May 2026 09:34:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-007.html",
+      "transaction_type": null,
+      "article_type": "Feature / Profile",
+      "market": "Houston, TX",
+      "narrative": "This article profiles Ford Noe, the Senior Managing Director and Market Leader of Marcus & Millichap's Houston office, highlighting his strategic leadership in transforming the office into one of the firm's top-performing markets. Since taking the helm in 2018, Noe has quadrupled headcount and revenue, overseeing over $10 billion in transactional volume. His success is attributed to a focus on talent development and scalable systems, including the creation of a standardized, firmwide Summer Internship Program that has become a competitive entry point for aspiring commercial real estate professionals.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Marcus & Millichap",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Southern Methodist University's Cox School of Business",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Marcus & Millichap",
+          "people": [
+            {
+              "name": "Ford Noe",
+              "title": "Senior Managing Director and Market Leader"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "What you missed at the NYC Real Estate Forum",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/05/10/what-you-missed-at-the-nyc-real-estate-forum/",
+      "published": "Sun, 10 May 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-008.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "New York City, NY",
+      "narrative": "This article summarizes key discussions and debates from The Real Deal's NYC Real Estate Forum, highlighting various perspectives on the city's real estate market and policy. Topics included a defense of New York City's real estate market and criticism of tax programs, a contentious debate on brokerage listing transparency, and strong opposition to a proposed pied-\u00e0-terre tax. Additionally, discussions covered Vornado's commitment to a major office development, the Housing Preservation and Development Commissioner's efforts to improve landlord relations, and insights into a casino project's strategic site selection. The forum also featured a panel on the private credit market and a discussion on luxury development trends in Brooklyn and Queens.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Related Companies",
+          "people": [
+            {
+              "name": "Jeff Blau",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Corcoran",
+          "people": [
+            {
+              "name": "Pam Liebman",
+              "title": "CEO"
             }
           ]
         },
@@ -92,111 +415,74 @@
         },
         {
           "label": "OWNER",
-          "firm_name": "Corcoran",
+          "firm_name": "Vornado Realty Trust",
           "people": [
             {
-              "name": "Pam Liebman",
-              "title": "President and CEO"
-            }
-          ]
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Compass",
-          "people": [
-            {
-              "name": "Rob Reffkin",
-              "title": null
-            }
-          ]
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Anywhere Real Estate",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Howard Hanna",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Elegran Real Estate",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Forbes Global Properties Network",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "A solution for vacant units and Mamdani\u2019s trust problem",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/09/how-mamdani-can-fix-his-trust-problem-with-landlords/",
-      "published": "Sat, 09 May 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-10-002.html",
-      "transaction_type": null,
-      "article_type": "Opinion / Editorial",
-      "market": "New York City, NY",
-      "narrative": "This article offers an opinion on how the Mamdani administration can build trust with the real estate industry and address the issue of vacant housing units in New York City. The author suggests that despite initial friction, the administration is attempting to engage with industry leaders to achieve its goals of reducing rent growth and improving tenant conditions. A key proposal involves the city issuing an RFP for contractors to renovate vacant rent-stabilized units at scale, charging owners a fixed fee, and guaranteeing legal occupancy. The author argues this approach would be more efficient and cost-effective than new construction, help bring thousands of units back online, create jobs, and foster trust between the city and property owners.",
-      "data_points": null,
-      "companies_people": [
-        {
-          "label": "OWNER",
-          "firm_name": "A&E",
-          "people": [
-            {
-              "name": "Douglas Eisenberg",
-              "title": null
-            }
-          ]
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "The Real Deal",
-          "people": []
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "Real Estate Board of New York",
-          "people": []
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "New York Apartment Association",
-          "people": []
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "Small Property Owners of New York",
-          "people": []
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "Housing Preservation and Development",
-          "people": [
-            {
-              "name": "Dina Levy",
-              "title": "Commissioner"
-            }
-          ]
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "Mamdani Administration",
-          "people": [
-            {
-              "name": "Leila Bozorg",
-              "title": "Deputy Mayor"
+              "name": "Glen Weiss",
+              "title": "Co-Head of Real Estate"
             },
             {
-              "name": "Cea Weaver",
+              "name": "Steve Roth",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Bally's",
+          "people": [
+            {
+              "name": "Soo Kim",
+              "title": "Chairman"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Madison Realty Capital",
+          "people": [
+            {
+              "name": "Josh Zegen",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "TYKO Capital",
+          "people": [
+            {
+              "name": "Adi Chugh",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Charney Companies",
+          "people": [
+            {
+              "name": "Sam Charney",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "ZD Jasper Realty",
+          "people": [
+            {
+              "name": "Jasper Wu",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Douglas Elliman Development Marketing",
+          "people": [
+            {
+              "name": "Susan de Fran\u00e7a",
               "title": null
             }
           ]
@@ -207,26 +493,26 @@
       "market_intelligence": null
     },
     {
-      "title": "The Daily Dirt: Waiting for 485x reform? Mamdani admin says wait longer",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/09/mamdani-admin-says-still-evaluating-485x/",
-      "published": "Sat, 09 May 2026 11:30:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-10-003.html",
-      "transaction_type": "Sale",
+      "title": "South Florida\u2019s top deals: Waterfront Venetian Islands property trades for $35M",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/05/11/south-florida-top-real-estate-deals-may-8-2026/",
+      "published": "Mon, 11 May 2026 12:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-009.html",
+      "transaction_type": "Acquisition",
       "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "New York City officials indicate that reforms to the 485x tax abatement program, particularly regarding construction wage standards, are not imminent. Despite calls from both developers seeking weaker wage requirements and labor unions advocating for stronger ones, the Mamdani administration believes the 10-year program needs more time to mature. Deputy Mayor Leila Bozorg and Housing Preservation and Development Commissioner Dinah Levy expressed that developers have yet to provide sufficiently detailed underwriting to demonstrate where the program is falling short, making it premature to assess its effectiveness or propose changes.",
+      "market": "Miami, FL",
+      "narrative": "An affiliate of Alta Development acquired the Roadway Inn South Miami, a four-story, 117-key hotel property spanning approximately 96,000 square feet, for $23 million. The seller was an LLC tied to Francisco Martinez-Miyashiki of Pegaso. This transaction highlights continued investor interest in the South Florida hospitality market.",
       "data_points": {
-        "property_type": "multifamily",
-        "property_name": null,
-        "address": "324 West 15th Street, New York City, NY",
+        "property_type": "hotel",
+        "property_name": "Roadway Inn South Miami",
+        "address": "5959 Southwest 71st Street, Miami, FL",
         "address_sourced_separately": false,
-        "size_sf": 13600.0,
+        "size_sf": 96000.0,
         "size_units": null,
         "size_beds": null,
-        "size_keys": null,
+        "size_keys": 117,
         "rental_rate": null,
-        "sale_price": 19000000.0,
+        "sale_price": 23000000.0,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -237,74 +523,21 @@
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Four-story apartment building.",
+        "notable_features": null,
         "project_notes": null
       },
       "companies_people": [
-        {
-          "label": "SELLER",
-          "firm_name": "Corlears School",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "NYC\u2019s top deals: Chelsea school sells building for $19M",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/09/new-york-top-real-estate-deals-friday-may-8-2026/",
-      "published": "Sat, 09 May 2026 11:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-10-004.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "Corlears School sold its four-story, 19,800-square-foot property at 324 West 15th Street in Chelsea for $19 million. The school is shifting its focus to early childhood education. The buyer was a partnership led by Gabriel Saffayeh, Robert Saffayeh, and Elie Fouerti.",
-      "data_points": {
-        "property_type": "school",
-        "property_name": "Corlears School",
-        "address": "324 West 15th Street, New York City, NY",
-        "address_sourced_separately": false,
-        "size_sf": 19800.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": 19000000.0,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Four-story property.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "SELLER",
-          "firm_name": "Corlears School",
-          "people": []
-        },
         {
           "label": "BUYER",
-          "firm_name": "Partnership led by Gabriel Saffayeh, Robert Saffayeh and Elie Fouerti",
+          "firm_name": "Alta Development",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Pegaso",
           "people": [
             {
-              "name": "Gabriel Saffayeh",
-              "title": null
-            },
-            {
-              "name": "Robert Saffayeh",
-              "title": null
-            },
-            {
-              "name": "Elie Fouerti",
+              "name": "Francisco Martinez-Miyashiki",
               "title": null
             }
           ]
@@ -315,26 +548,106 @@
       "market_intelligence": null
     },
     {
-      "title": "How the Fort Worth Stockyards became a chess piece in a \u201cSuccession\u201d-level family drama",
-      "source": "The Real Deal \u2014 Texas",
-      "link": "https://therealdeal.com/texas/2026/05/09/succession-at-majestic-realty-pauses-stockyards-project/",
-      "published": "Sat, 09 May 2026 14:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-10-005.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "Fort Worth, TX / Dallas, TX / Austin, TX",
-      "narrative": "This article details the dramatic exit of Craig Cavileer, the developer behind the successful redevelopment of the Fort Worth Stockyards, from the project's second phase. His departure, stemming from a \"Succession\"-level family drama involving Majestic Realty and the Hickman family, has cast uncertainty over the future of the planned expansion, which includes high-end shopping and a hotel. The article also covers the wrongful termination lawsuit filed by former Fermi CEO Toby Neugebauer against the data center REIT, citing the company's struggles with its flagship development and a significant stock price drop. Additionally, Crow Holdings secured a five-year, fixed-rate refinancing loan for six buildings within its Old Parkland office complex in Dallas. Finally, a long-foreclosed IHOP site in Downtown Austin, previously owned by Nate Paul, sold at auction for nearly $13 million to Travis County Exchange Corporation, representing a significant discount from its appraised value and signaling a prime redevelopment opportunity.",
+      "title": "Despite Lincoln Park retail boom, LLJ working through $10M loan default",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/05/10/llj-defaults-on-lincoln-park-loan-despite-armitage-boom/",
+      "published": "Sun, 10 May 2026 15:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-010.html",
+      "transaction_type": null,
+      "article_type": "REO / Foreclosure",
+      "market": "Chicago, IL",
+      "narrative": "LLJ Ventures, a San Diego-based property investment firm, defaulted on a nearly $10 million loan against The Armitage Collection, a 33,000-square-foot retail property in Chicago's Lincoln Park. The loan, originated in late 2015, matured on January 6, leading special servicer Midland Loan Services to prepare for foreclosure and receivership. However, Midland is also considering a loan modification, and LLJ Ventures is reportedly close to an agreement to avoid formal foreclosure. The property is currently being marketed for sale by Mid-America Real Estate for $10.5 million, despite a recent appraisal valuing it at $13.1 million.",
       "data_points": {
         "property_type": "retail",
-        "property_name": "IHOP",
-        "address": "707 East Cesar Chavez Street, Austin, TX",
+        "property_name": "The Armitage Collection",
+        "address": "1123-1131 West Armitage Avenue, Chicago, IL",
+        "address_sourced_separately": false,
+        "size_sf": 33000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 10000000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Anchored by a childcare center with a 10-year renewal, and includes trendy lifestyle tenants. Located near the $3 billion Foundry Park riverfront megaproject.",
+        "project_notes": "Loan taken out in late 2015, matured on January 6. Property appraised at $13.1 million in March."
+      },
+      "companies_people": [
+        {
+          "label": "SPONSOR",
+          "firm_name": "LLJ Ventures",
+          "people": [
+            {
+              "name": "Flavio Borquez",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Midland Loan Services",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Mid-America Real Estate",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "JDL",
+          "people": [
+            {
+              "name": "Jim Letchinger",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Kayne Anderson",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "The Goddard School",
+        "Studio Lagree",
+        "Armitage Allergy & Asthma Associates",
+        "Bowie Barker"
+      ],
+      "financing": null,
+      "market_intelligence": "Lincoln Park's Armitage Avenue is experiencing a retail boom with low vacancy rates, attracting boutiques and digitally native brands. The area is seeing significant development, including the $3 billion Foundry Park riverfront megaproject, which plans 3,200 new housing units, primarily apartments."
+    },
+    {
+      "title": "Michael Shvo, Germans\u2019 exit from Transamerica Pyramid gets more complicated",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/05/10/transamerica-pyramid-complications-and-bay-area-office-questions/",
+      "published": "Sun, 10 May 2026 16:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-011.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "San Francisco, CA",
+      "narrative": "The sale of San Francisco's iconic Transamerica Pyramid has become embroiled in a legal dispute, with a new court filing raising questions about the true compensation received by asset manager Michael Shvo. The property, along with two adjacent buildings, was sold by a partnership including German institutional investors and Shvo to Cyprus-based Yoda PLC for $692 million. While Shvo initially reported receiving $34 million in fees, a lawsuit by Deutsche Finance America alleges he received an additional $45 million upon termination as asset manager, bringing his total to $79 million, while Deutsche Finance America claims it was not paid its owed $31 million. This controversy unfolds as the investors incurred significant losses, having acquired the property for $650 million in 2020 and invested $250 million in renovations.",
+      "data_points": {
+        "property_type": "office",
+        "property_name": "Transamerica Pyramid",
+        "address": "600 Montgomery St, San Francisco, CA",
         "address_sourced_separately": false,
         "size_sf": null,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 13000000.0,
+        "sale_price": 692000000.0,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -343,59 +656,142 @@
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": 0.8,
-        "multi_asset_purchase": false,
-        "notable_features": "Prime redevelopment opportunity for a hotel, office, or apartment tower project.",
-        "project_notes": "Property previously owned by Nate Paul and sold at foreclosure auction for approximately half its appraised value of $26.2 million."
+        "land_area_acres": null,
+        "multi_asset_purchase": true,
+        "notable_features": null,
+        "project_notes": "The property was previously acquired for $650 million in 2020, with an additional $250 million invested in renovations."
       },
       "companies_people": [
         {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Majestic Realty",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Hickman family",
-          "people": []
-        },
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Fermi",
-          "people": [
-            {
-              "name": "Toby Neugebauer",
-              "title": "former CEO"
-            },
-            {
-              "name": "Rick Perry",
-              "title": "former Texas Gov."
-            }
-          ]
-        },
-        {
-          "label": "SPONSOR",
-          "firm_name": "Crow Holdings",
-          "people": []
-        },
-        {
-          "label": "LENDER",
-          "firm_name": "American General Life Insurance Company",
+          "label": "BUYER",
+          "firm_name": "Yoda PLC",
           "people": []
         },
         {
           "label": "SELLER",
-          "firm_name": "Nate Paul",
+          "firm_name": "Bayerische Versorgunskammer (BVK)",
           "people": []
         },
         {
-          "label": "BUYER",
-          "firm_name": "Travis County Exchange Corporation",
+          "label": "SELLER",
+          "firm_name": "Michael Shvo",
           "people": []
         },
         {
-          "label": "LENDER",
-          "firm_name": "Bryan Hardeman",
+          "label": "OWNER",
+          "firm_name": "Deutsche Finance America",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Data Centers Are Becoming Industrial\u2019s Growth Engine",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/national/news/industrial/data-center-supply-chain-boosting-industrial-leasing-and-development-134509",
+      "published": "Sun, 10 May 2026 10:51:07 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-11-012.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Texas / North Carolina",
+      "narrative": "The artificial intelligence boom is significantly boosting the U.S. industrial real estate sector, extending beyond just data center development to manufacturing and logistics. Major tech and manufacturing firms are partnering to build new facilities, with Nvidia and Corning planning three manufacturing plants in North Carolina and Texas. This trend is validated by a 28% jump in manufacturing leasing activity in Q1 2026 compared to the previous year, with 27% of new manufacturing leases attributed to data center and tech supply chain companies. The demand is driven by the ongoing need for IT gear and critical systems, suggesting a stabilized long-term growth engine for industrial real estate rather than a temporary construction-related surge. Additionally, a growing network of logistics facilities is emerging to support the data center sector, with data center suppliers now accounting for 10% of new industrial leases for major logistics landlords like Prologis.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Nvidia",
+          "people": [
+            {
+              "name": "Jensen Huang",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Corning",
+          "people": [
+            {
+              "name": "Wendell Weeks",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Siemens",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Eaton",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "nVent",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Aaon",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Tesla",
+          "people": [
+            {
+              "name": "Elon Musk",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Intel",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "TSMC",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "CBRE",
+          "people": [
+            {
+              "name": "James Breeze",
+              "title": "Global Head of Industrial Research"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "The Blev Group",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Prologis",
+          "people": [
+            {
+              "name": "Chris Caton",
+              "title": "Managing Director, Global Strategy and Analytics"
+            }
+          ]
+        },
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "DPR Construction",
+          "people": []
+        },
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "Mortenson",
           "people": []
         }
       ],
