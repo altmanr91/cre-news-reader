@@ -1,23 +1,500 @@
 {
-  "date": "2026-05-17",
+  "date": "2026-05-18",
   "articles": [
     {
-      "title": "No profit, no project: Reynoso tries to demystify development",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/16/no-profit-no-project-pol-aims-to-demystify-development/",
-      "published": "Sat, 16 May 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-17-001.html",
+      "title": "Dollar Stores Have Been On a Tear \u2014 Here\u2019s What Could Spoil the Party",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/dollar-stores-2026-gas-prices-general-five-below/",
+      "published": "Mon, 18 May 2026 12:17:33 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-001.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "The dollar store sector, including Dollar General, Dollar Tree, and Five Below, experienced a strong performance in 2025, driven by consumers across all income brackets seeking value. These retailers announced significant expansion plans for 2026, including new store openings and extensive renovations, with Dollar General planning 450 new locations and over 4,000 remodels, and Dollar Tree aiming for 400 new stores and converting existing ones to a multi-price format. However, rising gas prices and broader economic pressures are expected to challenge this momentum, potentially shifting consumer spending away from discretionary items, as evidenced by recent declines in foot traffic for some chains like Dollar Tree, while others focused on necessities, like Dollar General, have maintained steady visitation.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Dollar General",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Dollar Tree",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Five Below",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Family Dollar",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Moody's Analytics",
+          "people": [
+            {
+              "name": "Scott Hoyt",
+              "title": "senior director of consumer economics"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "CoStar",
+          "people": [
+            {
+              "name": "Brandon Svec",
+              "title": "national director of retail analytics"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Placer.ai",
+          "people": [
+            {
+              "name": "Elizabeth Lafontaine",
+              "title": "director of research"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Ollie's",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Saks Global\u2019s Fire Sale Might Help It Out of Bankruptcy \u2014 But Kill the Business",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/saks-globals-bankruptcy-richard-baker/",
+      "published": "Mon, 18 May 2026 10:30:21 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-002.html",
+      "transaction_type": null,
+      "article_type": "Non-CRE / Business News",
+      "market": null,
+      "narrative": "Saks Global, formed by the 2024 merger of Saks Fifth Avenue and Neiman Marcus, has filed for bankruptcy after missing a $100 million bond payment in late 2025. The $7 billion luxury retail entity, which included Bergdorf Goodman and Saks Off 5th, was financed with $2.2 billion in loans, $1.5 billion from Apollo Global Management, and a $475 million equity injection from Amazon. Despite initial projections of $600 million in cost-saving synergies, the company struggled with integrating operations, extended vendor payment terms, and saw sales decline by 13% with a net loss of $288 million. The bankruptcy has led to the fire sale of numerous retail properties, significant job losses, and substantial debts owed to brand-name vendors.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Apollo Global Management",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Amazon",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Salesforce",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Simon Property Group",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Authentic Brands Group",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Hudson's Bay Company",
+          "people": [
+            {
+              "name": "Richard Baker",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Pentwater Capital",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Bracebridge Capital",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Bank of America",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Surmount",
+          "people": [
+            {
+              "name": "Glen Kunofsky",
+              "title": "Founder and CEO"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Moody's Ratings",
+          "people": [
+            {
+              "name": "Mickey Chadha",
+              "title": "Vice President of Corporate Finance"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Columbia Business School",
+          "people": [
+            {
+              "name": "Mark Cohen",
+              "title": "Former Director of Retail Studies"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Rosenberg & Estis",
+          "people": [
+            {
+              "name": "Andrew Gottesman",
+              "title": "Bankruptcy Attorney"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Sunday Summary: Let\u2019s Get Straight to the Power 100, Shall We?",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/sunday-summary-lets-get-straight-to-the-power-100-shall-we/",
+      "published": "Sun, 17 May 2026 13:00:39 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-003.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Power Ranking",
       "market": "New York City, NY",
-      "narrative": "This article discusses Brooklyn Borough President Antonio Reynoso's conditional recommendation for the Monitor Point development, a proposed 1,150-unit project on the Greenpoint waterfront. Reynoso's recommendation uniquely includes specific financial details, such as the 6.25% to 6.5% yield required by financiers for initial capital lending, to illustrate the economic realities of housing development. He emphasizes that developers need to generate profit to secure funding, and that public land projects like Monitor Point, which require upfront and ongoing costs to the developer, differ from those where land is transferred at nominal cost. Despite this detailed financial explanation, Reynoso ultimately aligns with the local Council member's demand for 50% affordable units, suggesting a mix of moderate-income households to make the project financially viable and socially diverse.",
+      "narrative": "This article summarizes the Commercial Observer's annual Power 100 list, highlighting key trends and notable figures in commercial real estate. It discusses the criteria for inclusion, emphasizing significant deals, new entrants, and returning champions. The piece also reflects on the impact of market trends like data center growth, CRE mergers and acquisitions, and the resurgence of retail, while acknowledging the passing of industry leaders and the influence of political figures on real estate development.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "LANDLORD",
+          "firm_name": "Property & Building Corporation",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Baker McKenzie",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "JLL",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Savills",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Vornado Realty Trust",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Tavros",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Chelsea Piers Fitness",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Brookfield",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Qatar Investment Authority",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Soloviev Group",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Related Companies",
+          "people": [
+            {
+              "name": "Stephen Ross",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "CEO",
+          "firm_name": "Benenson Capital Partners",
+          "people": [
+            {
+              "name": "Richard Kessler",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Colliers",
+          "people": [
+            {
+              "name": "Michael Hirschfeld",
+              "title": "Vice Chair"
+            },
+            {
+              "name": "Brian Hirschfeld",
+              "title": "Senior Vice President"
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Avison Young",
+          "people": [
+            {
+              "name": "Christian Stanton",
+              "title": "Principal"
+            },
+            {
+              "name": "Libby Hodes",
+              "title": "Director"
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Alvarez & Marsal Property Solutions",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "TSCG",
+          "people": [
+            {
+              "name": "Nichole Popovics",
+              "title": "President"
+            }
+          ]
+        },
+        {
+          "label": "CEO",
+          "firm_name": "Silverstein Properties",
+          "people": [
+            {
+              "name": "Larry Silverstein",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "CEO",
+          "firm_name": "Blackstone Real Estate Investment Trust",
+          "people": [
+            {
+              "name": "Wesley LePatner",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "CEO",
+          "firm_name": "Simon Property Group",
+          "people": [
+            {
+              "name": "David Simon",
+              "title": null
+            },
+            {
+              "name": "Eli Simon",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BROKER",
+          "firm_name": "Cushman & Wakefield",
+          "people": [
+            {
+              "name": "Bob Knakal",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BROKER",
+          "firm_name": "Eastdil Secured",
+          "people": [
+            {
+              "name": "Roy March",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Retail Leasing, Development Activity \u2018Slow and Steady\u2019 in Baltimore Market",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/retail-leasing-development-activity-slow-and-steady-in-baltimore-market/",
+      "published": "Mon, 18 May 2026 11:52:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-004.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Baltimore, MD",
+      "narrative": "The Baltimore retail market is experiencing a \"slow and steady\" pace in leasing and new development due to elevated interest rates, higher construction costs, and economic uncertainties, mirroring national trends. Despite these challenges, the market remains optimistic for a rebound in the latter half of 2026, driven by strong local fundamentals and consumer resilience, particularly in the food-and-beverage sector. Permitting delays in Baltimore City and surrounding counties continue to hinder tenant build-out processes, causing frustration and potentially derailing transactions. However, some projects are making positive strides, and the overall 4% retail vacancy rate is contributing to continued rental growth.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Kimco Realty",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "28 Walker Development",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "TREND Community Development Corp.",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "BJs' Wholesale Club",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Target",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Harris Teeter",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Michael's",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Crunch Fitness",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "T. Rowe Price",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Meals on Wheels of Central Maryland",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Aldi",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Tim Hortons",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Paris Baguette",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Mavis Tire & Brakes",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "National Tire & Battery",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "MacKenzie Retail",
+          "people": [
+            {
+              "name": "Tom Fidler",
+              "title": "Executive Vice President, Principal"
+            }
+          ]
+        }
+      ],
+      "tenants": [
+        "BJs' Wholesale Club",
+        "Target",
+        "Harris Teeter",
+        "Michael's",
+        "Crunch Fitness",
+        "T. Rowe Price",
+        "Meals on Wheels of Central Maryland",
+        "Aldi",
+        "Tim Hortons",
+        "Paris Baguette",
+        "Mavis Tire & Brakes"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Don\u2019t paint yourself into a corner: How to take a smarter approach to healthcare facility design",
+      "source": "REJournals",
+      "link": "https://rejournals.com/dont-paint-yourself-into-a-corner-how-to-take-a-smarter-approach-to-healthcare-facility-design/?utm_source=rss&utm_medium=rss&utm_campaign=dont-paint-yourself-into-a-corner-how-to-take-a-smarter-approach-to-healthcare-facility-design",
+      "published": "Mon, 18 May 2026 09:59:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-005.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "This article argues that healthcare facility design must prioritize flexibility and foresight to accommodate future changes in patient volumes, care delivery, and technology. The author emphasizes the importance of comprehensive site master planning to evaluate maximum building footprints, parking ratios, and infrastructure capacity upfront, rather than addressing these issues reactively. By making strategic, cost-effective investments in expandable systems and thoughtful building layouts, healthcare organizations can avoid costly retrofits and ensure seamless growth without disrupting patient experience.",
       "data_points": {
-        "property_type": "multifamily",
-        "property_name": "Monitor Point",
+        "property_type": null,
+        "property_name": null,
         "address": null,
         "address_sourced_separately": false,
         "size_sf": null,
-        "size_units": 1150,
+        "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
@@ -32,24 +509,19 @@
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Proposed 1,150-unit project on the Greenpoint waterfront, including market-rate and affordable units, a Greenpoint Monitor Museum, public realm amenities, park maintenance, and a new MTA bus-washing facility.",
-        "project_notes": "Initial lending contingent on developers demonstrating a 6.25% to 6.5% yield on initial investment. The MTA site requires upfront and ongoing costs from the developer, which need to be offset by market-rate units. The project is currently undergoing a rezoning process, with the City Council scheduled to vote next month. If rezoning is rejected, a smaller as-of-right project would still require the developer to build an MTA bus-washing facility and pay $29 million in ground rent."
+        "notable_features": null,
+        "project_notes": null
       },
       "companies_people": [
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Gotham Organization",
+          "firm_name": "Bremner Healthcare Real Estate",
           "people": [
             {
-              "name": "David Picket",
-              "title": null
+              "name": "Kevin Knue",
+              "title": "Executive Vice President and Partner"
             }
           ]
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Metropolitan Transportation Authority",
-          "people": []
         }
       ],
       "tenants": [],
@@ -57,41 +529,333 @@
       "market_intelligence": null
     },
     {
-      "title": "\u201cIt\u2019s going to hurt\u201d: NYC resi players push back on proposed cash sales tax",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/16/nyc-resi-players-react-to-proposed-tax-on-cash-sales/",
-      "published": "Sat, 16 May 2026 12:39:11 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-17-002.html",
+      "title": "Balancing Value, Equity, and Debt: A Simple 1031 Equation",
+      "source": "REJournals",
+      "link": "https://rejournals.com/balancing-value-equity-and-debt-a-simple-1031-equation/?utm_source=rss&utm_medium=rss&utm_campaign=balancing-value-equity-and-debt-a-simple-1031-equation",
+      "published": "Mon, 18 May 2026 09:58:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-006.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
-      "market": "New York City, NY",
-      "narrative": "New York state lawmakers are considering a new 1% tax on residential cash sales of $1 million or more in New York City, a proposal projected to generate $160 million annually to help fund the city's budget deficit. This potential tax, along with a recently announced annual levy on second homes valued at $5 million or more, has drawn significant criticism from real estate professionals. Industry experts express concern that the lack of clear details and the cumulative effect of these taxes could deter transactions, particularly given that cash deals accounted for 65% of all sales in the city last year, rising to 75% for sales over $1 million. Critics also suggest the projected revenue may be overstated, as it doesn't account for potential changes in buyer behavior or market activity.",
+      "market": null,
+      "narrative": "This article provides a detailed guide for investors navigating 1031 exchanges, emphasizing that successful tax deferral hinges on meticulously matching the value, equity, and debt of the relinquished property with the replacement property. The author, an attorney and qualified intermediary, explains the \"simple 1031 equation\" for full deferral, which requires the replacement purchase price to be greater than or equal to the amount realized, equity invested to be greater than or equal to net equity from the sale, and debt replaced to be greater than or equal to debt paid off or released (or offset by additional cash). The piece clarifies key terms like \"amount realized\" and \"net equity,\" distinguishing between transactional and operational expenses, and highlights common pitfalls such as neglecting debt replacement planning. It also briefly touches on how Delaware Statutory Trust (DST) offerings can assist in meeting debt replacement requirements.",
       "data_points": null,
       "companies_people": [
         {
-          "label": "SELLER",
-          "firm_name": "Naftali Group",
-          "people": []
-        },
-        {
-          "label": "BUYER",
-          "firm_name": "Salmira Residences",
-          "people": []
-        },
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Compass",
+          "label": "OTHER",
+          "firm_name": "Commercial Partners Exchange Company, LLC",
           "people": [
             {
-              "name": "Alexa Lambert",
+              "name": "Jeff Peterson",
+              "title": "President"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "AI reshaping retail real estate, but not how you might think",
+      "source": "REJournals",
+      "link": "https://rejournals.com/ai-reshaping-retail-real-estate-but-not-how-you-might-think/?utm_source=rss&utm_medium=rss&utm_campaign=ai-reshaping-retail-real-estate-but-not-how-you-might-think",
+      "published": "Mon, 18 May 2026 09:52:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-007.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Retail Report",
+      "market": null,
+      "narrative": "A new report from Colliers indicates that artificial intelligence (AI) is not diminishing the importance of brick-and-mortar retail, but rather enhancing it. The report, \"How AI Is Redefining Retail Real Estate in 2026,\" highlights that physical stores are evolving into crucial fulfillment centers, logistics hubs, and technology-driven customer experience destinations, supporting both digital and in-person commerce. This shift is driving 71% of retailers to expand their physical footprints in 2026, as one in four online orders is already fulfilled through a physical store, a figure projected to rise to 35.4% by 2030. The increasing consumer adoption of AI for product recommendations and purchasing decisions is also compelling retailers to invest significantly in in-store technology and integrated data infrastructure, creating new demands for landlords and developers.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Macy's",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Colliers",
+          "people": [
+            {
+              "name": "Anjee Solanki",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Texas Icon Heather Nguyen: Curating global retail concepts into lasting U.S. destinations",
+      "source": "REJournals",
+      "link": "https://rejournals.com/texas-icon-heather-nguyen-curating-global-retail-concepts-into-lasting-u-s-destinations/?utm_source=rss&utm_medium=rss&utm_campaign=texas-icon-heather-nguyen-curating-global-retail-concepts-into-lasting-u-s-destinations",
+      "published": "Mon, 18 May 2026 09:46:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-008.html",
+      "transaction_type": null,
+      "article_type": "Feature / Profile",
+      "market": null,
+      "narrative": "This article profiles Heather Nguyen, Managing Director of Asia Pacific Advisory Services and Executive Vice President at NewQuest, highlighting her unique approach to retail development. Nguyen specializes in identifying emerging retail concepts from Asia and curating them into successful, culturally rich destinations across U.S. markets. Her strategy focuses on creating platforms for Asian brands that resonate with mainstream audiences, bridging cultural nuances with market demands. Over her 30-year career, she has facilitated over $10 billion in transactions, emphasizing relationship-driven collaboration with entrepreneurs and international brands entering the U.S. market.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "NewQuest",
+          "people": [
+            {
+              "name": "Heather Nguyen",
+              "title": "Managing Director of Asia Pacific Advisory Services, Executive Vice President and Development Partner"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Toys Fore Kids Foundation",
+          "people": [
+            {
+              "name": "Heather Nguyen",
               "title": null
             },
             {
-              "name": "Alison Black",
+              "name": "Dr. Shawn Taher",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Marcus & Millichap closes sale of 12,000-square-foot industrial property in Midland",
+      "source": "REJournals",
+      "link": "https://rejournals.com/marcus-millichap-closes-sale-of-12000-square-foot-industrial-property-in-midland/?utm_source=rss&utm_medium=rss&utm_campaign=marcus-millichap-closes-sale-of-12000-square-foot-industrial-property-in-midland",
+      "published": "Mon, 18 May 2026 09:44:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-009.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Midland, TX",
+      "narrative": "Marcus & Millichap has brokered the sale of Coastal Pump & Equipment, a 12,000-square-foot industrial property in Midland, Texas. The single-tenant asset, built in 2019, sits on 6.66 acres and is leased to a water transfer equipment and service provider with approximately four years remaining on a triple-net lease featuring 2% annual rent increases. The transaction closed at 96% of the original list price, attracting multiple offers from out-of-state investors.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": "Coastal Pump & Equipment",
+        "address": "10616 W. County Road 75, Midland, TX",
+        "address_sourced_separately": false,
+        "size_sf": 12000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 2019,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 6.66,
+        "multi_asset_purchase": false,
+        "notable_features": "Located just north of Texas State Highway 191 between Midland and Odessa.",
+        "project_notes": "The property has approximately four years remaining on its triple-net lease with 2% annual rent increases."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Marcus & Millichap",
+          "people": [
+            {
+              "name": "Davis Cagle",
               "title": null
             },
             {
-              "name": "Lib Goss",
+              "name": "Chase Beasley",
+              "title": null
+            },
+            {
+              "name": "Adam Abushagur",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Coastal Production Systems LLC",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "Coastal Production Systems LLC"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "What to expect at ICSC 2026: Dealmaking, flaunting and partying in Vegas",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/05/17/what-to-expect-at-icsc-this-year/",
+      "published": "Sun, 17 May 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-010.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Las Vegas, NV",
+      "narrative": "The International Council of Shopping Centers (ICSC) conference in Las Vegas is anticipated to draw over 25,000 attendees for days of dealmaking and networking. This year's event features a \"Professional Development Day\" at the Wynn Las Vegas, followed by the main exhibition. The retail sector is experiencing stability, with national asking rents increasing by over 2% year-over-year to approximately $25 per square foot, driven by tight supply and positive net absorption. While the retail availability rate saw a slight increase to 5% due to some bankruptcies, grocery-anchored centers and suburban retail continue to outperform urban markets. Industry executives are attending to gauge market sentiment, explore new retail and food & beverage concepts for developments, discuss debt strategies amid upcoming loan maturities, and delve into the practical implementation of AI in commercial real estate.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Cedars-Sinai",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Ashkenazy Acquisition Corp.",
+          "people": [
+            {
+              "name": "Ben Ashkenazy",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Cain",
+          "people": [
+            {
+              "name": "Larry Green",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Datex Property Solutions",
+          "people": [
+            {
+              "name": "Mark Sigal",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "JLL",
+          "people": [
+            {
+              "name": "Naveen Jaggi",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Vestar",
+          "people": [
+            {
+              "name": "Kean Thomas",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Northmarq",
+          "people": [
+            {
+              "name": "Ani Paulson",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "NewMark Merrill Companies",
+          "people": [
+            {
+              "name": "Edie Trott",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Prism & Partners",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Macerich",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Newmark",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Meridian Capital",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Retail availability rate rose slightly to 5% due to retailer bankruptcies and store closures. Grocery-anchored centers are performing better than older malls, and suburban retail is outperforming downtown retail. Manhattan and Los Angeles had higher availability rates compared to markets in the Sun Belt."
+    },
+    {
+      "title": "Why this West Village \u201ctownhouse\u201d was a hard sell",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/05/17/why-this-west-village-townhouse-was-a-hard-sell/",
+      "published": "Sun, 17 May 2026 17:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-011.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "A unique tenancy-in-common townhouse unit in New York City's West Village, located at 197 West Houston Street, finally sold for $2.1 million after a year on the market. The property, which was listed at a significant discount to area averages, presented challenges due to its shared ownership structure with an upstairs unit, making traditional mortgage financing difficult and requiring a cash buyer. The sale highlights the complexities of co-ownership arrangements, especially those established decades ago, and the increasing interest in shared property ownership as a solution to high housing costs in competitive markets.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": null,
+        "address": "197 West Houston Street, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 2100000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Features real oak floors, a working wood-burning fireplace, and a hidden back garden.",
+        "project_notes": "The property is a two-family home with a tenancy-in-common deed, where two parties have 50-50 ownership. The downstairs unit was sold, while the upstairs unit remains occupied by the original co-owner. The sellers previously acquired their unit in 2017 for $2 million and invested approximately $500,000 in renovations."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Serhant",
+          "people": [
+            {
+              "name": "Frayda Resnick",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Corcoran",
+          "people": [
+            {
+              "name": "Roni Rose",
               "title": null
             }
           ]
@@ -101,7 +865,7 @@
           "firm_name": "Compass",
           "people": [
             {
-              "name": "Ben Glazer",
+              "name": "Bridget Harvey",
               "title": null
             }
           ]
@@ -109,63 +873,53 @@
       ],
       "tenants": [],
       "financing": null,
-      "market_intelligence": null
+      "market_intelligence": "The cost of buying in New York City is expensive, leading to increased interest in shared property ownership arrangements. Some brokers are developing a niche in helping friends buy townhouses together, often utilizing state attorney general's office routes to convert buildings into condos for easier future sales."
     },
     {
-      "title": "NY Dirt: Latest pied-\u00e0-terre update like \u201ca night at improv\u201d",
+      "title": "A Brooklyn dealmaker\u2019s legal avalanche",
       "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/16/nyc-pied-a-terre-tax-details-highlight-fuzzy-math/",
-      "published": "Sat, 16 May 2026 11:30:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-17-003.html",
+      "link": "https://therealdeal.com/new-york/2026/05/17/a-brooklyn-dealmakers-legal-avalanche/",
+      "published": "Sun, 17 May 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-012.html",
       "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
+      "article_type": "CRE Legal / Regulatory",
       "market": "New York City, NY",
-      "narrative": "New York Governor Kathy Hochul has proposed a two-step plan to implement a pied-\u00e0-terre tax on second homes, primarily targeting condos and co-ops with a \"market value\" of at least $1 million, which the Department of Finance estimates to be equivalent to a $5 million sales value. The second step, to be enacted two years later, involves creating an entirely new metric for valuing co-op and condo sales. Critics argue that the proposed valuation methods are unclear and inconsistent with actual sales prices, highlighting the complexity of implementing such a tax. The plan is seen by some as a deferral of a clear policy, raising doubts about the city's ability to develop a robust valuation system within the two-year timeframe.",
+      "narrative": "Brooklyn dealmaker Bert I. Dweck of Dweck Group is facing a series of seven lawsuits in New York state court, seeking at least $14.4 million. The lawsuits allege a pattern of unpaid loans, diverted escrow funds, and checks tied to frozen or nonexistent accounts, painting a picture of a slow-motion collapse rather than routine business disputes. Investors claim Dweck pitched acquisitions, collected deposits, or partnership capital, but then failed to close deals or return funds, with some allegations including fraudulent documents and improper release of escrow money. Lenders also allege defaults on significant loans and attempts at repayment with bounced checks and failed transfers.",
       "data_points": null,
       "companies_people": [
         {
           "label": "OWNER",
-          "firm_name": "Extell Development",
+          "firm_name": "Dweck Group",
           "people": [
             {
-              "name": "Gary Barnett",
+              "name": "Bert I. Dweck",
               "title": null
             }
           ]
         },
         {
-          "label": "SELLER BROKER",
-          "firm_name": "Douglas Elliman",
+          "label": "LENDER",
+          "firm_name": "Patriarch President Capital",
           "people": []
         },
         {
-          "label": "LEASING AGENT",
-          "firm_name": "Sotheby's International Realty",
+          "label": "LENDER",
+          "firm_name": "Gary Porat",
           "people": []
         },
         {
-          "label": "OTHER",
-          "firm_name": "Compass",
-          "people": [
-            {
-              "name": "Jason Haber",
-              "title": null
-            }
-          ]
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "American Real Estate Association",
+          "label": "LENDER",
+          "firm_name": "Mordechai Samet",
           "people": []
         },
         {
-          "label": "OTHER",
-          "firm_name": "Marketproof",
+          "label": "OWNER",
+          "firm_name": "Luis Manuel Diaz",
           "people": []
         },
         {
-          "label": "OTHER",
-          "firm_name": "Urban Institute",
+          "label": "OWNER",
+          "firm_name": "Senelda Diaz",
           "people": []
         }
       ],
@@ -174,26 +928,399 @@
       "market_intelligence": null
     },
     {
-      "title": "NYC\u2019s top deals: Brooklyn Heights townhouse sells for $13M",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/16/new-york-top-real-estate-deals-friday-may-15-2026/",
-      "published": "Sat, 16 May 2026 11:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-17-004.html",
-      "transaction_type": "Acquisition",
+      "title": "South Florida\u2019s top deals: 5-acre dev site near the Everglades trades hands",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/05/18/south-florida-top-real-estate-deals-may-15-2026/",
+      "published": "Mon, 18 May 2026 12:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-013.html",
+      "transaction_type": "Sale",
       "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "Extell Development Company has acquired a significant development site at 405-407 Park Avenue in Midtown for approximately $451 million. The transaction involved multiple sellers, including Corem Property Group AB and a joint venture between Deutsche Bank's asset management arm and MRP Realty. This acquisition also includes air rights from the nearby Central Synagogue, indicating a strategic move for future development in a prime Manhattan location.",
+      "market": "Miami, FL",
+      "narrative": "A 5-acre development site in Miami, located within Miami-Dade County's Urban Development Boundary, was sold for $11.3 million. The transaction involved Silver Eagle Enterprises as the seller and a trust as the buyer, marking the most expensive commercial deal in South Florida for the period.",
       "data_points": {
-        "property_type": "development site",
+        "property_type": "land",
         "property_name": null,
-        "address": "405-407 Park Avenue, New York City, NY",
+        "address": "90 Northwest 137th Avenue, Miami, FL",
         "address_sourced_separately": false,
         "size_sf": null,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 451000000.0,
+        "sale_price": 11300000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 5.0,
+        "multi_asset_purchase": false,
+        "notable_features": "Site is within Miami-Dade County's Urban Development Boundary.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "Silver Eagle Enterprises",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Avison Young",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "South Florida Dirt: In Brickell, Michael Stern fights foreclosure. In Miami Beach, his proposed tower moves on without him",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/05/17/michael-stern-marquee-miami-projects/",
+      "published": "Sun, 17 May 2026 17:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-014.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "Miami, FL",
+      "narrative": "This article details the contrasting fates of two major South Florida development projects by Michael Stern's JDS Development Group. In Miami Beach, JDS transferred its ownership stake in the 1250 West Avenue condo tower project to Terra, which subsequently secured unanimous design approval for the 28-story building after JDS's earlier efforts to obtain an upzoning. Meanwhile, in Brickell, JDS is embroiled in a foreclosure lawsuit with its new lender, Cottonwood Management, over the stalled Mercedes-Benz Places development, with Cottonwood alleging default and JDS accusing the lender of violating a non-disclosure agreement.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "JDS Development Group",
+          "people": [
+            {
+              "name": "Michael Stern",
+              "title": "Founder"
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Terra",
+          "people": [
+            {
+              "name": "David Martin",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Cottonwood Management",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Chikoo Patel strikes back against Shai Wolkowicki in battle over Chicago multifamily meltdown",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/05/18/chikoo-patel-countersues-shai-wolkowicki/",
+      "published": "Mon, 18 May 2026 11:15:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-015.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "Chicago, IL",
+      "narrative": "A legal dispute is escalating between former partners Chikoo Patel and Shai Wolkowicki over a collapsed multifamily portfolio in Chicago. Patel, the former head of CKO Real Estate, is counter-suing Wolkowicki and his own former attorney, Animesh Ravani, alleging they fraudulently induced him to sign an \"Interim Settlement Agreement\" that stripped him of his 40% equity stake in 46 property-owning entities. Patel claims he was misled into forfeiting his equity and agreeing to pay $2 million based on a false verbal promise of future property sale offsets, while also accusing his attorney of professional misconduct for drafting an \"unconscionable\" settlement that benefited Ravani, who was also an investor. Wolkowicki's camp, however, argues Patel's counterclaims are a desperate attempt to reverse a legally binding agreement where Patel admitted sole responsibility for unauthorized fund transfers.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "CKO Real Estate",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Byline Bank",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Old National Bank",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Renovo Financial",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Itria Ventures",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "ROC Development Group",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Shai Wolkowicki",
+          "people": [
+            {
+              "name": "Shai Wolkowicki",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Chikoo Patel",
+          "people": [
+            {
+              "name": "Chikoo Patel",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Animesh Ravani",
+          "people": [
+            {
+              "name": "Animesh Ravani",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Northstone Law",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Reactions to Zillow-MRED lawsuit expose fault lines in fight over listing data",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/05/17/zillow-lawsuit-deepens-industry-rift-over-listing-data/",
+      "published": "Sun, 17 May 2026 14:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-016.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "Chicago, IL",
+      "narrative": "Zillow has filed a lawsuit against Midwest Real Estate Data (MRED), the Chicago-area Multiple Listing Service, and Compass, alleging that MRED colluded with Compass to force Zillow to display Compass's private listings nationwide or lose access to its Chicago data feed. This legal action highlights a broader industry debate over the control and transparency of listing data, questioning whether homesellers should be able to market properties privately or if a fully public market best serves consumers. Zillow argues that MRED, whose board includes Compass-affiliated brokers, is acting as a competitor rather than a neutral marketplace, potentially harming broader market access and consumer interests. The outcome of this lawsuit could significantly impact how MLSs nationwide interact with listing portals and brokerages, potentially leading to more fragmented listing data if Zillow loses, or setting a precedent for broader data distribution if Zillow prevails.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Zillow",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Midwest Real Estate Data (MRED)",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Compass",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Kale Realty",
+          "people": [
+            {
+              "name": "D.J. Paris",
+              "title": "President of Sales and Marketing"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Coldwell Banker Real Estate Group",
+          "people": [
+            {
+              "name": "Nicole Minier",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Corcoran Urban Real Estate",
+          "people": [
+            {
+              "name": "Matt Silver",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Compass International Holdings",
+          "people": [
+            {
+              "name": "Robert Reffkin",
+              "title": "CEO"
+            },
+            {
+              "name": "Fran Broude",
+              "title": "Regional Vice President for much of the Midwest"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Council of Multiple Listing Services",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Dallas-based Bray Real Estate joins Compass",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/05/18/independent-brokerage-bray-real-estate-joins-compass/",
+      "published": "Mon, 18 May 2026 11:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-017.html",
+      "transaction_type": null,
+      "article_type": "Non-CRE / Business News",
+      "market": "Dallas, TX",
+      "narrative": "Bray Real Estate Group, a Dallas-based brokerage, has joined Compass, integrating over 100 agents across Dallas-Fort Worth, Austin, and Houston. This move significantly expands Compass's residential brokerage presence in key Texas markets, particularly in the North Texas suburbs, and follows Bray Real Estate's reported brokerage volume of over $475 million last year. The decision was driven by Compass's technology platform, according to Bray's co-founder.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Compass",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Bray Real Estate Group",
+          "people": [
+            {
+              "name": "Chase Bray",
+              "title": null
+            },
+            {
+              "name": "Melanie Bray",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Rogers Healy and Associates Real Estate",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Realty Austin",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Realty San Antonio",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "@properties",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Christie's International Real Estate",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Christie's International Real Estate @properties Lone Star",
+          "people": [
+            {
+              "name": "Jerry Mooty Jr.",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Nan & Company",
+          "people": [
+            {
+              "name": "Nancy Almodovar",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "California\u2019s housing debate breaks in a new direction",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/05/17/becerra-proposes-housing-emergency-as-sf-ditches-union-labor/",
+      "published": "Sun, 17 May 2026 16:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-018.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "California",
+      "narrative": "California's gubernatorial race is seeing the state's housing crisis reshape political discourse, with candidates proposing diverse and sometimes radical solutions. One leading candidate has pledged to declare a state of emergency over the housing shortage, granting the governor broad powers to suspend regulations and allocate funds, while another has suggested expanding developed land to accommodate millions of new homes. The debate also highlights growing tensions over the high cost of union labor in residential construction, with some industry leaders now considering non-union alternatives to make projects financially viable amidst rising costs.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Farmers Insurance Group",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Building and Construction Trades Council",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Revel Architecture & Design",
+          "people": [
+            {
+              "name": "Scott Clement",
+              "title": "CEO"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Sachem Capital, IRG to Form $3.4B Industrial REIT",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/sachem-capital-irg-to-form-3-4b-industrial-reit/",
+      "published": "Mon, 18 May 2026 11:37:09 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-019.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": null,
+      "narrative": "Sachem Capital Corp., a mortgage REIT, and Industrial Realty Group (IRG) have entered into a definitive contribution agreement to form IRG Realty Trust, Inc. (IRGT). IRG will contribute 98 industrial assets from its portfolio to Sachem, creating a combined entity with an implied enterprise value of approximately $3.4 billion. The new REIT will focus on mission-critical industrial infrastructure, supporting manufacturing and distribution users, and is expected to become a top-10 publicly listed industrial REIT by enterprise value. Sachem's CEO noted that the transaction provides a powerful industrial platform with greater scale and a strategy for sustained growth, while also allowing Sachem's mortgage capabilities to continue providing capital solutions.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -205,37 +1332,37 @@
         "land_area_acres": null,
         "multi_asset_purchase": true,
         "notable_features": null,
-        "project_notes": "Sellers were reportedly seeking north of $500 million for the site. Extell also acquired air rights from the nearby Central Synagogue."
+        "project_notes": "IRG will contribute 98 industrial assets from its 200-asset portfolio to Sachem Capital Corp. The combined company will operate as IRG Realty Trust, Inc. (IRGT) and is expected to have an implied enterprise value of approximately $3.4 billion."
       },
       "companies_people": [
         {
           "label": "BUYER",
-          "firm_name": "Extell Development Company",
-          "people": []
+          "firm_name": "Sachem Capital Corp.",
+          "people": [
+            {
+              "name": "John Villano",
+              "title": "CEO"
+            }
+          ]
         },
         {
           "label": "SELLER",
-          "firm_name": "Corem Property Group AB",
+          "firm_name": "Industrial Realty Group (IRG)",
           "people": []
         },
         {
-          "label": "SELLER",
-          "firm_name": "Deutsche Bank",
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Scotiabank",
           "people": []
         },
         {
-          "label": "SELLER",
-          "firm_name": "MRP Realty",
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Piper Sandler & Co.",
           "people": []
         },
         {
-          "label": "BUYER",
-          "firm_name": "Lightstone Capital",
-          "people": []
-        },
-        {
-          "label": "SELLER",
-          "firm_name": "Trigild",
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Stout Risius Ross, LLC",
           "people": []
         }
       ],
@@ -244,63 +1371,76 @@
       "market_intelligence": null
     },
     {
-      "title": "Can JLL smooth out Sundance Square leasing as Sasha and Ed Bass\u2019 step back?",
-      "source": "The Real Deal \u2014 Texas",
-      "link": "https://therealdeal.com/texas/2026/05/16/sasha-and-ed-bass-hand-off-retail-leasing-at-sundance-square/",
-      "published": "Sat, 16 May 2026 14:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-17-005.html",
+      "title": "The 'Whale Hunting' Era Of Data Center Development May Be Ending",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/national/news/data-center-development/whale-hunting-bragawatts-era-data-center-development-ending-134612",
+      "published": "Sun, 17 May 2026 09:47:22 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-18-020.html",
       "transaction_type": null,
-      "article_type": "Market Research / Leasing Assignment",
-      "market": "Fort Worth, TX",
-      "narrative": "JLL has been appointed to manage retail leasing for Sundance Square, a 35-block mixed-use district in Downtown Fort Worth. This move follows criticism of the previous stewardship by Sasha and Ed Bass, who took control in 2019 and faced challenges including high vacancy rates and tenant complaints about untenable rent increases and unfulfilled marketing services. The Basses also appointed LanCarte Commercial Real Estate to handle office leasing a few months prior, signaling a shift in management strategy for the prominent downtown area.",
-      "data_points": {
-        "property_type": "mixed-use",
-        "property_name": "Sundance Square",
-        "address": "420 Main St, Fort Worth, TX",
-        "address_sourced_separately": true,
-        "size_sf": null,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "35-block mixed-use district in Downtown Fort Worth.",
-        "project_notes": "Previous stewardship by Sasha and Ed Bass since 2019 faced criticism for high vacancy rates and tenant issues."
-      },
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "The data center industry is experiencing a shift from the development of remote, gigawatt-scale hyperscale campuses, often dubbed \"bragawatts\" due to their speculative nature, towards smaller facilities of 100 MW or less located closer to major population centers. This change is driven by the increasing demand for AI inference computing, which requires lower latency and proximity to end-users, as opposed to the training of large language models that fueled the initial boom. Industry leaders note that these smaller, \"edge\" data centers are more feasible to develop, often utilizing infill sites like former industrial plants with existing power infrastructure, allowing for quicker deployment and better grid connectivity.",
+      "data_points": null,
       "companies_people": [
         {
           "label": "OWNER",
-          "firm_name": "Sundance Square",
+          "firm_name": "Google",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Amazon",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "xAI",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Meta",
+          "people": []
+        },
+        {
+          "label": "LAW FIRM",
+          "firm_name": "Mintz",
           "people": [
             {
-              "name": "Sasha Bass",
-              "title": null
-            },
-            {
-              "name": "Ed Bass",
-              "title": null
+              "name": "Josh Rudin",
+              "title": "Co-chair of the digital infrastructure practice"
             }
           ]
         },
         {
-          "label": "LEASING AGENT",
-          "firm_name": "JLL",
+          "label": "INVESTOR",
+          "firm_name": "Harrison Street",
+          "people": [
+            {
+              "name": "Michael Borchetta",
+              "title": "Senior Managing Director and Head of North American Transactions"
+            }
+          ]
+        },
+        {
+          "label": "REIT",
+          "firm_name": "Equinix",
           "people": []
         },
         {
-          "label": "LEASING AGENT",
-          "firm_name": "LanCarte Commercial Real Estate",
+          "label": "CHIPMAKER",
+          "firm_name": "Nvidia",
           "people": []
+        },
+        {
+          "label": "INVESTOR",
+          "firm_name": "Keith Wharton Equity Partners",
+          "people": [
+            {
+              "name": "Adam Krupp",
+              "title": null
+            }
+          ]
         }
       ],
       "tenants": [],
