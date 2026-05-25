@@ -1,112 +1,161 @@
 {
-  "date": "2026-05-24",
+  "date": "2026-05-25",
   "articles": [
     {
-      "title": "States defang housing opponents, but NIMBYs claw back",
-      "source": "The Real Deal \u2014 National",
-      "link": "https://therealdeal.com/national/2026/05/23/states-defang-housing-opponents-but-la-nimbys-fight-back/",
-      "published": "Sat, 23 May 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-001.html",
+      "title": "Sunday Summary: Retail, Hospitality, ICSC and a Big Merger",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/05/sunday-summary-retail-hospitality-icsc-and-a-big-merger/",
+      "published": "Sun, 24 May 2026 13:00:14 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-25-001.html",
       "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
-      "market": "Los Angeles, CA",
-      "narrative": "This article discusses the ongoing legislative battles in states like Florida, California, and New York, where state governments are attempting to streamline housing development by curtailing local obstructionism, often referred to as 'NIMBYism'. Despite state-level efforts to expedite projects, local opposition groups continue to employ various tactics, including environmental concerns and even the presence of wildlife, to delay or halt developments. The piece highlights a specific case in Woodland Hills, California, where a developer's plan to convert a golf course into a residential community is facing significant local resistance, illustrating the challenges in overcoming entrenched 'not in my backyard' sentiments.",
-      "data_points": {
-        "property_type": "multifamily",
-        "property_name": "Woodland Hills Country Club redevelopment",
-        "address": "4868 Canoga Avenue, Woodland Hills, CA",
-        "address_sourced_separately": false,
-        "size_sf": null,
-        "size_units": 398,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": 20.0,
-        "multi_asset_purchase": false,
-        "notable_features": "97 units designated as affordable housing.",
-        "project_notes": "The site was previously a golf course."
-      },
+      "article_type": "Market Research / Conference Summary",
+      "market": null,
+      "narrative": "This article summarizes key discussions and insights from the ICSC conference in Las Vegas, focusing on the retail and hospitality sectors. Experts debunked myths about e-commerce penetration, noting it has remained around 16% of total retail sales for the past two years, which is positive news for physical retail. The market is experiencing a turnaround with low availability and positive absorption, driven by limited new construction, demolition of older malls, and a resurgence of retail brands, particularly in value-oriented segments like mass merchants, grocers, and off-price retailers. The article also highlights the growing trend of entertainment spaces, including trampoline parks, fitting into a 'barbell economy' where both high-net-worth individuals and budget-conscious consumers seek value. Additionally, it touches on the struggles of anchor stores like Saks Fifth Avenue and the flourishing dollar store segment benefiting from consumers seeking value amidst inflation.",
+      "data_points": null,
       "companies_people": [
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Arrimus Capital",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Kathie Lee Gifford\u2019s headline listing and Greenwich\u2019s lux surge",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/23/kathie-lees-nine-figure-ask-and-greenwichs-lux-surge/",
-      "published": "Sat, 23 May 2026 14:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-002.html",
-      "transaction_type": null,
-      "article_type": "Property Listing / For Sale",
-      "market": "Greenwich, CT",
-      "narrative": "Kathie Lee Gifford has listed her waterfront estate in Riverside, CT, for $100 million, a price point that would make it one of the most expensive residential sales in Greenwich if achieved. While the property boasts significant acreage and water access, some market observers believe the asking price is aspirational and the property may trade closer to $40 million, especially given the likelihood of a teardown. The listing comes amidst a surge in Greenwich's luxury market, which has seen a significant increase in high-value home sales and a corresponding depletion of inventory.",
-      "data_points": {
-        "property_type": "single family",
-        "property_name": null,
-        "address": "108 Cedar Cliff, Riverside, CT",
-        "address_sourced_separately": false,
-        "size_sf": null,
-        "size_units": null,
-        "size_beds": 8,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": 100000000.0,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": 3.0,
-        "multi_asset_purchase": false,
-        "notable_features": "Waterfront estate with views of Long Island Sound and the Manhattan skyline, includes a pier, dock, and private beach.",
-        "project_notes": "Property was purchased by Kathie Lee Gifford and Frank Gifford in the early 1990s."
-      },
-      "companies_people": [
-        {
-          "label": "SELLER",
-          "firm_name": "Individual",
+          "firm_name": "Hudson Companies",
           "people": [
             {
-              "name": "Kathie Lee Gifford",
-              "title": null
+              "name": "Isaac Henderson",
+              "title": "Principal and Co-Head of Development"
             }
           ]
         },
         {
-          "label": "SELLER BROKER",
-          "firm_name": "Sotheby's International Realty",
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "MAG Partners",
           "people": [
             {
-              "name": "Leslie McElwreath",
+              "name": "Andrew Staniforth",
+              "title": "Co-Head of Development"
+            },
+            {
+              "name": "Aida Stoddard",
+              "title": "Co-Head of Development"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "AvalonBay",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Equity Residential",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Scion Group",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Ares Management",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Harrison Street Asset Management",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "TSCG",
+          "people": [
+            {
+              "name": "Nichole Popovics",
+              "title": "President"
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "CBRE",
+          "people": [
+            {
+              "name": "Ebere Anokute",
+              "title": "Head of Retail Research for the Americas"
+            },
+            {
+              "name": "Scott Schnuckel",
+              "title": "Managing Director of Retail for the Americas"
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Axiom Retail Advisors",
+          "people": [
+            {
+              "name": "Lea Clay Park",
               "title": null
             }
           ]
         },
         {
           "label": "LEASING AGENT",
-          "firm_name": "Douglas Elliman",
+          "firm_name": "JLL",
           "people": [
             {
-              "name": "Megan Sullivan",
+              "name": "James Cook",
+              "title": null
+            },
+            {
+              "name": "Angela Gentry",
+              "title": "Vice Chairman of Leasing Advisory"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Honigman",
+          "people": [
+            {
+              "name": "David Vallas",
+              "title": "Partner"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "CoStar",
+          "people": [
+            {
+              "name": "Brandon Svec",
+              "title": "National Director of Analytics"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Brookfield",
+          "people": [
+            {
+              "name": "Ed Hogan",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Vornado",
+          "people": [
+            {
+              "name": "Ed Hogan",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Rockefeller Group",
+          "people": [
+            {
+              "name": "Isaac Henderson",
               "title": null
             }
           ]
@@ -114,58 +163,63 @@
       ],
       "tenants": [],
       "financing": null,
-      "market_intelligence": "Greenwich's luxury market has seen 39 homes trade for over $10 million last year, nearly double the previous year. Current inventory is significantly low, with only 100-105 homes on the market compared to 600-700 pre-pandemic. The Upper East Side townhouse market recorded nearly $283 million in deals during Q1 2026, an 80% increase year-over-year, with an average sale price of $16.6 million."
+      "market_intelligence": "The retail market has seen three straight quarters of positive absorption. Record-low vacancy rates in retail are leading to growing rents, driven by a long trend of limited new shopping center construction, demolition of older malls, and growth in retail brands, particularly mass merchants, grocers, off-price, and food and beverage."
     },
     {
-      "title": "Hotel union deal puts NYC owners on notice",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/23/hotel-union-deal-puts-nyc-owners-on-notice/",
-      "published": "Sat, 23 May 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-003.html",
+      "title": "Is NYC\u2019s proposed cash-buyer tax already dead on arrival?",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/05/24/will-nycs-cash-deal-tax-pass/",
+      "published": "Mon, 25 May 2026 01:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-25-002.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
       "market": "New York City, NY",
-      "narrative": "New York City's hotel industry has reached a tentative eight-year labor agreement with the Hotel and Gaming Trades Council, covering nearly 30,000 workers across more than 250 properties. The deal, which is expected to be ratified, includes significant wage increases, with housekeepers projected to earn over $100,000 annually by the sixth year. While the agreement averts a strike ahead of the 2026 FIFA World Cup, hotel owners are concerned about the substantial increase in payroll obligations, which they believe will impact their bottom line amidst rising inflation, tariffs, and borrowing costs. Operators are expected to attempt to raise room rates to offset these increased expenses.",
+      "narrative": "A proposed 1% tax on all-cash home purchases over $1 million in New York City, intended to generate $160 million annually to address the city's budget deficit, is reportedly facing strong opposition and may be withdrawn. The residential real estate industry has reacted negatively, arguing that cash transactions are a significant portion of the market, especially at the high end, and the tax would further burden an already challenged market. Critics suggest the tax could lead buyers to circumvent the rule by taking out small mortgages or restructuring deals, potentially slowing transactions and complicating development underwriting. The proposal, introduced late in the budget process, has drawn comparisons to other controversial measures like the pied-\u00e0-terre tax and Los Angeles's 'mansion tax,' which have shown mixed results and, in some cases, chilled luxury investment activity.",
       "data_points": null,
       "companies_people": [
         {
           "label": "OTHER",
-          "firm_name": "Hotel and Gaming Trades Council",
+          "firm_name": "Jonathan Miller",
           "people": [
             {
-              "name": "Rich Maroko",
-              "title": "President"
-            }
-          ]
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "BD Hotels",
-          "people": [
-            {
-              "name": "Richard Born",
-              "title": "principal"
+              "name": "Jonathan Miller",
+              "title": "Appraiser"
             }
           ]
         },
         {
           "label": "OTHER",
-          "firm_name": "LW Hospitality Advisors",
-          "people": [
-            {
-              "name": "Daniel Lesser",
-              "title": "Industry consultant"
-            }
-          ]
-        },
-        {
-          "label": "OTHER",
-          "firm_name": "CoStar",
+          "firm_name": "Zillow",
           "people": []
         },
         {
           "label": "OTHER",
-          "firm_name": "Independent Budget Office",
+          "firm_name": "Midwest Real Estate Data",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Compass",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Vornado",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Hotel and Gaming Trades Council",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Douglas Elliman",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Google",
           "people": []
         }
       ],
@@ -174,26 +228,26 @@
       "market_intelligence": null
     },
     {
-      "title": "The Daily Dirt: Hochul\u2019s budget delays keep NYC real estate in flux",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/23/gov-hochuls-budget-delays-keep-nyc-taxes-in-flux/",
-      "published": "Sat, 23 May 2026 11:30:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-004.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "Governor Kathy Hochul's delayed state budget rollout has created uncertainty in New York City's real estate market, particularly concerning two proposed taxes. The budget, which includes a controversial 1% tax on all-cash home sales over $1 million and a 'pied-\u00e0-terre' tax on second homes valued at $5 million or more annually, has yet to be fully approved. Industry players are frustrated by the lack of clarity and the potential for these taxes to negatively impact sales and fail to meet revenue projections. The delay is seen as a strategic move by the governor to pressure lawmakers into accepting her proposals.",
+      "title": "The Hammocks: Inside South Florida\u2019s biggest HOA fraud",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/05/25/how-the-hammocks-hosted-the-biggest-known-hoa-fraud/",
+      "published": "Mon, 25 May 2026 11:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-25-003.html",
+      "transaction_type": null,
+      "article_type": "Non-CRE / Political & Crime News",
+      "market": "Miami, FL",
+      "narrative": "This article details a massive homeowners association fraud scheme at The Hammocks, South Florida's largest HOA. Marglli Gallego, the former president, orchestrated a scheme with her husband and other board members to siphon $11 million from HOA funds, diverting money to themselves and associates. The fraud involved retaliatory tactics against homeowners, invalidating recall petitions, and significantly hiking annual assessments. Gallego and her husband recently pleaded guilty, with Gallego receiving a seven-year prison sentence and a lifetime ban from the Hammocks, while her husband received probation and paid restitution.",
       "data_points": {
-        "property_type": "retail",
-        "property_name": null,
-        "address": "499 Grand Street, New York City, NY",
-        "address_sourced_separately": false,
-        "size_sf": 5600.0,
-        "size_units": null,
+        "property_type": "single family",
+        "property_name": "The Hammocks",
+        "address": "10605 Hammocks Blvd, Miami, FL",
+        "address_sourced_separately": true,
+        "size_sf": null,
+        "size_units": 6527,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 7500000.0,
+        "sale_price": null,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -202,21 +256,36 @@
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": null,
+        "land_area_acres": 3800.0,
         "multi_asset_purchase": false,
-        "notable_features": "Three-story rental property.",
-        "project_notes": null
+        "notable_features": "South Florida's largest HOA, second largest in the state, home to approximately 18,000 residents.",
+        "project_notes": "The scheme involved siphoning $11 million from HOA coffers. Annual assessments were increased by 167% in 2022. A 5-acre property in South Miami-Dade County, valued at $1.2 million, was deeded to the HOA as restitution."
       },
       "companies_people": [
         {
-          "label": "SELLER",
-          "firm_name": "Greenbrook Partners",
+          "label": "OWNER",
+          "firm_name": "The Hammocks Homeowners Association",
           "people": []
         },
         {
-          "label": "ARCHITECT",
-          "firm_name": "Kao Hwa Lee Architects",
-          "people": []
+          "label": "OTHER",
+          "firm_name": "Miami-Dade State Attorney's Office",
+          "people": [
+            {
+              "name": "Katherine Fernandez Rundle",
+              "title": "State Attorney"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Court-appointed receiver",
+          "people": [
+            {
+              "name": "David Gersten",
+              "title": null
+            }
+          ]
         }
       ],
       "tenants": [],
@@ -224,26 +293,26 @@
       "market_intelligence": null
     },
     {
-      "title": "NYC\u2019s top deals: UES co-op sells for $13M",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/05/23/new-york-top-real-estate-deals-friday-may-22-2026/",
-      "published": "Sat, 23 May 2026 11:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-005.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "A mixed-use property in Williamsburg, featuring ground-floor retail and upper-level apartments, was the priciest commercial transaction recorded in New York City, trading for $7.5 million. The three-story building at 499 Grand Street was sold by an LLC associated with Greenbrook Partners to Townhouse Rental II, LLC. This transaction marks a significant increase from its previous sale price of $3.8 million in 2024.",
+      "title": "South Florida Dirt: Miami jury sends a $48M message with commission suit verdict",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/05/24/miami-jury-sends-message-in-golden-beach-commission-suit/",
+      "published": "Sun, 24 May 2026 17:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-25-004.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "Miami, FL",
+      "narrative": "A Miami-Dade County jury awarded a real estate broker $47.8 million in damages, including punitive and compensatory damages, after finding that his client, a jewelry store owner, cheated him out of an $84,000 commission on a $2.8 million home sale. The broker had negotiated an offer for the Golden Beach waterfront home, but the client later claimed disinterest before secretly purchasing the property and paying his sister a nominal commission as a straw broker. The verdict, which is currently being challenged as excessive, is seen by many in the South Florida real estate community as a strong message against clients attempting to circumvent broker commissions.",
       "data_points": {
-        "property_type": "mixed-use",
+        "property_type": "single family",
         "property_name": null,
-        "address": "499 Grand Street, New York City, NY",
+        "address": "313 Center Island Drive, Golden Beach, FL",
         "address_sourced_separately": false,
         "size_sf": null,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 7500000.0,
+        "sale_price": 2800000.0,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -254,19 +323,39 @@
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Three-story building with ground-floor retail and apartments on upper levels.",
-        "project_notes": "Property last sold in 2024 for $3.8 million."
+        "notable_features": "Waterfront home.",
+        "project_notes": null
       },
       "companies_people": [
         {
-          "label": "SELLER",
-          "firm_name": "Greenbrook Partners",
-          "people": []
+          "label": "SELLER BROKER",
+          "firm_name": "Miles Goldstein Real Estate",
+          "people": [
+            {
+              "name": "Alexander Goldstein",
+              "title": null
+            }
+          ]
         },
         {
           "label": "BUYER",
-          "firm_name": "Townhouse Rental II, LLC",
-          "people": []
+          "firm_name": "R&R GB Investment Group",
+          "people": [
+            {
+              "name": "Reuben Ezekiel",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Irene Ezekiel Ishay",
+          "people": [
+            {
+              "name": "Irene Ezekiel Ishay",
+              "title": null
+            }
+          ]
         }
       ],
       "tenants": [],
@@ -274,20 +363,20 @@
       "market_intelligence": null
     },
     {
-      "title": "Hoping to spur development, San Francisco wants to eliminate some affordable housing requirements",
-      "source": "The Real Deal \u2014 San Francisco",
-      "link": "https://therealdeal.com/san-francisco/2026/05/23/san-francisco-wants-to-cut-affordable-housing-rule/",
-      "published": "Sat, 23 May 2026 16:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-24-006.html",
-      "transaction_type": null,
-      "article_type": "Infrastructure Investment / Government Policy",
-      "market": "San Francisco, CA",
-      "narrative": "San Francisco city leaders are proposing to reduce the required percentage of affordable housing units in new developments from 15% to 5% to stimulate housing construction, a move that would make the city's on-site affordable housing requirements among the lowest nationally. Projects with 25 or fewer units would be entirely exempt. This proposal, supported by Mayor Daniel Lurie and Supervisor Myrna Melgar, aims to address the city's struggle to build new housing despite a tech boom. Concurrently, a ballot initiative will seek to increase the city's annual contribution to its Housing Trust Fund from $52 million to $125 million to finance and preserve affordable units.",
+      "title": "Keeping up with the Thakkars, the embattled Dallas developer family",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/05/24/dallas-developer-poorvesh-thakkars-track-record/",
+      "published": "Sun, 24 May 2026 14:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-05-25-005.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Plano, TX",
+      "narrative": "This article details the ongoing legal and development challenges faced by Dallas-based developer Poorvesh Thakkar. While he recently achieved a milestone with the sale of a portion of his Mustang Square mixed-use project in Plano, his development track record remains largely unproven due to numerous delayed or aborted projects. Concurrently, Thakkar is embroiled in a lawsuit in New York City, where the ground lease owner of a Midtown Manhattan office building he acquired is seeking his eviction for alleged unpaid property taxes and penalties totaling nearly $28 million. Thakkar, who purchased the building for a significant discount with plans for a residential conversion, has filed a countersuit, claiming he was hindered from his conversion project.",
       "data_points": {
-        "property_type": null,
-        "property_name": null,
-        "address": null,
-        "address_sourced_separately": false,
+        "property_type": "land",
+        "property_name": "Mustang Square",
+        "address": "4524 Community Ct, Plano, TX",
+        "address_sourced_separately": true,
         "size_sf": null,
         "size_units": null,
         "size_beds": null,
@@ -302,30 +391,26 @@
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": null,
+        "land_area_acres": 3.5,
         "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": "The state of California mandates San Francisco permit at least 45,000 new subsidized housing units by 2031."
+        "notable_features": "Portion of a mixed-use project intended for 13 standalone luxury office condominiums.",
+        "project_notes": "The developer claims the overall Mustang Square project is almost fully sold out and developed. D.R. Horton also purchased homesites at the project."
       },
       "companies_people": [
         {
-          "label": "OWNER",
-          "firm_name": "City of San Francisco",
+          "label": "SELLER",
+          "firm_name": "Poorvesh Thakkar",
           "people": []
         },
         {
-          "label": "PLANNER",
-          "firm_name": "City of San Francisco",
-          "people": [
-            {
-              "name": "Daniel Lurie",
-              "title": "Mayor"
-            },
-            {
-              "name": "Myrna Melgar",
-              "title": "Supervisor"
-            }
-          ]
+          "label": "BUYER",
+          "firm_name": "Madewell Spaces",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "D.R. Horton",
+          "people": []
         }
       ],
       "tenants": [],
