@@ -1,83 +1,59 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "articles": [
     {
-      "title": "Canyon Partners Real Estate Adds Four Executives to Investment Platform",
+      "title": "Fraud Prevention Startup 100 Acquires Cobblestone",
       "source": "Commercial Observer",
-      "link": "https://commercialobserver.com/2026/06/canyon-partners-real-estate-adds-four-executives-to-investment-platform/",
-      "published": "Mon, 08 Jun 2026 13:00:50 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-001.html",
+      "link": "https://commercialobserver.com/2026/06/100-acquires-cobblestone/",
+      "published": "Tue, 09 Jun 2026 12:00:34 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-001.html",
       "transaction_type": null,
-      "article_type": "Promotion",
-      "market": null,
-      "narrative": "Canyon Partners Real Estate has expanded its executive team with four key appointments, including Scott Swisher as head of Western region credit originations, Adam Ostrowsky as managing director of capital markets, Scott San Filippo as senior director of bridge debt, and Spencer Schlee as head of opportunistic equity. These strategic hires and promotions are intended to strengthen the firm's real estate platform and capitalize on opportunities in both lending and opportunistic investing, reflecting an ongoing evolution of the firm's capabilities.",
+      "article_type": "Non-CRE / Business News",
+      "market": "New York City, NY",
+      "narrative": "Proptech startup 100 has acquired Cobblestone, a fraud-detection and income-verification company specializing in the multifamily market. The acquisition, funded by a mix of cash and equity from existing revenue, integrates Cobblestone's fintech-grade fraud prevention technology into 100's existing verification and underwriting platform. This strategic move aims to enhance 100's end-to-end fraud prevention capabilities, particularly in income automation, leveraging advanced AI to combat increasingly sophisticated fraudulent applications in the real estate industry.",
       "data_points": null,
       "companies_people": [
         {
-          "label": "OWNER",
-          "firm_name": "Canyon Partners Real Estate",
+          "label": "BUYER",
+          "firm_name": "100",
           "people": [
             {
-              "name": "Scott Swisher",
-              "title": "Managing Director and Head of Western Region Credit Originations"
+              "name": "Caren Maio",
+              "title": "CEO and co-founder"
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Cobblestone",
+          "people": [
+            {
+              "name": "Jason Scharff",
+              "title": "co-founder and CEO"
             },
             {
-              "name": "Adam Ostrowsky",
-              "title": "Managing Director of Capital Markets"
-            },
-            {
-              "name": "Scott San Filippo",
-              "title": "Senior Director of Bridge Debt"
-            },
-            {
-              "name": "Spencer Schlee",
-              "title": "Managing Director and Head of Opportunistic Equity"
-            },
-            {
-              "name": "Robin Potts",
-              "title": "Partner and Chief Investment Officer"
+              "name": "Jack Mastrangelo",
+              "title": "co-founder and chief technology officer"
             }
           ]
         },
         {
           "label": "OWNER",
-          "firm_name": "Heitman",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "ACORE Capital",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Mack Real Estate Group",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "CMBS Distress Rises in 17 of the 25 Largest U.S. Markets",
-      "source": "Commercial Observer",
-      "link": "https://commercialobserver.com/2026/06/cmbs-distress-largest-u-s-markets/",
-      "published": "Mon, 08 Jun 2026 11:30:24 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-002.html",
-      "transaction_type": null,
-      "article_type": "Market Research / CMBS Distress Report",
-      "market": null,
-      "narrative": "A May 2026 analysis of commercial mortgage-backed securities (CMBS) distress by CRED iQ reveals a national distress rate of 12.7 percent across the 25 largest U.S. metropolitan statistical areas, an increase from 12.2 percent in June 2025. Seventeen of these markets experienced year-over-year increases, with Minneapolis, Denver, and Rochester, N.Y., showing the highest distress rates. The most significant escalations were observed in St. Louis, Oklahoma City, and Pittsburgh, largely due to concentrated office and mixed-use loan exposure. Conversely, Providence, Charlotte, and Austin saw improvements in their distress rates, reflecting successful loan resolutions and stronger market dynamics in some Sun Belt areas.",
-      "data_points": null,
-      "companies_people": [
-        {
-          "label": "OWNER",
-          "firm_name": "CRED iQ",
+          "firm_name": "Asset Living",
           "people": [
             {
-              "name": "Mike Haas",
-              "title": "Founder and CEO"
+              "name": "David Walther",
+              "title": "chief revenue officer"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "RAM Partners",
+          "people": [
+            {
+              "name": "Brenda Lindner",
+              "title": "executive vice president and partner"
             }
           ]
         }
@@ -87,24 +63,84 @@
       "market_intelligence": null
     },
     {
-      "title": "Hey, Retailers, the Soccer Ball\u2019s in Your Court This World Cup",
+      "title": "In Life Sciences Real Estate, Times Are Tough. That Spells Opportunity for Some.",
       "source": "Commercial Observer",
-      "link": "https://commercialobserver.com/2026/06/retailers-world-cup/",
-      "published": "Mon, 08 Jun 2026 10:40:36 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-003.html",
+      "link": "https://commercialobserver.com/2026/06/life-sciences-real-estate-conversions/",
+      "published": "Tue, 09 Jun 2026 10:00:54 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-002.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
       "market": null,
-      "narrative": "This article argues that the FIFA World Cup presents a significant opportunity for retailers, restaurateurs, and U.S. downtowns to attract foot traffic and new customers. The author emphasizes that this is not a passive opportunity, but requires intentional strategies focused on fan behavior before and after games, such as extending hours, offering specials, and implementing outdoor activations. Partnerships between businesses and downtown organizations, like those seen in New York City, are highlighted as crucial for maximizing economic impact by spreading visitor movement beyond single anchor destinations. The piece also suggests tactics like country-themed menus, viewing parties, limited-time merchandise, and pop-up shops, while stressing the importance of data analysis for staffing and security.",
+      "narrative": "The life sciences real estate market, once booming during the pandemic, is now experiencing a downturn with high vacancy rates, creating a unique opportunity for investors. While tenants are increasingly building their own facilities, investors are acquiring properties at discounted prices, anticipating a market rebound. Despite the perceived stagnation, significant investment activity continues, with venture capital funding in the sector showing strong growth in late 2025. The specialized infrastructure of lab spaces makes conversions to other uses costly, but some experts see potential for repurposing them as data centers due to their robust power and HVAC systems.",
       "data_points": null,
       "companies_people": [
         {
           "label": "OWNER",
-          "firm_name": "MRI Software",
+          "firm_name": "Alexandria Real Estate Equities",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Johnson & Johnson",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Novartis",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Blackstone",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "BioMed Realty",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Blackstone Life Sciences",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "A123 Systems",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "The Gutierrez Company",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Cushman & Wakefield",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "CBRE",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Savills",
           "people": [
             {
-              "name": "Carla Hinson",
-              "title": "Vice President of Innovation"
+              "name": "Brianna Friedman",
+              "title": "Researcher"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Saul Ewing",
+          "people": [
+            {
+              "name": "Megan Moyer",
+              "title": "Real estate attorney"
             }
           ]
         }
@@ -114,21 +150,258 @@
       "market_intelligence": null
     },
     {
-      "title": "Realterm CEO Bob Fordi Is Transforming the IOS Business",
+      "title": "Senior Housing Operator Omni Lifestyle Living Buys Midtown Marriott for $40M",
       "source": "Commercial Observer",
-      "link": "https://commercialobserver.com/2026/06/realterm-ceo-bob-fordi-ios-investments/",
-      "published": "Mon, 08 Jun 2026 10:30:48 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-004.html",
-      "transaction_type": null,
-      "article_type": "Feature / Profile",
-      "market": "Annapolis, MD",
-      "narrative": "Realterm, a multinational transportation and logistics real estate investment firm, has experienced significant growth under CEO Bob Fordi, tripling its assets from $4.5 billion to $14 billion since 2019. The firm, a pioneer in industrial outdoor storage (IOS) and a leader in air cargo facilities, has expanded its global footprint to include Amsterdam, Singapore, Australia, and soon, Japan. Realterm's strategy focuses on acquiring and developing 'high flow-through' properties designed to move freight efficiently, establishing a foundational grip on critical transportation logistics assets.",
+      "link": "https://commercialobserver.com/2026/06/senior-housing-omni-lifestyle-living-buys-midtown-marriott/",
+      "published": "Mon, 08 Jun 2026 21:20:54 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-003.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Omni Lifestyle Living, an Ohio-based senior living provider, has acquired the Fairfield by Marriott Inn & Suites New York Manhattan hotel in Midtown for $39.9 million from Lam Generation. The company, which specializes in converting hotels into assisted senior living facilities, secured $37.3 million in acquisition financing from Wells Fargo. This purchase marks Omni's expansion into the New York City market, adding to its portfolio of 10 existing assets and eight planned facilities.",
       "data_points": {
-        "property_type": null,
-        "property_name": null,
-        "address": null,
+        "property_type": "hotel",
+        "property_name": "Fairfield by Marriott Inn & Suites New York Manhattan",
+        "address": "21 West 37th Street, New York City, NY",
         "address_sourced_separately": false,
         "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": 92,
+        "rental_rate": null,
+        "sale_price": 39900000.0,
+        "loan_amount": 37300000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Three-star hotel still in operation and accepting bookings.",
+        "project_notes": "The seller, Lam Generation, originally bought the property in 2007."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Omni Lifestyle Living",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Lam Generation",
+          "people": [
+            {
+              "name": "Jeffrey Lam",
+              "title": "Founder and CEO"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Wells Fargo",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Berkadia Provides $35M Refi for Detroit-Area Multifamily Apartment Complex",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/berkadia-35m-refi-detroit-multifamily-apartment/",
+      "published": "Mon, 08 Jun 2026 20:40:47 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-004.html",
+      "transaction_type": "Refinance",
+      "article_type": null,
+      "market": "Lake Orion, MI",
+      "narrative": "Fenton Management Company has secured a $35.2 million fixed-rate loan to refinance the Indian Lake Village Apartments, a 394-unit multifamily community located in Lake Orion, Michigan. Berkadia originated the 10-year loan, which will be securitized by Freddie Mac. The property's strong fundamentals and resident demand in a desirable suburban market near Detroit contributed to favorable financing terms.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": "Indian Lake Village Apartments",
+        "address": "3001 Lake Village Boulevard, Lake Orion, MI",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 394,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 35200000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 1995,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 58.0,
+        "multi_asset_purchase": false,
+        "notable_features": "The community features 27 residential buildings with one- and two-bedroom units, a clubhouse, fitness center, business center, swimming pool, tennis and volleyball courts, and covered parking.",
+        "project_notes": "The property was built between 1995 and 1997."
+      },
+      "companies_people": [
+        {
+          "label": "SPONSOR",
+          "firm_name": "Fenton Management Company",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Berkadia",
+          "people": [
+            {
+              "name": "Wesley Moczul",
+              "title": null
+            },
+            {
+              "name": "Scott Wadler",
+              "title": null
+            },
+            {
+              "name": "Matt Robbins",
+              "title": null
+            },
+            {
+              "name": "Brad Williamson",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Freddie Mac",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Kaufman Under Contract to Buy Savanna\u2019s Madison Square Park Properties for $125M",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/kaufman-contract-buy-savanna-madison-square-park-properties/",
+      "published": "Mon, 08 Jun 2026 20:34:36 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-005.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Kaufman Investments is under contract to acquire the Madison Square Collection, comprising 24-28 West 25th Street and 48 West 25th Street, from Savanna for approximately $125 million. The transaction, which includes two office properties in Manhattan's Flatiron District, is expected to close within the next couple of weeks. Rialto Capital is providing the acquisition financing for Kaufman Investments.",
+      "data_points": {
+        "property_type": "office",
+        "property_name": "Madison Square Collection",
+        "address": "24-28 West 25th Street and 48 West 25th Street, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 125000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": true,
+        "notable_features": "Located just west of Madison Square Park in Manhattan's Flatiron District.",
+        "project_notes": "Savanna previously acquired 48 West 25th Street in 2018 for $90 million and 24 and 28 West 25th Street in 2019 for $107.35 million."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Kaufman Investments",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Savanna",
+          "people": [
+            {
+              "name": "Chris Schlank",
+              "title": null
+            },
+            {
+              "name": "Nick Bienstock",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Rialto Capital",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Eastdil Secured",
+          "people": [
+            {
+              "name": "Gary Phillips",
+              "title": null
+            },
+            {
+              "name": "Will Silverman",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "How Developers Can Prioritize Successful Adaptive Reuse Lending Relationships",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/how-developers-can-prioritize-successful-adaptive-reuse-lending-relationships/",
+      "published": "Tue, 09 Jun 2026 12:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-006.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "This article by John Garrett of Enterprise Bank & Trust discusses the unique financial challenges and opportunities in adaptive reuse projects, particularly for sub-institutional transitional developments. It highlights how these projects transform underutilized commercial spaces into new, functional uses like residential or mixed-use, offering value-add opportunities for developers. The author emphasizes the importance of strong, flexible banking partnerships, especially with local banks, to navigate the complexities of these projects, which often involve limited interim cash flow and specific lending needs. Garrett advises developers to be \"loan ready\" by demonstrating experience, a strong understanding of market numbers, and a commitment to a banking relationship beyond just seeking the lowest interest rate, while also managing dependencies, ensuring sufficient equity, and avoiding over-rapid expansion.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "LENDER",
+          "firm_name": "Enterprise Bank & Trust",
+          "people": [
+            {
+              "name": "John Garrett",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Skanska Completes 250,000 SF Academic Project at University of Texas at Tyler",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/skanska-completes-250000-sf-academic-project-at-university-of-texas-at-tyler/",
+      "published": "Mon, 08 Jun 2026 15:05:06 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-007.html",
+      "transaction_type": "Construction",
+      "article_type": null,
+      "market": "Tyler, TX",
+      "narrative": "Skanska has completed a 250,000-square-foot academic building for the University of Texas at Tyler, which will serve as the university's new medical school. The five-story facility includes classrooms, advanced teaching laboratories, and collaborative training spaces. The project also features a seven-story parking garage with an integrated facilities office and a skybridge connecting to the existing hospital.",
+      "data_points": {
+        "property_type": "medical",
+        "property_name": "University of Texas at Tyler Medical School",
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": 250000.0,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
@@ -138,6 +411,204 @@
         "total_project_cost": null,
         "occupancy": null,
         "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Includes a seven-story parking garage with an integrated facilities office and a skybridge connecting to an existing hospital.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "HGR General Contractors",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Skanska",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "University of Texas at Tyler",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "PEG Cos. Nears Completion of 220-Room Dual\u2011Branded Hotel in Irving\u2019s Las Colinas District",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/peg-cos-nears-completion-of-220-room-dual-branded-hotel-in-irvings-las-colinas-district/",
+      "published": "Mon, 08 Jun 2026 14:59:27 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-008.html",
+      "transaction_type": "Construction",
+      "article_type": null,
+      "market": "Irving, TX",
+      "narrative": "PEG Cos. is nearing completion of a 220-room dual-branded hotel in Irving's Las Colinas district, with an opening anticipated in July. The five-story property will feature both Residence Inn and Courtyard by Marriott brands, offering shared amenities including a pool, fitness center, and meeting spaces.",
+      "data_points": {
+        "property_type": "hotel",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": 220,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": "July 2026",
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Dual-branded hotel featuring Residence Inn and Courtyard by Marriott; shared amenities include a pool, fitness center, 24-hour market, bistro, bar, and three private meeting spaces.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "PEG Cos.",
+          "people": []
+        },
+        {
+          "label": "ARCHITECT",
+          "firm_name": "Mayse & Associates",
+          "people": []
+        },
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "Muckleroy & Falls",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "JLL Negotiates 75,000 SF Office Lease at APEX at Legacy in Plano",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/jll-negotiates-75000-sf-office-lease-at-apex-at-legacy-in-plano/",
+      "published": "Mon, 08 Jun 2026 14:45:44 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-009.html",
+      "transaction_type": "Lease",
+      "article_type": null,
+      "market": "Plano, TX",
+      "narrative": "JLL has successfully brokered a 75,000-square-foot office lease at APEX at Legacy in Plano, Texas, with a cloud-based educational software company. This significant transaction boosts the 220,000-square-foot building's occupancy to 97 percent, underscoring strong demand for prime office space in the area.",
+      "data_points": {
+        "property_type": "office",
+        "property_name": "APEX at Legacy",
+        "address": "5801 Headquarters Dr, Plano, TX",
+        "address_sourced_separately": true,
+        "size_sf": 75000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": 97.0,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Located at the intersection of Dallas North Tollway and Sam Rayburn tollways.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "LANDLORD",
+          "firm_name": "Undisclosed Landlord",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "PowerSchool",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "JLL",
+          "people": [
+            {
+              "name": "Blake Shipley",
+              "title": null
+            },
+            {
+              "name": "Gini Rounsaville",
+              "title": null
+            },
+            {
+              "name": "Michael Williams",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "TENANT REP",
+          "firm_name": "CBRE",
+          "people": [
+            {
+              "name": "Stephen Salomon",
+              "title": null
+            },
+            {
+              "name": "Will Haynes",
+              "title": null
+            },
+            {
+              "name": "Jad Charif",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [
+        "PowerSchool"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Century Fire Protection Signs 25,798 SF Industrial Lease in Grand Prairie, Texas",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/century-fire-protection-signs-25798-sf-industrial-lease-in-grand-prairie-texas/",
+      "published": "Mon, 08 Jun 2026 14:43:30 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-010.html",
+      "transaction_type": "Lease",
+      "article_type": null,
+      "market": "Grand Prairie, TX",
+      "narrative": "Century Fire Protection, a provider of fire safety systems, has secured a 25,798-square-foot industrial lease in Grand Prairie, Texas. The transaction involves a building constructed in 1984, with the tenant's representation handled by KBC Advisors and the landlord represented by Holt Lunsford Commercial.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": null,
+        "address": "1111 W. Carrier Parkway, Grand Prairie, TX",
+        "address_sourced_separately": false,
+        "size_sf": 25798.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 1984,
         "completion": null,
         "phase_1": null,
         "total_project_all_phases": null,
@@ -149,41 +620,71 @@
       },
       "companies_people": [
         {
-          "label": "OWNER",
-          "firm_name": "Realterm",
+          "label": "TENANT",
+          "firm_name": "Century Fire Protection",
+          "people": []
+        },
+        {
+          "label": "TENANT REP",
+          "firm_name": "KBC Advisors",
           "people": [
             {
-              "name": "Bob Fordi",
-              "title": "CEO and Chief Investment Officer"
-            },
-            {
-              "name": "Peter Lesburg",
-              "title": "Managing Director and Global Head of Capital Markets"
-            },
-            {
-              "name": "Kenneth Code",
-              "title": "Co-founder"
-            },
-            {
-              "name": "John Cammett",
-              "title": "Co-founder"
+              "name": "Brad Balke",
+              "title": null
             }
           ]
         },
         {
-          "label": "OTHER",
+          "label": "LANDLORD",
+          "firm_name": "Sealy & Co.",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Holt Lunsford Commercial",
+          "people": [
+            {
+              "name": "Canon Shoults",
+              "title": null
+            },
+            {
+              "name": "Maddy Coffman",
+              "title": null
+            },
+            {
+              "name": "Walker Floyd",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [
+        "Century Fire Protection"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "St. Louis office of CBRE names executive managing director",
+      "source": "REJournals",
+      "link": "https://rejournals.com/st-louis-office-of-cbre-names-executive-managing-director/?utm_source=rss&utm_medium=rss&utm_campaign=st-louis-office-of-cbre-names-executive-managing-director",
+      "published": "Tue, 09 Jun 2026 10:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-011.html",
+      "transaction_type": "Promotion",
+      "article_type": null,
+      "market": null,
+      "narrative": "",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "PROMOTED",
           "firm_name": "CBRE",
           "people": [
             {
-              "name": "Michael Caprile",
-              "title": "Former Vice Chairman"
+              "name": "Jeff Kaiser",
+              "title": "Executive Managing Director"
             }
           ]
-        },
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Port Authority of New York and New Jersey",
-          "people": []
         }
       ],
       "tenants": [],
@@ -191,66 +692,44 @@
       "market_intelligence": null
     },
     {
-      "title": "Data Centers Are Plugging a Big Hole in the U.S. Construction Industry",
-      "source": "Commercial Observer",
-      "link": "https://commercialobserver.com/2026/06/data-center-construction-overall-market-us/",
-      "published": "Mon, 08 Jun 2026 10:30:15 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-005.html",
+      "title": "St. Louis\u2019 Case Engineering adds three to its roster",
+      "source": "REJournals",
+      "link": "https://rejournals.com/st-louis-case-engineering-adds-three-to-its-roster/?utm_source=rss&utm_medium=rss&utm_campaign=st-louis-case-engineering-adds-three-to-its-roster",
+      "published": "Tue, 09 Jun 2026 10:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-012.html",
       "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
-      "market": null,
-      "narrative": "The U.S. construction industry is experiencing a significant shift, with data center and advanced manufacturing projects increasingly dominating overall activity, while multifamily construction faces substantial headwinds. This disparity is so pronounced that excluding data center and manufacturing work would reveal a flat or declining pace of construction nationally. Factors such as high interest rates, elevated material and labor costs, and a slowdown in population and employment growth are hindering multifamily development, leading to a shrinking pipeline of new projects and impacting contractor revenues. While some markets like South Florida continue to see multifamily activity, the national outlook suggests ongoing challenges for financing and delivering new rental housing units.",
+      "article_type": "Promotion",
+      "market": "St. Louis, MO",
+      "narrative": "Case Engineering, a St. Louis-based firm, has expanded its team by hiring three new engineers. Adam Barney joins as an Electrical Engineer, Luke Markovich as a Mechanical Engineer, and Spencer Bearden as a Structural Engineer. These additions bring a mix of recent graduates and experienced professionals to the firm, enhancing its capabilities across various engineering disciplines.",
       "data_points": null,
       "companies_people": [
         {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Turner Construction",
-          "people": []
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Kast Construction",
-          "people": [
-            {
-              "name": "Mike Neal",
-              "title": "CEO"
-            }
-          ]
-        },
-        {
           "label": "OWNER",
-          "firm_name": "Meta",
+          "firm_name": "Case Engineering",
+          "people": [
+            {
+              "name": "Adam Barney",
+              "title": "Electrical Engineer"
+            },
+            {
+              "name": "Luke Markovich",
+              "title": "Mechanical Engineer"
+            },
+            {
+              "name": "Spencer Bearden",
+              "title": "Structural Engineer"
+            }
+          ]
+        },
+        {
+          "label": "ENGINEER",
+          "firm_name": "SSC Engineering",
           "people": []
         },
         {
-          "label": "BROKER",
-          "firm_name": "Cushman & Wakefield",
-          "people": [
-            {
-              "name": "Sam Tenenbaum",
-              "title": "Head of Multifamily Research"
-            }
-          ]
-        },
-        {
-          "label": "APPRAISER",
-          "firm_name": "Miller Samuel",
-          "people": [
-            {
-              "name": "Jonathan Miller",
-              "title": "President and CEO"
-            }
-          ]
-        },
-        {
-          "label": "ASSOCIATION",
-          "firm_name": "Associated Builders and Contractors",
-          "people": [
-            {
-              "name": "Sonny Maken",
-              "title": "Chief Operating Officer of the South Florida chapter"
-            }
-          ]
+          "label": "ENGINEER",
+          "firm_name": "Mettemeyer Engineering",
+          "people": []
         }
       ],
       "tenants": [],
@@ -258,197 +737,21 @@
       "market_intelligence": null
     },
     {
-      "title": "Core Spaces to develop three new student housing developments near University of Illinois Urbana-Champaign",
+      "title": "Krusinski Construction Company tackling tenant-improvement project for auto, clean energy company in Chicago",
       "source": "REJournals",
-      "link": "https://rejournals.com/core-spaces-to-develop-three-new-student-housing-developments-near-university-of-illinois-urbana-champaign/?utm_source=rss&utm_medium=rss&utm_campaign=core-spaces-to-develop-three-new-student-housing-developments-near-university-of-illinois-urbana-champaign",
-      "published": "Mon, 08 Jun 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-006.html",
-      "transaction_type": "Development",
-      "article_type": null,
-      "market": "Champaign, IL",
-      "narrative": "Core Spaces, a prominent student housing developer, has announced plans for three new purpose-built student housing developments near the University of Illinois Urbana-Champaign. These projects are expected to deliver over 3,500 beds between 2028 and 2031, significantly expanding the firm's presence in the market. The expansion builds on Core Spaces' existing portfolio in Champaign, which includes previous developments and recent acquisitions along Green Street.",
+      "link": "https://rejournals.com/krusinski-construction-company-tackling-tenant-improvement-project-for-auto-clean-energy-company-in-chicago/?utm_source=rss&utm_medium=rss&utm_campaign=krusinski-construction-company-tackling-tenant-improvement-project-for-auto-clean-energy-company-in-chicago",
+      "published": "Tue, 09 Jun 2026 09:59:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-013.html",
+      "transaction_type": null,
+      "article_type": "Construction",
+      "market": "Chicago, IL",
+      "narrative": "Krusinski Construction Company has been selected by Dayton Street Partners to undertake a tenant improvement project for a multinational automotive and clean energy company in Chicago. The project at the Loomis facility will convert the existing building into an electric-vehicle repair facility, involving extensive renovations including new overhead doors, ADA-compliant restrooms, enhanced exterior lighting, and significant mechanical and drainage upgrades. Construction is slated for completion in July 2026.",
       "data_points": {
-        "property_type": "student housing",
-        "property_name": "Hub Champaign Green Street",
+        "property_type": "industrial",
+        "property_name": "Loomis facility",
         "address": null,
         "address_sourced_separately": false,
         "size_sf": null,
-        "size_units": 490,
-        "size_beds": 1577,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "Summer 2028",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": "This project is the first of three new developments, with the remaining two planned to deliver between 2028 and 2031, totaling over 3,500 beds across all three projects."
-      },
-      "companies_people": [
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Core Spaces",
-          "people": [
-            {
-              "name": "Marc Lifshin",
-              "title": null
-            },
-            {
-              "name": "Barry Howard",
-              "title": null
-            },
-            {
-              "name": "Brian Neiswender",
-              "title": null
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Retail sector keeps showing off its resilience",
-      "source": "REJournals",
-      "link": "https://rejournals.com/retail-sector-keeps-showing-off-its-resilience/?utm_source=rss&utm_medium=rss&utm_campaign=retail-sector-keeps-showing-off-its-resilience",
-      "published": "Mon, 08 Jun 2026 10:04:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-007.html",
-      "transaction_type": null,
-      "article_type": "Market Research / Retail Report",
-      "market": null,
-      "narrative": "Retail sales demonstrated continued resilience in April, with overall sales rising 4.6% year-over-year and foot traffic increasing by 2.6%, according to Colliers' latest report. This indicates that consumers are still engaging with brick-and-mortar stores despite economic uncertainties. Discretionary spending, particularly in apparel and electronics, saw significant boosts, with electronics sales jumping 9.1% and clothing store traffic rising nearly 4%. Value-oriented retailers also continued to perform strongly, attracting budget-conscious shoppers, while housing-related retail segments and experiential categories showed signs of cooling.",
-      "data_points": null,
-      "companies_people": [
-        {
-          "label": "OWNER",
-          "firm_name": "Colliers",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "PCCP, The Dinerstein Companies acquire student housing communities in College Station",
-      "source": "REJournals",
-      "link": "https://rejournals.com/pccp-the-dinerstein-companies-acquire-student-housing-communities-in-college-station/?utm_source=rss&utm_medium=rss&utm_campaign=pccp-the-dinerstein-companies-acquire-student-housing-communities-in-college-station",
-      "published": "Mon, 08 Jun 2026 10:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-008.html",
-      "transaction_type": "Acquisition",
-      "article_type": null,
-      "market": "College Station, TX",
-      "narrative": "A joint venture between PCCP and The Dinerstein Companies has acquired two adjacent student housing communities in College Station, TX, totaling 1,128 beds. The properties, formerly known as 2818 Apartments and Parkway Place, have been rebranded as Sterling College Station. The new owners plan a comprehensive renovation and operational improvement program, including upgraded unit interiors, fitness center improvements, and new pickleball courts, to enhance the community's appeal to Texas A&M University students.",
-      "data_points": {
-        "property_type": "student housing",
-        "property_name": "Sterling College Station",
-        "address": "1300 Harvey Mitchell Parkway South, College Station, TX",
-        "address_sourced_separately": false,
-        "size_sf": null,
-        "size_units": 350,
-        "size_beds": 1128,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": 44.0,
-        "multi_asset_purchase": true,
-        "notable_features": "Low-density cottage- and garden-style communities offering larger layouts and expansive indoor and outdoor amenity spaces, served by the AggieSpirit bus system.",
-        "project_notes": "Properties delivered in 2008 and 2009. The joint venture plans to combine operations into a single community and implement in-house property management."
-      },
-      "companies_people": [
-        {
-          "label": "BUYER",
-          "firm_name": "PCCP",
-          "people": []
-        },
-        {
-          "label": "BUYER",
-          "firm_name": "The Dinerstein Companies",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "The Can Gets Heavier: Texas multifamily hopes for shift in capital",
-      "source": "REJournals",
-      "link": "https://rejournals.com/the-can-gets-heavier-texas-multifamily-hopes-for-shift-in-capital/?utm_source=rss&utm_medium=rss&utm_campaign=the-can-gets-heavier-texas-multifamily-hopes-for-shift-in-capital",
-      "published": "Mon, 08 Jun 2026 09:57:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-009.html",
-      "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
-      "market": "Texas",
-      "narrative": "Multifamily owners in Texas are facing increased pressure to sell or refinance assets as capital markets continue to favor a \"higher for longer\" interest rate environment, despite earlier hopes for rate cuts. While operating fundamentals are showing uneven improvement across submarkets, refinancing challenges are primarily driving transaction activity, with many sales involving smoothly operating properties burdened by distressed capital stacks rather than operational distress. The market is characterized by significant submarket divergence, with some areas experiencing rent growth and strong absorption, while others, particularly in North Dallas, continue to offer substantial concessions. Buyers are increasingly focused on yield-on-cost frameworks and current asset production rather than theoretical stabilization values, with assumable low-rate debt emerging as a key selling point for properties.",
-      "data_points": null,
-      "companies_people": [
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Cushman & Wakefield",
-          "people": []
-        },
-        {
-          "label": "LEASING AGENT",
-          "firm_name": "Cushman & Wakefield",
-          "people": [
-            {
-              "name": "Grant Raymond",
-              "title": "Senior Director, Texas Multifamily Advisory Group"
-            },
-            {
-              "name": "Asher Hall",
-              "title": "Senior Director, Texas Multifamily Advisory Group"
-            }
-          ]
-        },
-        {
-          "label": "LEASING AGENT",
-          "firm_name": "Newmark",
-          "people": [
-            {
-              "name": "Patton Jones",
-              "title": "Vice Chairman of Multifamily Capital Markets"
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": "Austin reported its first quarter of rent growth since Q2 2023. San Antonio's annual absorption has outpaced deliveries for two straight years. San Antonio cap rates are running approximately 25 basis points higher than Austin. North Dallas, which accounted for roughly half of DFW units under construction, has six to eight weeks of free rent quoted as standard across northern Collin County and North Fort Worth."
-    },
-    {
-      "title": "Marcus & Millichap brokers sale of 7,295-square-foot retail property in Anna",
-      "source": "REJournals",
-      "link": "https://rejournals.com/marcus-millichap-brokers-sale-of-7295-square-foot-retail-property-in-anna/?utm_source=rss&utm_medium=rss&utm_campaign=marcus-millichap-brokers-sale-of-7295-square-foot-retail-property-in-anna",
-      "published": "Mon, 08 Jun 2026 09:52:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-010.html",
-      "transaction_type": "Acquisition",
-      "article_type": null,
-      "market": "Anna, TX",
-      "narrative": "A Dallas-area private partnership has acquired a 7,295-square-foot multi-tenant retail property in Anna, Texas, as part of a 1031 exchange. The all-cash transaction closed in less than 45 days, with the buyer strategically reallocating equity from an alternative property type into triple-net retail assets within high-growth DFW submarkets. The acquisition was part of a two-property portfolio that included an adjacent shopping center.",
-      "data_points": {
-        "property_type": "retail",
-        "property_name": null,
-        "address": "409 Central Expy S., Anna, TX",
-        "address_sourced_separately": false,
-        "size_sf": 7295.0,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
@@ -457,56 +760,73 @@
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
-        "year_built": 2021,
-        "completion": null,
+        "year_built": null,
+        "completion": "July 2026",
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": 1.11,
-        "multi_asset_purchase": true,
-        "notable_features": "Shadow-anchored by a Walmart, located in a fast-growing suburban corridor.",
-        "project_notes": "Acquisition was part of a 1031 exchange and included an adjacent shopping center."
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "The facility will support a new electric-vehicle repair center.",
+        "project_notes": null
       },
       "companies_people": [
         {
-          "label": "BUYER",
-          "firm_name": "Dallas-area private partnership",
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "Krusinski Construction Company",
+          "people": [
+            {
+              "name": "Joe Krusinski III",
+              "title": "Senior Project Manager"
+            },
+            {
+              "name": "Kuy Parker",
+              "title": "Project Manager"
+            },
+            {
+              "name": "Gama Cruz",
+              "title": "Project Engineer"
+            },
+            {
+              "name": "Andrew Dempsey",
+              "title": "Project Superintendent"
+            },
+            {
+              "name": "Erin Anderson",
+              "title": "Project Coordinator"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Dayton Street Partners",
           "people": []
         },
         {
-          "label": "BUYER BROKER",
-          "firm_name": "Marcus & Millichap",
-          "people": [
-            {
-              "name": "Chris Gainey",
-              "title": null
-            },
-            {
-              "name": "Philip Levy",
-              "title": null
-            }
-          ]
+          "label": "ARCHITECT",
+          "firm_name": "A+M Architects",
+          "people": []
+        },
+        {
+          "label": "ENGINEER",
+          "firm_name": "Jacob & Hefner Associates, Inc.",
+          "people": []
         }
       ],
-      "tenants": [
-        "Verizon",
-        "UPS",
-        "Jersey Mike's",
-        "Fuzzy's Taco Shop"
-      ],
+      "tenants": [],
       "financing": null,
       "market_intelligence": null
     },
     {
-      "title": "AI is creating new challenges, opportunities and questions about the industry\u2019s future",
-      "source": "The Real Deal \u2014 National",
-      "link": "https://therealdeal.com/national/2026/06/07/ai-impact-on-real-estate/",
-      "published": "Sun, 07 Jun 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-011.html",
+      "title": "St. Louis\u2019 Lawrence Group names director of procurement in St. Louis office",
+      "source": "REJournals",
+      "link": "https://rejournals.com/st-louis-lawrence-group-names-director-of-procurement-in-st-louis-office/?utm_source=rss&utm_medium=rss&utm_campaign=st-louis-lawrence-group-names-director-of-procurement-in-st-louis-office",
+      "published": "Tue, 09 Jun 2026 09:28:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-014.html",
       "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
+      "article_type": null,
       "market": null,
-      "narrative": "This article explores the dual impact of artificial intelligence on the commercial real estate industry, highlighting both new opportunities and significant challenges. AI companies are driving substantial office leasing demand in major tech hubs like San Francisco and New York, and fueling a boom in data center development, particularly in Texas. However, the technology also raises concerns about potential long-term reductions in office-based jobs, which could diminish future space needs. Additionally, AI is influencing residential real estate by providing buyers and sellers with market analysis, while also requiring agents to refine their expertise to address AI-generated insights and maintain the human element in transactions.",
+      "narrative": "",
       "data_points": null,
       "companies_people": [],
       "tenants": [],
@@ -514,96 +834,278 @@
       "market_intelligence": null
     },
     {
-      "title": "Developer seizes on affordable, workforce market with condos, townhomes",
-      "source": "The Real Deal \u2014 Miami",
-      "link": "https://therealdeal.com/miami/2026/06/08/ellen-buckley-plans-affordable-workforce-miami-dade-homes/",
-      "published": "Mon, 08 Jun 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-012.html",
-      "transaction_type": "Development",
+      "title": "PolicyPro: Adams agency chief takes over affordable housing nonprofit",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/08/adams-agency-chief-takes-over-housing-nonprofit/",
+      "published": "Mon, 08 Jun 2026 23:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-015.html",
+      "transaction_type": null,
+      "article_type": "Promotion",
+      "market": "New York City, NY",
+      "narrative": "Molly Wasow Park, former head of the Department of Social Services under Mayor Eric Adams, has been appointed CEO of the NYC Housing Partnership, an affordable housing nonprofit. Starting July 13, Park will focus on stabilizing distressed multifamily properties and strengthening ties between affordable housing and social services to support tenants facing financial hardship. The Housing Partnership, which has developed and preserved over 100,000 low- and moderate-income apartments since 1983, is positioned to play a key role in Mayor Zohran Mamdani's housing agenda, which aims to increase city intervention in troubled properties and expand financing for nonprofits and HDFCs.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "NYC Housing Partnership",
+          "people": [
+            {
+              "name": "Molly Wasow Park",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Holland & Knight",
+          "people": [
+            {
+              "name": "Stuart Saft",
+              "title": "Partner"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "LISTEN: The real estate deep dive into artificial intelligence",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/08/listen-the-real-estate-deep-dive-on-artificial-intelligence/",
+      "published": "Mon, 08 Jun 2026 21:51:19 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-016.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "This article summarizes a podcast discussion on the potential impact of artificial intelligence on the real estate industry. The conversation explores how AI is influencing residential transactions, with clients using AI-generated information to inform their decisions. In the commercial sector, AI presents both challenges, such as potential disruption in the office market as tenants delay long-term plans, and opportunities for increased efficiency and new demand from growth-oriented companies. The overall sentiment is that while AI's long-term effects are still uncertain, it is poised to significantly reshape real estate.",
+      "data_points": null,
+      "companies_people": [],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Canada, Mexico lead US in World Cup hotel bookings",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/08/canada-mexico-shutting-out-u-s-in-world-cup-hotel-bookings/",
+      "published": "Mon, 08 Jun 2026 21:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-017.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Hospitality Report",
+      "market": null,
+      "narrative": "Hotel bookings in Canada and Mexico for the upcoming World Cup are significantly outpacing those in most U.S. host cities, according to CoStar Group data. This trend is attributed to several factors, including the greater affordability of Canadian and Mexican cities for travelers, encompassing both hotel rates and ancillary costs like transportation. Additionally, the U.S. political climate and concerns over immigration policies may be deterring some foreign visitors. Despite the current booking patterns, there remains potential for last-minute bookings, as historically up to 40% of hotel reservations materialize within six days of a match.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Host Hotels & Resorts",
+          "people": [
+            {
+              "name": "Jim Risoleo",
+              "title": "chief executive officer"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "CoStar Group",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Housing Notes: Thoughts about eliminating Florida property taxes",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/08/lessons-from-floridas-property-tax-plan/",
+      "published": "Mon, 08 Jun 2026 19:35:36 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-018.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Florida",
+      "narrative": "Jonathan Miller, a prominent real estate market analyst, argues against Florida's proposed elimination of property taxes, asserting that such a move would be detrimental to the state's housing market and quality of life. He emphasizes that property taxes are the most efficient and stable revenue source for local governments, funding essential services like police, fire, and schools, and that their elimination without a clear replacement plan would lead to reduced affordability and increased uncertainty. Miller highlights that land is an ideal tax target due to its inelastic supply and immobility, making property taxes difficult to evade and closely linking payment to local service benefits, which in turn capitalizes into property values.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OTHER",
+          "firm_name": "The Real Deal",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Douglas Elliman",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Streetmatrix",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Jonathan Miller",
+          "people": [
+            {
+              "name": "Jonathan Miller",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "TPG leads investor acquisition of retail landlord Echo Realty",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/08/tpg-leads-acquisition-of-retail-landlord-echo-realty/",
+      "published": "Mon, 08 Jun 2026 18:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-019.html",
+      "transaction_type": "Acquisition",
       "article_type": null,
-      "market": "Miami, FL",
-      "narrative": "Prospera Real Estate Collective, led by Ellen Buckley, is developing two affordable and workforce housing projects in Miami-Dade County, Florida. The projects include Grand Bahamas Place, a 56-unit condo building in Coconut Grove, and Faith Place Village, a 37-unit townhome community near North Miami. Grand Bahamas Place will offer units restricted to households earning up to 80 percent of the area median income, while Faith Place Village will cater to households earning up to 120 percent of the AMI. These developments address South Florida's critical need for affordable and workforce housing, with Prospera partnering with local churches and community groups to unlock value from underutilized land.",
+      "market": null,
+      "narrative": "A joint venture led by TPG, alongside PSP Investments, La Caisse, and Norges Bank Investment Management, has acquired retail landlord Echo Realty for approximately $2 billion. Echo Realty's portfolio comprises over 230 grocery-anchored retail centers, primarily located in the Midwest and Southeast. The acquisition underscores strong investor confidence in the necessity-based retail sector, with the new ownership planning to expand Echo's business across existing and new markets, including its leasing, property management, and brokerage operations.",
       "data_points": {
-        "property_type": "multifamily",
-        "property_name": "Grand Bahamas Place",
-        "address": "3655 and 3659 Grand Avenue, Miami, FL",
+        "property_type": "retail",
+        "property_name": null,
+        "address": null,
         "address_sourced_separately": false,
         "size_sf": null,
-        "size_units": 56,
+        "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": null,
+        "sale_price": 2000000000.0,
         "loan_amount": null,
-        "total_project_cost": 23000000.0,
+        "total_project_cost": null,
         "occupancy": null,
         "year_built": null,
-        "completion": "early 2029",
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": true,
+        "notable_features": null,
+        "project_notes": "Echo Realty's portfolio includes over 230 retail centers, primarily in the Midwest and Southeast, with grocery store anchors such as Giant Eagle, Publix, Harris Teeter, Safeway, Acme Markets, and Whole Foods."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "TPG",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "PSP Investments",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "La Caisse",
+          "people": []
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Norges Bank Investment Management",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Echo Realty",
+          "people": [
+            {
+              "name": "Thomas Karet",
+              "title": "Chief Executive Officer"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "NYC\u2019s top deals: Jeffrey Lam sells Garment District hotel for $40M",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/06/09/new-york-top-real-estate-deals-monday-june-8-2026/",
+      "published": "Tue, 09 Jun 2026 11:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-020.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "An LLC tied to Jeffrey Lam's Lam Group sold the 17-story Fairfield Inn & Suites New York Manhattan/Fifth Avenue in the Garment District for $39.9 million. The buyer was an LLC linked to Ohio-based Omni Lifestyle Living. The transaction represents the priciest commercial deal recorded in New York City during the reporting period.",
+      "data_points": {
+        "property_type": "hotel",
+        "property_name": "Fairfield Inn & Suites New York Manhattan/Fifth Avenue",
+        "address": "21 West 37th Street, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": 34600.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 39900000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 2007,
+        "completion": null,
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Condos will range from studios to two bedrooms and are restricted for households earning up to 80 percent of the area median income. The project includes nearly 3,000 square feet of retail and a 4,000-square-foot religious and community space.",
-        "project_notes": "The partnership paid $2.2 million for one lot in 2025, and Believers of Authority Ministries transferred the other lot for $100 in 2025. Condo prices will range from $305,000 to $450,000. The project is named in homage to the area's earliest settlers from the Bahamas."
+        "notable_features": null,
+        "project_notes": "The hotel site was previously sold for $6.5 million 20 years ago."
       },
       "companies_people": [
         {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Prospera Real Estate Collective",
+          "label": "SELLER",
+          "firm_name": "Lam Group",
           "people": [
             {
-              "name": "Ellen Buckley",
+              "name": "Jeffrey Lam",
               "title": null
             }
           ]
         },
         {
-          "label": "ARCHITECT",
-          "firm_name": "Behar Font",
-          "people": []
-        },
-        {
-          "label": "EQUITY/FINANCING",
-          "firm_name": "Collective Empowerment Group",
-          "people": []
-        },
-        {
-          "label": "EQUITY/FINANCING",
-          "firm_name": "Believers of Authority Ministries",
-          "people": []
-        },
-        {
-          "label": "LENDER",
-          "firm_name": "Florida Community Loan Fund",
+          "label": "BUYER",
+          "firm_name": "Omni Lifestyle Living",
           "people": []
         }
       ],
       "tenants": [],
-      "financing": "Grand Bahamas Place received $4.2 million in Miami Forever bond financing and $700,000 from Florida Community Loan Fund. Prospera is working to obtain a construction loan for both projects.",
+      "financing": null,
       "market_intelligence": null
     },
     {
-      "title": "South Florida\u2019s top deals: Miami Beach estate sells for $24M",
-      "source": "The Real Deal \u2014 Miami",
-      "link": "https://therealdeal.com/miami/2026/06/08/south-florida-top-real-estate-deals-june-5-2026/",
-      "published": "Mon, 08 Jun 2026 12:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-013.html",
+      "title": "Sotheby\u2019s sues seller over $56M Hamptons deal",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/06/08/sothebys-sues-over-hamptons-sale/",
+      "published": "Mon, 08 Jun 2026 19:54:48 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-021.html",
       "transaction_type": "Sale",
       "article_type": null,
-      "market": "Fort Lauderdale, FL",
-      "narrative": "An affiliate of Link Logistics sold an industrial property in Fort Lauderdale for $17.2 million to an LLC tied to Dalfen International. The transaction for the 66,000-square-foot property equates to approximately $260 per square foot. This deal represents the top commercial transaction in South Florida for the period.",
+      "market": "Southampton, NY",
+      "narrative": "Sotheby's International Realty has filed a lawsuit against seller Nancy Silverman and her LLC, alleging an unpaid commission of $840,000 from the $56 million sale of a Southampton property. The brokerage claims its agent, Harald Grant, was instrumental in securing the buyer, Roger Barnett, and salvaging the deal, which closed in August 2025. Silverman, however, refused to pay the agreed-upon 1.5% commission, leading to the litigation.",
       "data_points": {
-        "property_type": "industrial",
+        "property_type": "single family",
         "property_name": null,
-        "address": "3600 Northwest 54th Street, Fort Lauderdale, FL",
+        "address": "1010 Meadow Lane, Southampton, NY",
         "address_sourced_separately": false,
-        "size_sf": 66000.0,
+        "size_sf": null,
         "size_units": null,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 17200000.0,
+        "sale_price": 56000000.0,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
@@ -615,41 +1117,514 @@
         "land_area_acres": null,
         "multi_asset_purchase": false,
         "notable_features": null,
-        "project_notes": "Seller acquired the property in 2017 for $6.1 million."
+        "project_notes": "The sale included an additional $1,000,000 for furniture and fixtures."
       },
       "companies_people": [
         {
           "label": "SELLER",
-          "firm_name": "Link Logistics",
+          "firm_name": "1010 Meadow LLC",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Nancy Silverman",
           "people": []
         },
         {
           "label": "BUYER",
-          "firm_name": "Dalfen International",
+          "firm_name": "Roger Barnett",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Sotheby's International Realty",
+          "people": [
+            {
+              "name": "Harald Grant",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Bespoke Real Estate",
+          "people": [
+            {
+              "name": "Cody Vichinsky",
+              "title": "President and Co-founder"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Seaport\u2019s \u201cSky House\u201d penthouse asking $20M snags contract",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/06/08/manhattan-sky-house-penthouse-asking-20m-snags-contract/",
+      "published": "Mon, 08 Jun 2026 15:47:28 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-022.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "A penthouse unit at 150 Nassau Street, known as \"Sky House,\" has gone under contract with an asking price of $20 million, making it the priciest Manhattan home to find a buyer last week. The 6,400-square-foot quadplex, featuring unique amenities like a four-story stainless-steel slide and multiple terraces, was previously renovated by its sellers, former technology executives Craig and Kristen Nevill-Manning. This transaction is part of a strong luxury market in Manhattan, which saw 36 properties asking $4 million or more secure contracts last week.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": "Sky House (penthouse at American Tract Society)",
+        "address": "150 Nassau Street, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": 6400.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 20000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Features a four-story, stainless-steel slide, multiple terraces totaling 1,200 square feet, a gym, rope swing, and rock climbing column. Named \"Best Apartment of the Decade\" by Interior Magazine in 2015.",
+        "project_notes": "The sellers purchased the quadplex in 2007 for $6.45 million and subsequently renovated it."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "Craig Nevill-Manning",
+              "title": null
+            },
+            {
+              "name": "Kristen Nevill-Manning",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass",
+          "people": [
+            {
+              "name": "Nick Gavin",
+              "title": null
+            },
+            {
+              "name": "Ugo Russino",
+              "title": null
+            },
+            {
+              "name": "Allie Fraza",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "ARCHITECT",
+          "firm_name": "Ghislaine Vi\u00f1as Interior Design",
+          "people": [
+            {
+              "name": "Ghislaine Vi\u00f1as",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Manhattan's trophy market has been on a hot streak, with an average of 34 luxury homes per week going into contract over the last three months. Approximately a quarter of these deals were for homes asking $10 million or more. The typical luxury home in contract last week was on the market for over a year and saw a 4 percent discount."
+    },
+    {
+      "title": "Hedge funder seeks record $153M for Sagaponack estate",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/tristate/2026/06/08/hedge-funder-seeks-record-153m-for-sagaponack-estate/",
+      "published": "Mon, 08 Jun 2026 14:11:16 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-023.html",
+      "transaction_type": null,
+      "article_type": "Property Listing / For Sale",
+      "market": "Sagaponack, NY",
+      "narrative": "Hedge fund founder Zach Schreiber has listed his Sagaponack estate at 39 Fairfield Pond Lane for $152.5 million, a price that would set a new Hamptons record for a single parcel if achieved. The property features a renovated, fully-furnished two-story home with extensive amenities and over 360 feet of beach frontage. This listing comes amidst a strong luxury market in the South Fork, which saw a significant increase in high-end transactions and median sale prices for luxury homes in the first quarter of the year.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": null,
+        "address": "39 Fairfield Pond Lane, Sagaponack, NY",
+        "address_sourced_separately": false,
+        "size_sf": 9500.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 152500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 3.0,
+        "multi_asset_purchase": false,
+        "notable_features": "The renovated, fully-furnished two-story home includes over 360 feet of beach frontage, a tennis court, a heated pool, a media lounge, and a Pilates room with a sauna and spa.",
+        "project_notes": "The owner purchased the compound in 2013 for $24 million."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "PointState Capital",
+          "people": [
+            {
+              "name": "Zach Schreiber",
+              "title": "Founder"
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass Real Estate",
+          "people": [
+            {
+              "name": "Terry Cohen",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "During the first three months of this year, transactions above $5 million notched a record share of deals in the South Fork, and the median sale price for luxury homes jumped 30 percent to $13 million. Sales of $10 million or more generated $560 million in volume during the first quarter, up from $523 million in the same period in 2020."
+    },
+    {
+      "title": "\u201cReckless\u201d: George Pino breaks down at start of his manslaughter trial over 2022 boat crash",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/06/08/george-pinos-trial-over-2022-fatal-miami-boat-crash-begins/",
+      "published": "Mon, 08 Jun 2026 22:30:18 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-024.html",
+      "transaction_type": null,
+      "article_type": "Non-CRE / Political & Crime News",
+      "market": null,
+      "narrative": "George Pino, CEO of State Street Realty, experienced an emotional breakdown on the first day of his manslaughter trial related to a 2022 boat crash that resulted in the death of a 17-year-old girl. Prosecutors allege Pino was reckless and negligent, piloting his boat erratically and accelerating before crashing into a channel marker in Biscayne Bay. The defense argues Pino would never intentionally endanger lives and had safely navigated the channel many times before.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "State Street Realty",
+          "people": [
+            {
+              "name": "George Pino",
+              "title": "CEO"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "South Florida\u2019s top deals: Finance exec sells Surf Club condo for $27M",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/06/08/south-florida-top-real-estate-deals-june-8-2026/",
+      "published": "Mon, 08 Jun 2026 22:02:34 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-025.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "South Florida",
+      "narrative": "This article is a roundup of the top residential sales in South Florida. The priciest transaction involved financier Todd Green selling a condo at the Four Seasons at The Surf Club in Surfside for $27.3 million. Another notable sale was a waterfront property on Hibiscus Island in Miami Beach, which traded for $18.5 million. Additionally, a home in Palm Beach sold for $15.9 million, and a Palm Beach Gardens residence was acquired for $11 million.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": "The Surf Club",
+        "address": "9111 Collins Avenue, Surfside, FL",
+        "address_sourced_separately": false,
+        "size_sf": 5300.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 27300000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Four-bedroom, four-bathroom unit.",
+        "project_notes": "The unit was previously acquired for $12.4 million in 2017. The most recent asking price was $31.5 million."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "Todd Green",
+              "title": "financier"
+            }
+          ]
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Trust",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "One Sotheby's International Realty",
+          "people": [
+            {
+              "name": "Eric Johnson",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Douglas Elliman",
+          "people": [
+            {
+              "name": "Devin Kay",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Wellness-focused Coral Gables condo project nabs $68M construction loan",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/06/08/cora-merrick-park-secures-67-5-million-construction-loan/",
+      "published": "Mon, 08 Jun 2026 19:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-026.html",
+      "transaction_type": "Loan",
+      "article_type": null,
+      "market": "Coral Gables, FL",
+      "narrative": "Constellation Group and the Boschetti Group secured a $67.5 million construction loan from BHI for Cora Merrick Park, a 74-unit luxury condominium development in Coral Gables, two months after breaking ground. The project, located at 4241 Aurora Street, is designed with a strong focus on health and wellness, aiming for certification through the International Well Building Institute\u2019s residential program. This financing underscores the developers' strategy to attract affluent buyers with wellness-centric amenities, despite a challenging lending environment for new construction.",
+      "data_points": {
+        "property_type": "condo",
+        "property_name": "Cora Merrick Park",
+        "address": "4241 Aurora Street, Coral Gables, FL",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 74,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 67500000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 0.7,
+        "multi_asset_purchase": false,
+        "notable_features": "Wellness-focused luxury condo project seeking certification through the International Well Building Institute\u2019s residential program, featuring a rooftop pool deck, yoga and meditation spaces, a fitness center, and Coral Gables\u2019 first rooftop padel court.",
+        "project_notes": "The 0.7-acre site was previously acquired for $6.1 million in 2022. The development team originally envisioned the site as an apartment project before pivoting to condos. Construction began in April 2026 and is expected to wrap in 2028, a year later than originally projected. Units are priced from $900,000 to over $4 million for penthouses. The development will also feature a 5,000-square-foot public park with a sculpture by Jaume Plensa, which the developers plan to donate to the city."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Constellation Group",
+          "people": [
+            {
+              "name": "Eduardo Otaola",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Boschetti Group",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "BHI",
+          "people": []
+        },
+        {
+          "label": "MORTGAGE BROKER",
+          "firm_name": "Berkadia",
+          "people": [
+            {
+              "name": "Scott Wadler",
+              "title": null
+            },
+            {
+              "name": "Matt Nihan",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Douglas Elliman",
           "people": []
         }
       ],
       "tenants": [],
       "financing": null,
-      "market_intelligence": "CRE deal activity in April saw a 33% year-over-year decline to $24.7 billion, but year-to-date volume reached $163.5 billion, marking a 14% increase compared to the previous year, suggesting overall market stability."
+      "market_intelligence": "Construction financing remains difficult to obtain, particularly as South Florida\u2019s condo market shows signs of slowing after several years of record-breaking growth. Berkadia\u2019s Miami office secured over $680 million in land acquisition, construction, and condo inventory loans across South Florida in 2026, and more than $1.7 billion over the past year."
     },
     {
-      "title": "South Florida Dirt: Miami-Dade County vs. Fisher Island\u2019s billionaires",
+      "title": "Miami commission to revisit $80M plan to redevelop neglected Virginia Key marinas",
       "source": "The Real Deal \u2014 Miami",
-      "link": "https://therealdeal.com/miami/2026/06/07/south-florida-dirt-miami-dade-fights-for-fisher-island-site/",
-      "published": "Sun, 07 Jun 2026 17:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-014.html",
+      "link": "https://therealdeal.com/miami/2026/06/08/miami-to-revisit-redevelopment-of-virginia-key-marinas/",
+      "published": "Mon, 08 Jun 2026 18:25:04 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-027.html",
       "transaction_type": null,
-      "article_type": "CRE Legal / Regulatory",
+      "article_type": "Development",
       "market": "Miami, FL",
-      "narrative": "Miami-Dade County has abandoned its proposed $400 million deal to acquire a nearly 10-acre fuel depot on Fisher Island from HRP Group, opting instead to pursue the property through eminent domain. HRP Group had previously acquired the site for $180 million in October, with plans to demolish the fuel facility, remediate the land, and develop luxury condominiums, conveying 4 acres to the Fisher Island Community Association. The county's decision to pursue eminent domain comes after a lawsuit filed by residents against HRP and the resignation of two county officials, highlighting a contentious battle over the site's future use and the county's need for continued fuel supply for PortMiami cruise ships.",
+      "narrative": "The Miami City Commission is set to consider an $80 million redevelopment plan for the Virginia Key marinas, which would allow Virginia Key LLC, a joint venture of RCI Marine Group and Suntex Marinas, to lease and modernize the facilities. The proposal, which includes upgraded marina infrastructure, boat storage, restaurants, retail, and public parking, follows a court order for a public referendum after a decade of legal and political disputes. The developers would pay the city a minimum of $2.2 million annually, plus a percentage of gross revenue, under a proposed 45-year lease with two 15-year renewal options.",
+      "data_points": {
+        "property_type": "marina",
+        "property_name": "Virginia Key marinas",
+        "address": "3301 Rickenbacker Causeway, Miami, FL",
+        "address_sourced_separately": false,
+        "size_sf": 32000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 80000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": "Construction of a mixed-use building with 282 dry boat slips, commercial space, relocated dockmaster's office, new parking; renovation of two existing 19,000 SF commercial buildings, fueling facilities, and boat launch.",
+        "total_project_all_phases": "750 dry slips, 162 wet slips, 32,000 SF commercial space, 630 parking spaces",
+        "original_plan": null,
+        "land_area_acres": 27.6,
+        "multi_asset_purchase": false,
+        "notable_features": "Redevelopment includes upgraded marina infrastructure, boat storage, restaurants, retail space, and public parking. The project will reserve at least 220 parking spaces for the neighboring Rusty Pelican restaurant.",
+        "project_notes": "The proposed lease is for an initial 45-year term with two 15-year renewal options, potentially extending to 75 years. The city is estimated to receive $204 million in rent during the initial term, excluding percentage rent. The project has been subject to lawsuits and political fights for nearly a decade."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Virginia Key LLC",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "RCI Marine Group",
+          "people": [
+            {
+              "name": "Robert Christoff Jr.",
+              "title": "President"
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Suntex Marinas",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "City of Miami",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Rickenbacker Marina",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Firm led by former Blackstone Exec buys two Waukegan industrial properties for $47M",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/06/09/centaur-capital-buys-waukegan-warehouses/",
+      "published": "Tue, 09 Jun 2026 12:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-028.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "Waukegan, IL",
+      "narrative": "Centaur Capital Partners, led by Blackstone co-founder John Schreiber, acquired two industrial properties in Waukegan, IL, from VentureOne Real Estate for a total of $46 million. The portfolio includes a 133,000-square-foot distribution center and a 271,000-square-foot manufacturing building, both fully leased to packaging companies. This acquisition reflects continued investor interest in the Chicago industrial market as it normalizes post-pandemic, with speculative development evening out and existing inventory absorbing tenants.",
       "data_points": {
         "property_type": "industrial",
         "property_name": null,
         "address": null,
         "address_sourced_separately": false,
-        "size_sf": null,
+        "size_sf": 404000.0,
         "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 46000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 18.7,
+        "multi_asset_purchase": true,
+        "notable_features": null,
+        "project_notes": "VentureOne Real Estate previously acquired these two properties in 2023 for $39 million."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Centaur Capital Partners",
+          "people": [
+            {
+              "name": "John Schreiber",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "VentureOne Real Estate",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "The Chicago industrial market is normalizing post-pandemic, with speculative development evening out and existing inventory absorbing tenants. As of Q2, 11.4 million square feet of industrial space was under construction in the Chicago area, with 50.5% being speculative. Regional vacancy improved by 10 basis points quarter-over-quarter to 5.9% in Q2, compared to just over 6% in Q1 2020."
+    },
+    {
+      "title": "\u201cDysfunction, unnecessary banter, lies and delays\u201d: River Forest officials want development saga to be over",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/06/08/river-forest-officials-want-development-saga-to-end/",
+      "published": "Mon, 08 Jun 2026 22:36:19 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-029.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "River Forest, IL",
+      "narrative": "A Cook County judge has admonished the developer and lender involved in a stalled condominium project in River Forest, urging them to resolve their legal disputes to allow a foreclosure to proceed. The village president also expressed frustration over the protracted delays and lack of progress on the site, which has been an eyesore for years. The project, initially approved in 2018 for a 30-unit condo building, has been mired in legal battles since the developer's building permit was revoked in 2023 and the lender initiated foreclosure proceedings.",
+      "data_points": {
+        "property_type": "condo",
+        "property_name": "Lake & Lathrop",
+        "address": "7601-7613 Lake Street, River Forest, IL",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 30,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
@@ -662,40 +1637,154 @@
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": 10.0,
+        "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Aging fuel depot critical for PortMiami cruise ship fuel supply; located on Fisher Island, an exclusive community accessible only by ferry, boat, or helicopter.",
-        "project_notes": "HRP Group acquired the property for $180 million in October, with TransMontaigne Partners continuing operations until 2027. Miami-Dade County initially proposed a $400 million purchase ($200 million at closing, $200 million over 20 years) before abandoning the deal for eminent domain."
+        "notable_features": null,
+        "project_notes": "The 2018 plan for a five-story, 30-unit condo building was approved with unit prices up to $1.4 million. The developer's building permit was revoked in 2023. Beverly Bank & Trust initiated foreclosure in May 2023 after canceling a $20 million line of credit and suing the developer for $4.2 million."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Sedgwick Properties",
+          "people": [
+            {
+              "name": "Marty Paris",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Wintrust Bank",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Beverly Bank & Trust",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Crowns sell Water Tower Place jewel for nearly $6M",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/06/08/crowns-sell-water-tower-place-jewel-for-nearly-6m/",
+      "published": "Mon, 08 Jun 2026 20:30:35 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-030.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Chicago, IL",
+      "narrative": "Lester and Renee Crown sold their 6,200-square-foot condominium on the 37th floor of Water Tower Place in Chicago for $5.5 million. The five-bedroom unit, which the Crowns had assembled from two separate units purchased in 2015 and 2016, was recently renovated by Kara Mann Interiors. The buyer of the luxury residence was not identified in public records.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": "Water Tower Place",
+        "address": "835 North Michigan Avenue, Chicago, IL",
+        "address_sourced_separately": false,
+        "size_sf": 6200.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 5500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Recently renovated by Kara Mann Interiors, features a walk-in coat closet, multiple wet bars, a nursery, and a breakfast room overlooking Lake Michigan.",
+        "project_notes": "The unit was purchased in chunks by the Crowns in 2015 and 2016 for $2.7 million and $3.3 million respectively, then combined. The property had a $60,000 property tax bill in 2024 and $56,500 in annual HOA dues."
       },
       "companies_people": [
         {
           "label": "SELLER",
-          "firm_name": "TransMontaigne Partners",
-          "people": []
-        },
-        {
-          "label": "BUYER",
-          "firm_name": "HRP Group",
+          "firm_name": "Crown Family",
           "people": [
             {
-              "name": "Roberto Perez",
+              "name": "Lester Crown",
+              "title": null
+            },
+            {
+              "name": "Renee Crown",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Malone Residential",
+          "people": [
+            {
+              "name": "Kathleen Malone",
+              "title": "Listing Agent"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Water Tower Place is undergoing a $170 million revamp by MetLife, with upper floors being converted into medical office space. The Magnificent Mile commercial district is experiencing renewed excitement with dropping retail vacancy and high-profile tenants like American Eagle, Nike, and Levi's looking to shuffle around the area."
+    },
+    {
+      "title": "Foundry Park nears $202M for infrastructure from City Hall",
+      "source": "The Real Deal \u2014 Chicago",
+      "link": "https://therealdeal.com/chicago/2026/06/08/foundry-park-developers-seeking-202m-in-tif-reimbursements/",
+      "published": "Mon, 08 Jun 2026 16:06:16 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-031.html",
+      "transaction_type": null,
+      "article_type": "Infrastructure Investment / Government Policy",
+      "market": "Chicago, IL",
+      "narrative": "JDL Development and Kanye Anderson Real Estate's $3 billion Foundry Park megadevelopment is poised to receive $202 million in tax-increment financing (TIF) from the city, pending approval from the Community Development Commission. These funds are designated to reimburse the developers for infrastructure improvements, including new roadways and park space, addressing critical issues that were also a concern for the site's previous development proposal. The project, located on the former Lincoln Yards site, will feature 3,200 residential units alongside retail and office components.",
+      "data_points": {
+        "property_type": "mixed-use",
+        "property_name": "Foundry Park",
+        "address": "Parking lot, 14 W Superior St, Chicago, IL",
+        "address_sourced_separately": true,
+        "size_sf": null,
+        "size_units": 3200,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 3000000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Located on the north half of the former Lincoln Yards site.",
+        "project_notes": "The $202 million TIF funding includes approximately $70 million for new roadways and $21.5 million for an extension of the 606 trail. The previous Lincoln Yards redevelopment plan had earmarked $490 million in TIF funds for its first phase."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "JDL Development",
+          "people": [
+            {
+              "name": "Jim Ketchinger",
               "title": "CEO"
             }
           ]
         },
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Related Group",
-          "people": []
-        },
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Russell Galbut",
+          "firm_name": "Kanye Anderson Real Estate",
           "people": []
         },
         {
           "label": "OWNER",
-          "firm_name": "Fisher Island Community Association",
+          "firm_name": "Novak Construction",
           "people": []
         }
       ],
@@ -704,133 +1793,135 @@
       "market_intelligence": null
     },
     {
-      "title": "Movers: Five-person Avison Young industrial team jumps to JLL",
-      "source": "The Real Deal \u2014 Chicago",
-      "link": "https://therealdeal.com/chicago/2026/06/08/avison-young-industrial-team-leaves-avison-young-for-jll/",
-      "published": "Mon, 08 Jun 2026 11:15:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-015.html",
+      "title": "Austin\u2019s luxury market is regaining speed",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/06/08/austins-luxury-market-is-regaining-speed/",
+      "published": "Mon, 08 Jun 2026 21:23:17 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-032.html",
       "transaction_type": null,
-      "article_type": "Promotion",
-      "market": "Chicago, IL",
-      "narrative": "A five-person industrial brokerage team, including Managing Director Adam Haefner, Executive Vice Presidents Marty Mikaitis and Zeke Rowan, Vice President Nick Fazio, and Sales Coordinator Anne McGrath, has moved from Avison Young to JLL in Chicago. The team will focus on industrial clients in the O'Hare submarket, bringing a combined deal volume of over $2.5 billion across 50 million square feet. Additionally, Core Industrial Realty hired Alexander \"AJ\" Smith as a new broker, Lee & Associates promoted Tony Russo to Executive Vice President and Matthew Androwich to Vice President, and McHugh Construction added Eric Engstrom as Project Executive, Grant Peoples as Director of Risk Management, and Amit Patel as Project Manager. Jordan Multak also joined Greenstone Partners, specializing in multifamily and mixed-use sectors.",
+      "article_type": "Opinion / Market Commentary",
+      "market": "Austin, TX",
+      "narrative": "Austin's luxury housing market is experiencing a significant turnaround, moving from being one of the slowest in the country last year to one of the swiftest this spring. Luxury homes in Austin are now going under contract in a median of 57 days, 16 days faster than the previous year, indicating a strong resurgence in buyer interest. This shift is attributed to more realistic seller expectations and a limited supply of move-in ready luxury homes, leading to an increase in cash transactions and quicker closings.",
       "data_points": null,
       "companies_people": [
         {
           "label": "TENANT REP",
-          "firm_name": "JLL",
-          "people": [
-            {
-              "name": "Adam Haefner",
-              "title": "Managing Director"
-            },
-            {
-              "name": "Marty Mikaitis",
-              "title": "Executive Vice President"
-            },
-            {
-              "name": "Zeke Rowan",
-              "title": "Executive Vice President"
-            },
-            {
-              "name": "Nick Fazio",
-              "title": "Vice President"
-            },
-            {
-              "name": "Anne McGrath",
-              "title": "Sales Coordinator"
-            }
-          ]
-        },
-        {
-          "label": "TENANT REP",
-          "firm_name": "Avison Young",
+          "firm_name": "Redfin",
           "people": []
         },
         {
-          "label": "TENANT REP",
-          "firm_name": "Core Industrial Realty",
+          "label": "SELLER BROKER",
+          "firm_name": "Austin luxury agent",
           "people": [
             {
-              "name": "Alexander \"AJ\" Smith",
-              "title": "Broker"
+              "name": "Michael Reisor",
+              "title": null
             }
           ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Freddie Mac to auction foreclosed Austin apartment complex with $9.5M opening bid",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/06/08/freddie-mac-sends-foreclosed-austin-apartments-to-auction/",
+      "published": "Mon, 08 Jun 2026 20:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-033.html",
+      "transaction_type": null,
+      "article_type": "Property Listing / For Sale",
+      "market": "Austin, TX",
+      "narrative": "Freddie Mac is auctioning a foreclosed 526-unit apartment complex at 1601 Royal Crest Drive in Austin, TX, with an opening bid of $9.5 million. The mortgage giant foreclosed on the property after the previous owner, Mia Riverside, allegedly defaulted on a $50.2 million loan. Freddie Mac acquired the vacant property at a January foreclosure auction for $50 million. The 20.2-acre site is zoned for neighborhood mixed-use, allowing for residential, small employers, and neighborhood retail, with specific building height and setback requirements.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": "1601 Royal Crest Drive, Austin, TX",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 526,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 9500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": 0.0,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 20.2,
+        "multi_asset_purchase": false,
+        "notable_features": "Zoned for neighborhood mixed-use with residential, small employers, and neighborhood-oriented retail; easy access to I-35 and proximity to East Riverside Drive businesses and Lady Bird Lake.",
+        "project_notes": "Freddie Mac foreclosed on the property and won it at a January foreclosure auction with a $50 million bid after the previous owner defaulted on a $50.2 million loan granted in March 2024."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "Freddie Mac",
+          "people": []
         },
         {
-          "label": "TENANT REP",
-          "firm_name": "Lee & Associates",
-          "people": [
-            {
-              "name": "Tony Russo",
-              "title": "Executive Vice President"
-            },
-            {
-              "name": "Matthew Androwich",
-              "title": "Vice President"
-            }
-          ]
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "McHugh Construction",
-          "people": [
-            {
-              "name": "Eric Engstrom",
-              "title": "Project Executive"
-            },
-            {
-              "name": "Grant Peoples",
-              "title": "Director of Risk Management"
-            },
-            {
-              "name": "Amit Patel",
-              "title": "Project Manager"
-            }
-          ]
-        },
-        {
-          "label": "TENANT REP",
-          "firm_name": "Greenstone Partners",
-          "people": [
-            {
-              "name": "Jordan Multak",
-              "title": "Commercial Broker"
-            }
-          ]
-        },
+          "label": "OWNER",
+          "firm_name": "Mia Riverside",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Austin's housing market experienced an increase in foreclosures in April, leading the nation year-over-year, primarily affecting luxury condos and high-priced areas. Other high-profile Austin properties, including The Line Austin and Hyatt Centric, also recently went to foreclosure auctions, returning to their lenders for a combined $222.5 million."
+    },
+    {
+      "title": "Craig International wins bid for former Globe Life campus, eyes $200M-plus redevelopment",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/06/08/craig-international-wins-bid-for-old-globe-life-hq/",
+      "published": "Mon, 08 Jun 2026 18:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-034.html",
+      "transaction_type": "Development",
+      "article_type": null,
+      "market": "McKinney, TX",
+      "narrative": "Craig International has won the bid to redevelop the former Globe Life Corporate Headquarters in McKinney, Texas. The 58-acre site, which includes over 300,000 square feet of existing office space, will be rebranded as \"Rowlett Station\" and transformed into a mixed-use development. The initial redevelopment plans are projected to exceed $200 million, with a focus on repurposing existing structures and integrating new master-planned elements, hike-and-bike trails, and connectivity to adjacent retail.",
+      "data_points": {
+        "property_type": "mixed-use",
+        "property_name": "Rowlett Station",
+        "address": "3700 South Stonebridge Drive, McKinney, TX",
+        "address_sourced_separately": false,
+        "size_sf": 300000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 200000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 58.0,
+        "multi_asset_purchase": false,
+        "notable_features": "Connects Stonebridge Drive and Eldorado Parkway with hike-and-bike trails and promotes connectivity to adjacent retail.",
+        "project_notes": "The site was previously the Globe Life Corporate Headquarters, which relocated to a smaller office in 2025."
+      },
+      "companies_people": [
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Sterling Bay",
-          "people": []
+          "firm_name": "Craig International",
+          "people": [
+            {
+              "name": "David Craig",
+              "title": "founder and CEO"
+            }
+          ]
         },
         {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "LendLease",
-          "people": []
-        },
-        {
-          "label": "ENGINEER",
-          "firm_name": "Sargent & Lundy",
-          "people": []
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "The Walsh Group",
-          "people": []
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Blackwood Group",
-          "people": []
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Chicago Commercial Construction",
-          "people": []
-        },
-        {
-          "label": "TENANT REP",
-          "firm_name": "Essex Realty Partners",
+          "label": "SELLER",
+          "firm_name": "Globe Life",
           "people": []
         }
       ],
@@ -839,46 +1930,858 @@
       "market_intelligence": null
     },
     {
-      "title": "One-two-three punch of Mavs, Stars and Neiman bruises struggling Downtown Dallas",
+      "title": "Dallas city officials to vote on future of \u201cobsolete\u201d City Hall building",
       "source": "The Real Deal \u2014 Texas",
-      "link": "https://therealdeal.com/texas/dallas/2026/06/07/downtown-dallas-reels-from-bad-news/",
-      "published": "Sun, 07 Jun 2026 14:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-08-016.html",
+      "link": "https://therealdeal.com/texas/2026/06/08/dallas-city-officials-weigh-future-of-obsolete-city-hall/",
+      "published": "Mon, 08 Jun 2026 17:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-035.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
       "market": "Dallas, TX",
-      "narrative": "Downtown Dallas is facing significant challenges with the departure of several key anchors. The Dallas Mavericks are relocating to Valley View, the Dallas Stars are leaving American Airlines Center, and the Neiman Marcus flagship store at 1618 Main Street is closing in September due to Saks Global's bankruptcy. These departures follow AT&T's earlier decision to move its 2 million-square-foot office footprint to Plano, further exacerbating the urban core's struggles. Meanwhile, Plano continues to attract major businesses, including Samsung's relocation of its U.S. operations from New Jersey.",
+      "narrative": "Dallas city officials are considering the future of the \"obsolete\" City Hall building at 1500 Marilla Street, with Mayor Eric Johnson advocating for relocation. Modernizing the existing building is estimated to cost between $1.49 billion and $1.6 billion over two decades. Moving out could pave the way for redevelopment of the site, potentially revitalizing Downtown Dallas, which has recently seen the closure of a major department store and the planned departure of two professional sports teams.",
+      "data_points": {
+        "property_type": "government",
+        "property_name": "Dallas City Hall",
+        "address": "1500 Marilla Street, Dallas, TX",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 1490000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "Estimated cost to modernize and operate the building over two decades ranges from $1.49 billion to $1.6 billion."
+      },
+      "companies_people": [
+        {
+          "label": "PLANNER",
+          "firm_name": "Gresham Smith",
+          "people": []
+        },
+        {
+          "label": "PLANNER",
+          "firm_name": "WM2 Company",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "City of Dallas",
+          "people": [
+            {
+              "name": "Eric Johnson",
+              "title": "Mayor"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Co-living startup sells Sutter Mansion at 52% markup a year after buying",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/08/neighbourgood-sells-hotel-for-nearly-double-2025-price/",
+      "published": "Mon, 08 Jun 2026 23:30:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-036.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "San Francisco, CA",
+      "narrative": "Neighbourgood, a co-living and hospitality company, has sold the Sutter Mansion, a boutique hotel in San Francisco, for $7.3 million to Dharma Bums Holdings. This transaction represents a 52% markup from the $4.8 million Neighbourgood paid for the property just one year prior. Neighbourgood divested the asset to reallocate capital towards larger-scale adaptive reuse opportunities that better align with its long-term investment strategy.",
+      "data_points": {
+        "property_type": "hotel",
+        "property_name": "Sutter Mansion",
+        "address": "1409 Sutter Street, San Francisco, CA",
+        "address_sourced_separately": false,
+        "size_sf": 17000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": 12,
+        "rental_rate": null,
+        "sale_price": 7300000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Historic Queen Anne house with a 3,600-square-foot dining space capable of seating 130 people.",
+        "project_notes": "Previously acquired in June 2025 for $4.8 million with plans to secure a food and beverage partner for a full-service restaurant."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Dharma Bums Holdings",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Neighbourgood",
+          "people": [
+            {
+              "name": "Murray Clark",
+              "title": "Co-founder and CEO"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "San Francisco's lodging sector is recovering, with the strongest revenue per available room growth among major U.S. markets in Q1 this year, increasing 31% year-over-year."
+    },
+    {
+      "title": "Twin Peaks single-family home floated for multifamily redevelopment",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/08/san-francisco-home-slated-for-multifamily-redevelopment/",
+      "published": "Mon, 08 Jun 2026 21:02:42 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-037.html",
+      "transaction_type": null,
+      "article_type": "Development",
+      "market": "San Francisco, CA",
+      "narrative": "A single-family home in San Francisco's Twin Peaks neighborhood is slated for redevelopment into a nine-unit apartment complex. Property owner Benny McGrath, through Modern Art Construction, has filed permits to replace the existing residence at 821 Corbett Avenue with a four-story building designed by Kerman Morris Architects. The project aims to contribute to San Francisco's state-mandated housing goals, which require the city to plan for over 82,000 new housing units by the end of the decade, despite challenges like rising construction costs and material shortages that have stalled many entitled developments.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": "821 Corbett Avenue, San Francisco, CA",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 9,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 0.25,
+        "multi_asset_purchase": false,
+        "notable_features": "The building will include setbacks for private balconies overlooking Market Street and planned parking for 12 cars and 16 bicycles.",
+        "project_notes": "The existing two-story home on the site was built in the early 20th century and is eligible for historic resource designation."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Modern Art Construction",
+          "people": [
+            {
+              "name": "Benny McGrath",
+              "title": "Owner"
+            }
+          ]
+        },
+        {
+          "label": "ARCHITECT",
+          "firm_name": "Kerman Morris Architects",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "San Francisco must plan for 82,069 new housing units by the end of the decade. More than 20,000 units are stalled in the pipeline even after receiving construction approvals. Last year, 1,453 new units were completed, less than a third of the 5,000+ new homes completed in 2020. Plans for 2,541 new homes were filed last year."
+    },
+    {
+      "title": "11K sf Saratoga estate hits market for $19M as local housing market heats up",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/08/saratoga-estate-hits-market-for-nearly-20-million/",
+      "published": "Mon, 08 Jun 2026 19:22:46 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-038.html",
+      "transaction_type": null,
+      "article_type": "Property Listing / For Sale",
+      "market": "Saratoga, CA",
+      "narrative": "A luxurious 11,000-square-foot estate in Saratoga, CA, has been listed for sale at $19 million. Completed in 2013 by Conrado Home Builders, the property features high-end amenities including a theater, wine storage, gym, and an 85-foot infinity-edge pool. The sellers, who commissioned the home while working abroad, are now downsizing, a trend observed among affluent Bay Area families.",
+      "data_points": {
+        "property_type": "single family",
+        "property_name": null,
+        "address": "22525 Rolling Hills Road, Saratoga, CA",
+        "address_sourced_separately": false,
+        "size_sf": 11000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 19000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 2013,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Features a theater room, temperature-controlled wine storage, multiple living areas, a gym, a detached accessory dwelling unit, and an 85-foot infinity-edge pool built on a reinforced slope. The home was originally built with an on-site water system including wells and reverse-osmosis filtration, and has since been connected to city utilities.",
+        "project_notes": "The home was a 'no-budget build' commissioned by the sellers while working abroad in banking and finance."
+      },
+      "companies_people": [
+        {
+          "label": "GENERAL CONTRACTOR",
+          "firm_name": "Conrado Home Builders",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass",
+          "people": [
+            {
+              "name": "David Welton",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Home prices in Saratoga were up 12.3 percent in the three months ending in April compared to the same period last year, with a median price of $4.1 million. Silicon Valley and the Bay Area are experiencing a surge of high-net-worth buyers, many linked to the artificial intelligence sector."
+    },
+    {
+      "title": "San Francisco sent its two polarizing housing views to the November ballot",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/08/wiener-chan-advance-to-november-in-ca-11-housing-showdown/",
+      "published": "Mon, 08 Jun 2026 15:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-039.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Political Commentary",
+      "market": "San Francisco, CA",
+      "narrative": "San Francisco voters have advanced two candidates to the November general election who represent the city's conflicting views on housing policy. State Sen. Scott Wiener, a proponent of pro-growth housing policies, secured a significant lead, advocating for increased housing production and reduced local permitting hurdles. His opponent, Supervisor Myrna Chan, represents a more traditional progressive stance, emphasizing subsidized affordable housing and expressing concerns about gentrification from market-rate development. The primary results highlight the ongoing debate within San Francisco regarding housing supply, affordability, and the role of state versus local control in development.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OTHER",
+          "firm_name": "California State Legislature",
+          "people": [
+            {
+              "name": "Scott Wiener",
+              "title": "State Senator"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "San Francisco Board of Supervisors",
+          "people": [
+            {
+              "name": "Myrna Chan",
+              "title": "County Supervisor"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Campaign for Saikat Chakrabarti",
+          "people": [
+            {
+              "name": "Saikat Chakrabarti",
+              "title": "Political Operative"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "City of San Jose",
+          "people": [
+            {
+              "name": "Matt Mahan",
+              "title": "Mayor"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Caruso",
+          "people": [
+            {
+              "name": "Rick Caruso",
+              "title": "Mall Magnate"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "California Attorney General's Office",
+          "people": [
+            {
+              "name": "Xavier Becerra",
+              "title": "Former California Attorney General"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Campaign for Steve Hilton",
+          "people": [
+            {
+              "name": "Steve Hilton",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Campaign for Tom Steyer",
+          "people": [
+            {
+              "name": "Tom Steyer",
+              "title": "Billionaire"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "City of San Francisco",
+          "people": [
+            {
+              "name": "Daniel Lurie",
+              "title": "Mayor"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Tishman Speyer Holds First Close on Fund Targeting Multifamily in Seoul",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/tishman-speyer-holds-first-close-on-fund-targeting-multifamily-in-seoul/",
+      "published": "Tue, 09 Jun 2026 11:23:47 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-040.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Fund Close",
+      "market": null,
+      "narrative": "Tishman Speyer has achieved the first close for its Korea Living Venture (KLV) fund, securing $300 million in third-party equity commitments from two European pension funds. The fund is dedicated to acquiring, repositioning, and developing multifamily and accommodation properties across Seoul and the broader capital region. This initiative aims to capitalize on the under-institutionalized living sector in Korea, driven by increasing demand and limited supply, while expanding Tishman Speyer's global portfolio.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 800000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "The fund is targeting approximately $400 million of equity commitments, representing more than $800 million of investment capacity."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Tishman Speyer",
+          "people": [
+            {
+              "name": "Graham Mackie",
+              "title": "Head of Pan-Asia"
+            }
+          ]
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "APG Asset Management N.V.",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Bouwinvest",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Kennedy Wilson Forges \u20ac2-Billion JV to Own, Develop Irish Apartments",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/kennedy-wilson-forges-e2-billion-jv-to-own-develop-irish-apartments/",
+      "published": "Tue, 09 Jun 2026 11:23:01 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-041.html",
+      "transaction_type": "Development",
+      "article_type": null,
+      "market": "Ireland",
+      "narrative": "Kennedy Wilson has established a \u20ac2 billion (US$2.31 billion) residential joint venture with APG, acting on behalf of Dutch pension fund ABP, to develop and manage a portfolio of over 3,400 private rented homes in Ireland. This strategic partnership will significantly expand Kennedy Wilson's Irish residential footprint to approximately 6,900 units upon completion of the new developments. The venture includes Kennedy Wilson acquiring a minority equity interest in APG's existing 1,100-unit Cherrywood portfolio and a minority equity interest in 2,300 new rental units across three development sites, which Kennedy Wilson will develop and deliver. These projects are expected to transform communities and contribute to Ireland's housing supply goals.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 3400,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 2310000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "The joint venture includes two components: Kennedy Wilson acquiring a minority equity interest in APG's existing 1,100-unit Cherrywood portfolio, and Kennedy Wilson taking a minority equity interest in approximately 2,300 new rental units across the Player Wills, Bailey Gibson, and Clonliffe sites, which the firm will develop."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Kennedy Wilson",
+          "people": [
+            {
+              "name": "John Keegan",
+              "title": "Head of Capital Formation, EMEA"
+            }
+          ]
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "APG",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "ABP",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "CF Capital: Multifamily Investment Requires Connecting the Right Dots for Each Deal, Not Riding Market Waves",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/cf-capital-multifamily-investment-requires-connecting-the-right-dots-for-each-deal-not-riding-market-waves/",
+      "published": "Mon, 08 Jun 2026 21:48:09 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-042.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Louisville, KY",
+      "narrative": "CF Capital, a Louisville-based multifamily investment firm, emphasizes that successful multifamily investing stems from disciplined underwriting, execution, governance, and investor transparency rather than attempting to time the market or follow broad trends. The firm, which has nearly doubled its revenue in the last two years and manages 1,500 units across two states, prioritizes long-term advantages in apartment communities that offer downside protection and appreciation potential across cycles. They utilize a scoring system for property characteristics to maintain discipline in their pursuit of deals, ensuring higher return expectations for lower-scoring opportunities. The firm cautions against oversimplifying distressed deals, noting that many require a repositioning of the resident profile, not just interior upgrades, which can create operational friction and impact returns if not properly underwritten.",
       "data_points": null,
       "companies_people": [
         {
           "label": "OWNER",
-          "firm_name": "Saks Global",
+          "firm_name": "CF Capital",
+          "people": [
+            {
+              "name": "Alex Terauds",
+              "title": "Acquisitions Principal"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Walker & Dunlop, Pretium Close on $76M Bridge Loan for Chelsea Apartments",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/walker-dunlop-pretium-close-on-76m-bridge-loan-for-chelsea-apartments/",
+      "published": "Mon, 08 Jun 2026 21:41:47 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-043.html",
+      "transaction_type": "Loan",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Walker & Dunlop and Pretium, through their affordable housing bridge lending joint venture, have closed a $75.7 million bridge loan for a 174-unit affordable multifamily community in Manhattan's Chelsea neighborhood. This financing will provide short-term interim capital, supporting the property until it secures a permanent refinance through the HUD 223(f) program. The transaction underscores the venture's commitment to preserving affordable housing and offering tailored financing solutions during transitional periods for property owners.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": "Chelsea Apartments",
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 174,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 75700000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 1928,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Rehabilitated in 1981, with 110 one-bedroom units and 64 two-bedroom units, averaging 704 square feet per unit.",
+        "project_notes": "Bridge loan structured as short-term interim financing ahead of anticipated permanent refinance under the HUD 223(f) program."
+      },
+      "companies_people": [
+        {
+          "label": "LENDER",
+          "firm_name": "Walker & Dunlop Affordable Bridge Capital",
           "people": []
         },
         {
-          "label": "TENANT",
-          "firm_name": "Dallas Mavericks",
+          "label": "LENDER",
+          "firm_name": "Walker & Dunlop, Inc.",
+          "people": [
+            {
+              "name": "William Carroll",
+              "title": "SVP of Walker & Dunlop Affordable Housing and Head of Specialty Credit"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Pretium",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Insights from Connect CRE LA 2026: Where the Market is Headed (VIDEO)",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/insights-from-connect-cre-la-2026-where-the-market-is-headed-video/",
+      "published": "Mon, 08 Jun 2026 21:36:13 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-044.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "Los Angeles, CA",
+      "narrative": "Industry leaders at Connect CRE Los Angeles 2026 offered a positive outlook for the remainder of 2026, characterizing the market as \"hot\" with abundant capital. The lending environment is highly competitive, creating a borrower's market where financing is available for various opportunities. Discussions also touched upon the strengths and weaknesses within the Southern California economy and its commercial real estate sector.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "LENDER",
+          "firm_name": "Red Oak Capital Holdings",
+          "people": [
+            {
+              "name": "Gary Bechtel",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "California Governor's Office of Business & Economic Development",
+          "people": [
+            {
+              "name": "Brian Coleman",
+              "title": "Project Financing Manager"
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Nixon Peabody",
+          "people": [
+            {
+              "name": "Sonia Nayak",
+              "title": "Partner"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "AI Is Filling Office Towers. It's Also Likely To Empty Them",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/national/news/office/ai-filling-office-towers-also-likely-to-empty-them-134916",
+      "published": "Mon, 08 Jun 2026 15:08:31 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-045.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "The article explores the paradoxical impact of artificial intelligence on the U.S. office market, noting a concentrated rebound in leasing activity within high-quality properties in select markets, primarily driven by AI-focused tech firms. This surge in demand for premium space coexists with significant tech sector layoffs, as companies prioritize AI investments over hiring and seek efficiencies. Experts suggest that while AI adoption is leading to downsizing and a flat outlook for office-using job growth in the short term, it is also expected to create new job categories and business opportunities as the technology matures, particularly in areas like compliance and data security.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Manulife",
+          "people": [
+            {
+              "name": "Erin Patterson",
+              "title": "Co-lead of research and strategy"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "CBRE",
+          "people": [
+            {
+              "name": "Colin Yasukochi",
+              "title": "Executive director of Tech Insights Center"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "OpenAI",
           "people": []
         },
         {
-          "label": "TENANT",
-          "firm_name": "Dallas Stars",
+          "label": "OWNER",
+          "firm_name": "Oracle",
           "people": []
         },
         {
-          "label": "TENANT",
-          "firm_name": "Neiman Marcus",
+          "label": "OWNER",
+          "firm_name": "Amazon",
           "people": []
         },
         {
-          "label": "TENANT",
-          "firm_name": "AT&T",
+          "label": "OWNER",
+          "firm_name": "Intel",
           "people": []
         },
         {
-          "label": "TENANT",
-          "firm_name": "Samsung",
+          "label": "OWNER",
+          "firm_name": "Microsoft",
           "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Meta",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Mercer",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Charlotte Approves 150-Day Pause On New Data Center Projects",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/charlotte/news/data-center-community-relations/charlotte-approves-150-day-pause-data-center-development-134903",
+      "published": "Mon, 08 Jun 2026 09:00:50 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-046.html",
+      "transaction_type": null,
+      "article_type": "Infrastructure Investment / Government Policy",
+      "market": "Charlotte, NC",
+      "narrative": "The Charlotte City Council has unanimously approved a 150-day moratorium on new data center development to study the infrastructure and environmental impacts of these facilities. This pause will allow the city to gather technical and scientific information to inform future policy decisions regarding the rapidly growing data center industry. The moratorium will not affect projects that have already received valid building permits or have complete applications for developmental approval.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "American Tower Corp.",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Charlotte City Council",
+          "people": [
+            {
+              "name": "Victoria Watlington",
+              "title": "Council Member"
+            },
+            {
+              "name": "Andrea Leslie-Fite",
+              "title": "City Attorney"
+            },
+            {
+              "name": "Joi Mayo",
+              "title": "Council Member"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "A city in Southern California recently passed the nation's first permanent citywide data center ban. New York state is considering a one-year moratorium. Durham, NC, passed a 60-day moratorium in May, and Apex, NC, passed a one-year moratorium in April."
+    },
+    {
+      "title": "OceanFirst Purges $1.4B In Rent-Stabilized Multifamily Loans Following Flushing Financial Merger",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/new-york/news/multifamily/oceanfirst-flushing-financial-bank-rent-stabilized-multifamily-new-york-city-134909",
+      "published": "Mon, 08 Jun 2026 12:01:15 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-047.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "OceanFirst Financial Corp. is divesting $1.4 billion in multifamily loans, primarily from Flushing Financial Corp.'s portfolio, shortly after completing their merger. This strategic move aims to significantly reduce OceanFirst's exposure to rent-regulated properties in New York City, a segment that has faced challenges since the 2019 Housing Stability and Tenant Protection Act. The bank had anticipated substantial losses on this portfolio, underwriting the deal with loss assumptions four times higher than Flushing's existing reserves and devaluing the rent-regulated apartment loan portfolio by over 10%. The sale is expected to conclude by the end of Q2.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 1400000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "The sale represents the bulk of Flushing Financial Corp.'s multifamily loan portfolio, with an average loan size of $1.3M. Of these loans, 48% were tied to fully regulated buildings, 35% were between 50% and 99% regulated, and 17% were less than half regulated. The weighted average loan-to-value ratio at origination was 55%, and the weighted average debt coverage ratio was 1.7x."
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "OceanFirst Financial Corp.",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Flushing Financial Corp.",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Boston Developers Sue Bank For Disclosing Financial Information",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/boston/news/capital-markets/developers-sue-eastern-bank-alleging-disclosure-of-personal-financial-information-134917",
+      "published": "Mon, 08 Jun 2026 15:19:00 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-048.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "Boston, MA",
+      "narrative": "A group of Boston developers has filed a lawsuit against Eastern Bank, alleging the bank improperly disclosed their personal financial information on the online debt sale platform DebtX. The developers claim that sensitive data, including personal financial statements, tax returns, and details on over 50 active properties, was published without their consent or legitimate business purpose. This alleged disclosure occurred as Eastern Bank sought to sell a construction loan related to a substance abuse treatment center in Weston, a loan originally issued by HarborOne Bank before its acquisition by Eastern Bank.",
+      "data_points": {
+        "property_type": "healthcare",
+        "property_name": null,
+        "address": "75 Norumbega Road, Weston, MA",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": 110,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 29000000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": "2022",
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Former senior living facility redeveloped into a substance abuse treatment center.",
+        "project_notes": "A $2 million line of credit was also issued for the treatment facility in 2022."
+      },
+      "companies_people": [
+        {
+          "label": "LENDER",
+          "firm_name": "Eastern Bank",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "City Realty Group",
+          "people": [
+            {
+              "name": "Fred Starikov",
+              "title": "Co-founder"
+            },
+            {
+              "name": "Stephen Whalen",
+              "title": "Co-founder"
+            }
+          ]
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Matthew Zuker",
+          "people": [
+            {
+              "name": "Matthew Zuker",
+              "title": "Developer"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "HarborOne Bank",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Horvath & Tremblay Buys Paul Massey's B6 Brokerage",
+      "source": "Bisnow News Feed",
+      "link": "https://www.bisnow.com/national/news/commercial-real-estate/horvath-tremblay-buys-paul-masseys-b6-brokerage-134910",
+      "published": "Mon, 08 Jun 2026 12:10:52 -0400",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-09-049.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Horvath & Tremblay, a Boston-based brokerage, has acquired B6 Real Estate Advisors, a New York City firm founded by Paul Massey. This acquisition will expand Horvath & Tremblay's presence in New York City, with Massey leading the combined operations in the market. The deal integrates B6's approximately 20 employees into Horvath & Tremblay's national platform, which focuses on investment sales, 1031 exchanges, debt/equity placement, and appraisal services.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Horvath & Tremblay",
+          "people": [
+            {
+              "name": "Bob Horvath",
+              "title": "Partner"
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "B6 Real Estate Advisors",
+          "people": [
+            {
+              "name": "Paul Massey",
+              "title": null
+            }
+          ]
         }
       ],
       "tenants": [],
