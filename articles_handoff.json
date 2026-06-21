@@ -1,931 +1,78 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "articles": [
     {
-      "title": "Skanska Breaks Ground on $134M Academic Project at Texas A&M University in College Station",
-      "source": "REBusinessOnline",
-      "link": "https://rebusinessonline.com/skanska-breaks-ground-on-134m-academic-project-at-texas-am-university-in-college-station/",
-      "published": "Fri, 19 Jun 2026 14:55:11 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-001.html",
-      "transaction_type": "Construction",
-      "article_type": null,
-      "market": "College Station, TX",
-      "narrative": "Skanska has commenced construction on the $134 million AgriLife Meat Science & Technology Building at Texas A&M University in College Station. This 85,600-square-foot academic facility will feature modern labs, classrooms, and processing spaces for research and education, along with a public retail outlet. The project is slated for completion in 2028 and will anchor a new agriculture district on the university's West Campus.",
-      "data_points": {
-        "property_type": "academic",
-        "property_name": "AgriLife Meat Science & Technology Building",
-        "address": null,
-        "address_sourced_separately": false,
-        "size_sf": 85600.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": 134000000.0,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "2028",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Will serve as a cornerstone of a future agriculture district on Texas A&M University\u2019s West Campus; includes updated labs, classrooms, processing space, and a retail outlet with a public storefront.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Skanska",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Texas A&M University",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Marcus & Millichap Brokers Sale of 1,087-Unit Self-Storage Portfolio in Elgin, Texas",
-      "source": "REBusinessOnline",
-      "link": "https://rebusinessonline.com/marcus-millichap-brokers-sale-of-1087-unit-self-storage-portfolio-in-elgin-texas/",
-      "published": "Fri, 19 Jun 2026 14:51:44 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-002.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "Elgin, TX",
-      "narrative": "Marcus & Millichap has brokered the sale of the Solid Ground Storage Portfolio, comprising two self-storage facilities in Elgin, Texas. The portfolio totals 126,038 net rentable square feet across 1,087 units. Both the seller and buyer requested anonymity in the transaction.",
-      "data_points": {
-        "property_type": "self-storage",
-        "property_name": "Solid Ground Storage Portfolio",
-        "address": "505 and 1210 W. U.S. Highway 290, Elgin, TX",
-        "address_sourced_separately": false,
-        "size_sf": 126038.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": true,
-        "notable_features": null,
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Marcus & Millichap",
-          "people": [
-            {
-              "name": "Dave Knobler",
-              "title": null
-            },
-            {
-              "name": "Mixson Staffel",
-              "title": null
-            },
-            {
-              "name": "Charles LeClaire",
-              "title": null
-            },
-            {
-              "name": "Jon Danklefs",
-              "title": null
-            }
-          ]
-        },
-        {
-          "label": "BUYER BROKER",
-          "firm_name": "Marcus & Millichap",
-          "people": [
-            {
-              "name": "Dave Knobler",
-              "title": null
-            },
-            {
-              "name": "Mixson Staffel",
-              "title": null
-            },
-            {
-              "name": "Charles LeClaire",
-              "title": null
-            },
-            {
-              "name": "Jon Danklefs",
-              "title": null
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Walmart to Open 175,995 SF Store at Santa Rita Ranch in Liberty Hill, Texas",
-      "source": "REBusinessOnline",
-      "link": "https://rebusinessonline.com/walmart-to-open-175995-sf-store-at-santa-rita-ranch-in-liberty-hill-texas/",
-      "published": "Fri, 19 Jun 2026 14:48:13 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-003.html",
-      "transaction_type": "Lease",
-      "article_type": null,
-      "market": "Liberty Hill, TX",
-      "narrative": "Walmart is set to open a new 175,995-square-foot store in Liberty Hill, Texas, within the Santa Rita Ranch mixed-use development. This new retail anchor is expected to create approximately 400 jobs and is slated for opening next year, significantly enhancing the retail offerings in this growing Williamson County community.",
-      "data_points": {
-        "property_type": "retail",
-        "property_name": "Walmart at Santa Rita Ranch",
-        "address": null,
-        "address_sourced_separately": false,
-        "size_sf": 175995.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "2027",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "TENANT",
-          "firm_name": "Walmart",
-          "people": []
-        },
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Santa Rita Ranch",
-          "people": [
-            {
-              "name": "Ed Horne",
-              "title": "Owner and Master Developer"
-            }
-          ]
-        }
-      ],
-      "tenants": [
-        "Walmart"
-      ],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "MRC Provides $480M in Financing for Office-to-Residential Conversion Project in Midtown Manhattan",
-      "source": "REBusinessOnline",
-      "link": "https://rebusinessonline.com/mrc-provides-480m-in-financing-for-office-to-residential-conversion-project-in-midtown-manhattan/",
-      "published": "Fri, 19 Jun 2026 13:50:10 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-004.html",
-      "transaction_type": "Loan",
-      "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "Madison Realty Capital has provided $480 million in financing for the conversion of a 27-story office building in Midtown Manhattan into a 420-unit multifamily property. The project at 1740 Broadway will feature 238 apartments and 182 condominiums, along with 60,000 square feet of amenities. The financing was arranged by Ackman-Ziff on behalf of Yellowstone Real Estate Investments, with completion anticipated in the third quarter of 2029.",
-      "data_points": {
-        "property_type": "multifamily",
-        "property_name": null,
-        "address": "1740 Broadway, New York City, NY",
-        "address_sourced_separately": false,
-        "size_sf": null,
-        "size_units": 420,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": 480000000.0,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "3Q 2029",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "The converted building will include 60,000 square feet of amenities, such as a 22,000-square-foot sporting club, a spa with a lap pool, and a speakeasy bar in the original bank vault.",
-        "project_notes": "The project involves the conversion of an existing 27-story office building into residential use."
-      },
-      "companies_people": [
-        {
-          "label": "LENDER",
-          "firm_name": "Madison Realty Capital",
-          "people": []
-        },
-        {
-          "label": "SPONSOR",
-          "firm_name": "Yellowstone Real Estate Investments",
-          "people": []
-        },
-        {
-          "label": "MORTGAGE BROKER",
-          "firm_name": "Ackman-Ziff",
-          "people": [
-            {
-              "name": "Jason Krane",
-              "title": null
-            },
-            {
-              "name": "Russ Schildkraut",
-              "title": null
-            },
-            {
-              "name": "Simon Ziff",
-              "title": null
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Cushman & Wakefield adds director to St. Louis office",
-      "source": "REJournals",
-      "link": "https://rejournals.com/cushman-wakefield-adds-director-to-st-louis-office/?utm_source=rss&utm_medium=rss&utm_campaign=cushman-wakefield-adds-director-to-st-louis-office",
-      "published": "Fri, 19 Jun 2026 15:34:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-005.html",
-      "transaction_type": null,
-      "article_type": "Promotion",
-      "market": "St. Louis, MO",
-      "narrative": "Cushman & Wakefield has appointed Matt Hiatt as Director in its St. Louis office, where he will join the office leasing team. With over two decades of commercial real estate experience, Hiatt will provide advisory services to both occupiers and landlords in St. Louis and other national markets. His expertise includes negotiation, site selection, sales, and portfolio strategy, focusing on delivering client-centric real estate solutions.",
-      "data_points": {
-        "property_type": null,
-        "property_name": null,
-        "address": null,
-        "address_sourced_separately": false,
-        "size_sf": null,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "LEASING AGENT",
-          "firm_name": "Cushman & Wakefield",
-          "people": [
-            {
-              "name": "Matt Hiatt",
-              "title": "Director"
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Marcus & Millichap brokers sale of 94,532-square-foot retail property in Wichita Falls",
-      "source": "REJournals",
-      "link": "https://rejournals.com/marcus-millichap-brokers-sale-of-94532-square-foot-retail-property-in-wichita-falls/?utm_source=rss&utm_medium=rss&utm_campaign=marcus-millichap-brokers-sale-of-94532-square-foot-retail-property-in-wichita-falls",
-      "published": "Fri, 19 Jun 2026 14:33:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-006.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "Wichita Falls, TX",
-      "narrative": "Marcus & Millichap has brokered the sale of Parker Square Shopping Center, a 94,532-square-foot multi-tenant retail property in Wichita Falls, Texas. The center, which was 97% occupied at the time of sale, was acquired by a Dallas-based high-net-worth individual from one of the largest privately held real estate firms in the United States. The buyer secured traditional financing and intends to hold the property as a long-term investment.",
-      "data_points": {
-        "property_type": "retail",
-        "property_name": "Parker Square Shopping Center",
-        "address": "2901 Kemp Blvd, Wichita Falls, TX",
-        "address_sourced_separately": false,
-        "size_sf": 94532.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": 97.0,
-        "year_built": 1955,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": 12.0,
-        "multi_asset_purchase": false,
-        "notable_features": "Anchored by Crunch Fitness, with approximately 68% of the center leased to national or regional tenants on a triple-net basis. The center is shadow-anchored by Cinemark Theatres and benefits from strong visibility and freeway access at a signalized intersection.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Marcus & Millichap",
-          "people": [
-            {
-              "name": "Chris Gainey",
-              "title": "Investment Specialist"
-            },
-            {
-              "name": "Philip Levy",
-              "title": "Investment Specialist"
-            }
-          ]
-        },
-        {
-          "label": "SELLER",
-          "firm_name": "One of the largest privately held real estate firms in the United States",
-          "people": []
-        },
-        {
-          "label": "BUYER",
-          "firm_name": "Dallas-based high-net-worth individual",
-          "people": []
-        }
-      ],
-      "tenants": [
-        "Crunch Fitness",
-        "Cinemark Theatres"
-      ],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "CBRE closes sale of 142,400-square-foot industrial portfolio in Beavercreek",
-      "source": "REJournals",
-      "link": "https://rejournals.com/cbre-closes-sale-of-142400-square-foot-industrial-portfolio-in-beavercreek/?utm_source=rss&utm_medium=rss&utm_campaign=cbre-closes-sale-of-142400-square-foot-industrial-portfolio-in-beavercreek",
-      "published": "Fri, 19 Jun 2026 14:05:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-007.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "Beavercreek, OH",
-      "narrative": "CBRE has facilitated the sale of a two-building industrial and research and development portfolio in Beavercreek, Ohio, for $12.5 million. The fully leased portfolio, totaling 142,400 square feet, was acquired from 2060 Heller LLC and 2070 Heller LLC. The properties are strategically located within the Cincinnati\u2013Dayton Interstate 75 corridor, offering a strong position for industrial operations.",
-      "data_points": {
-        "property_type": "industrial",
-        "property_name": null,
-        "address": "2060 and 2070 Heller Drive, Beavercreek, OH",
-        "address_sourced_separately": false,
-        "size_sf": 142400.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": 12500000.0,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": true,
-        "notable_features": "Each building includes a mix of office and production space designed to support specialized aerospace manufacturing and research functions, located within the Cincinnati\u2013Dayton Interstate 75 corridor.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "SELLER",
-          "firm_name": "2060 Heller LLC",
-          "people": []
-        },
-        {
-          "label": "SELLER",
-          "firm_name": "2070 Heller LLC",
-          "people": []
-        },
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "CBRE",
-          "people": [
-            {
-              "name": "Steve Timmel",
-              "title": null
-            },
-            {
-              "name": "Will Roberts",
-              "title": null
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Patriot Business Park in North Houston lands major tenant",
-      "source": "REJournals",
-      "link": "https://rejournals.com/patriot-business-park-in-north-houston-lands-major-tenant/?utm_source=rss&utm_medium=rss&utm_campaign=patriot-business-park-in-north-houston-lands-major-tenant",
-      "published": "Fri, 19 Jun 2026 13:03:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-008.html",
-      "transaction_type": "Lease",
-      "article_type": null,
-      "market": "Houston, TX",
-      "narrative": "Lindenmeyr Munroe, a leading distributor of printing and packaging papers, has leased 100,043 square feet in Building 3 at Patriot Business Park in North Houston. This lease marks the second major tenant for the newly developed three-building industrial campus, which was delivered in the first quarter of 2026. The rapid leasing activity underscores the quality of the development and the strong demand for institutional-grade industrial space in the North Houston market, according to the leasing agent.",
-      "data_points": {
-        "property_type": "industrial",
-        "property_name": "Patriot Business Park, Building 3",
-        "address": "10326\u201310330 Veterans Memorial Drive, Houston, TX",
-        "address_sourced_separately": false,
-        "size_sf": 100043.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "Q1 2026",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Building 3 offers 150,615 square feet with 36 dock-high doors and two drive-in ramps, 32-foot clear heights, and ample parking. The park is strategically located with direct access to Veterans Memorial Drive and proximity to Beltway 8 and Interstate 45.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "LANDLORD",
-          "firm_name": "Investment & Development Ventures, LLC (IDV)",
-          "people": []
-        },
-        {
-          "label": "LANDLORD",
-          "firm_name": "Standard Real Estate Investments (SREI)",
-          "people": []
-        },
-        {
-          "label": "TENANT",
-          "firm_name": "Lindenmeyr Munroe",
-          "people": []
-        },
-        {
-          "label": "LEASING AGENT",
-          "firm_name": "Stream Realty Partners",
-          "people": [
-            {
-              "name": "Jeremy Lumbreras",
-              "title": "Managing Director"
-            }
-          ]
-        },
-        {
-          "label": "DEVELOPER/SPONSOR",
-          "firm_name": "Investment & Development Ventures, LLC (IDV)",
-          "people": [
-            {
-              "name": "Cole Mueller",
-              "title": "Director"
-            }
-          ]
-        }
-      ],
-      "tenants": [
-        "Lindenmeyr Munroe",
-        "Smurfit Westrock"
-      ],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Aby Rosen selling \u201cAnna Delvey\u201d building for $80M+",
+      "title": "The challenge of cheap markets",
       "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/06/19/aby-rosen-selling-anna-delvey-building-for-80m/",
-      "published": "Fri, 19 Jun 2026 14:29:29 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-009.html",
-      "transaction_type": "Sale",
+      "link": "https://therealdeal.com/new-york/2026/06/20/can-luxury-rentals-pencil-out-in-lake-charles-louisiana/",
+      "published": "Sat, 20 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-21-001.html",
+      "transaction_type": "Acquisition",
       "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "RFR, led by Aby Rosen, is in contract to sell the historic 281 Park Avenue South building in New York City for $81.5 million. The Beaux-Arts landmark, formerly home to Fotografiska, is currently vacant. The sale price of approximately $2,000 per square foot represents a significant premium compared to recent neighborhood transactions, reflecting RFR's substantial investment in overhauling the building's systems since acquiring it in 2014.",
-      "data_points": {
-        "property_type": "office",
-        "property_name": null,
-        "address": "281 Park Avenue South, New York City, NY",
-        "address_sourced_separately": false,
-        "size_sf": 42500.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": 81500000.0,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": 1894,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Ornate, Beaux-Arts style landmark building; formerly known as the Church Missions House.",
-        "project_notes": "RFR previously acquired the building for $50 million in 2014. The building was marketed for sale in 2022 for $135 million, but a deal did not close."
-      },
-      "companies_people": [
-        {
-          "label": "SELLER",
-          "firm_name": "RFR",
-          "people": []
-        },
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Avison Young",
-          "people": [
-            {
-              "name": "James Nelson",
-              "title": null
-            }
-          ]
-        },
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Serhant.",
-          "people": [
-            {
-              "name": "Ryan Serhant",
-              "title": null
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": "A recent comparable transaction in the neighborhood involved Olmstead Properties' purchase of 373 and 381 Park Avenue South for $104 million, or approximately $300 per square foot."
-    },
-    {
-      "title": "Bronx STEAM Sets Up Shop at Simone\u2019s Hutchinson Metro Center Atrium",
-      "source": "Connect CRE",
-      "link": "https://www.connectcre.com/stories/bronx-steam-center-sets-up-shop-at-simones-hutchinson-metro-center-atrium/",
-      "published": "Fri, 19 Jun 2026 20:50:27 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-010.html",
-      "transaction_type": "Lease",
-      "article_type": null,
-      "market": "Bronx, NY",
-      "narrative": "The New York City School Construction Authority has signed a long-term lease for 54,245 square feet at the Hutchinson Metro Center Atrium in the Bronx to establish the new Bronx STEAM Center. This initiative represents a significant public-private partnership, with Bronx STEAM and Montefiore Medical Center collaborating to offer career-connected education in high-demand healthcare and technology fields. The project is expected to create long-term opportunities for students and the borough.",
-      "data_points": {
-        "property_type": "mixed-use",
-        "property_name": "Hutchinson Metro Center Atrium",
-        "address": "1776 Eastchester Rd, Bronx, NY",
-        "address_sourced_separately": false,
-        "size_sf": 54245.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Three-story, 361,857 square-foot mixed-use property.",
-        "project_notes": null
-      },
-      "companies_people": [
-        {
-          "label": "LANDLORD",
-          "firm_name": "Simone Development Companies",
-          "people": [
-            {
-              "name": "Joe Simone",
-              "title": "President"
-            }
-          ]
-        },
-        {
-          "label": "TENANT",
-          "firm_name": "New York City School Construction Authority",
-          "people": []
-        }
-      ],
-      "tenants": [
-        "Bronx STEAM Center",
-        "Montefiore Medical Center"
-      ],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Kidder Closes Hollywood Multifamily Sale Despite Softening Rental Trends",
-      "source": "Connect CRE",
-      "link": "https://www.connectcre.com/stories/kidder-closes-hollywood-multifamily-sale-despite-softening-rental-trends/",
-      "published": "Fri, 19 Jun 2026 20:36:38 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-011.html",
-      "transaction_type": "Sale",
-      "article_type": null,
-      "market": "Los Angeles, CA",
-      "narrative": "Kidder Mathews successfully brokered the $7.6 million sale of The Carlton Apartments, a 36-unit multifamily property in Hollywood. Despite a softening rental market in the area, the property attracted significant buyer interest, underscoring the importance of persistent brokerage efforts to connect sellers with suitable investors.",
+      "market": "Lake Charles, LA",
+      "narrative": "Muss Development and Amesbury Companies have acquired the 270-unit Erdace Apartments in downtown Lake Charles, Louisiana, by purchasing a HUD-insured loan for $37 million, which equates to $137,000 per unit. The new owners plan to invest several million dollars in renovations to the lobby, facades, hallways, and balconies, and will rebrand the property as the Ryan Apartments. This acquisition marks Muss Development's entry into the Louisiana market, contrasting with its historical focus on more complex and expensive development in New York City.",
       "data_points": {
         "property_type": "multifamily",
-        "property_name": "The Carlton Apartments",
-        "address": "5535 Carlton Way, Hollywood, CA",
-        "address_sourced_separately": false,
+        "property_name": "Erdace Apartments",
+        "address": "600 Ryan St, Lake Charles, LA",
+        "address_sourced_separately": true,
         "size_sf": null,
-        "size_units": 36,
+        "size_units": 270,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
-        "sale_price": 7600000.0,
+        "sale_price": 37000000.0,
         "loan_amount": null,
         "total_project_cost": null,
         "occupancy": null,
         "year_built": null,
-        "completion": null,
+        "completion": "June 2020",
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
         "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": null
+        "notable_features": "High-end downtown market-rate units with in-unit dishwashers, 10-foot ceilings, walk-in closets, granite counters, stainless steel appliances, air conditioning, broadband access, private patio or balcony, clubhouse, lounge, caf\u00e9, fitness center, business center, indoor and outdoor pavilions, and a large pool.",
+        "project_notes": "The 2.6-acre former Sears site was previously acquired from the city in mid-2013 for just over $1 million. The project was initially projected to cost $43 million in 2016 and $160,000 per unit in 2018. Groundbreaking occurred in January 2018."
       },
       "companies_people": [
         {
-          "label": "SELLER",
-          "firm_name": "James Investment Partners",
+          "label": "BUYER",
+          "firm_name": "Muss Development",
           "people": []
-        },
-        {
-          "label": "SELLER BROKER",
-          "firm_name": "Kidder Mathews",
-          "people": [
-            {
-              "name": "Darin Beebower",
-              "title": "EVP"
-            },
-            {
-              "name": "Dakoda Iversen",
-              "title": "Associate"
-            }
-          ]
         },
         {
           "label": "BUYER",
-          "firm_name": "Local real estate investor",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "NYC DOT Modernizes Willets Point Offices and Yard with $121M Redevelopment",
-      "source": "Connect CRE",
-      "link": "https://www.connectcre.com/stories/nyc-dot-modernizes-willets-point-offices-and-yard-with-121m-redevelopment/",
-      "published": "Fri, 19 Jun 2026 20:26:53 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-012.html",
-      "transaction_type": "Construction",
-      "article_type": null,
-      "market": "New York City, NY",
-      "narrative": "The New York City Department of Transportation (DOT) is undertaking a $121 million redevelopment of its Harper Street administration building and maintenance yard in Willets Point, Queens. The project involves replacing obsolete 1934 facilities with three new structures: a 72,820-square-foot administration and warehouse building, a washbay, and a security booth. The modernized facility aims to improve operational efficiency, enhance safety for personnel and vehicles, and incorporate sustainable strategies to achieve LEED Gold certification.",
-      "data_points": {
-        "property_type": "industrial",
-        "property_name": "Harper Street DOT administration building and yard",
-        "address": "32-11 Harper St, Queens, NY",
-        "address_sourced_separately": false,
-        "size_sf": 72820.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": null,
-        "total_project_cost": 121000000.0,
-        "occupancy": null,
-        "year_built": 1934,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "The project includes a five-story administration and personnel building and warehouse, a two-story washbay structure, and a precast concrete flood- and storm-resistant security booth. The facility is designed to meet LEED Gold certification.",
-        "project_notes": "The redevelopment replaces obsolete and deteriorated facilities that no longer met modern operational, safety, or resiliency standards. The existing 160,000-square-foot Queens Roadway Repair and Maintenance & Fleet Services maintenance yard operates 24/7 and houses over 300 field employees."
-      },
-      "companies_people": [
-        {
-          "label": "OWNER",
-          "firm_name": "New York City Department of Transportation (DOT)",
+          "firm_name": "Amesbury Companies",
           "people": []
         },
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "New York City Department of Design and Construction",
-          "people": []
-        },
-        {
-          "label": "ARCHITECT",
-          "firm_name": "Urbahn Architects",
-          "people": [
-            {
-              "name": "Ijeoma D. Iheanacho",
-              "title": "Associate Principal"
-            }
-          ]
-        },
-        {
-          "label": "ARCHITECT",
-          "firm_name": "Selldorf Architects",
-          "people": []
-        },
-        {
-          "label": "GENERAL CONTRACTOR",
-          "firm_name": "Scalamandre-Tully JV",
+          "firm_name": "Roger Landry",
           "people": []
         }
       ],
       "tenants": [],
       "financing": null,
-      "market_intelligence": null
+      "market_intelligence": "The Lake Charles metro area's population grew by 21 percent in 2019, but has since edged down."
     },
     {
-      "title": "Locally Based Logistics Firm Scales Up with Menifee Warehouse Acquisition",
-      "source": "Connect CRE",
-      "link": "https://www.connectcre.com/stories/locally-based-logistics-firm-scales-up-with-menifee-warehouse-acquisition/",
-      "published": "Fri, 19 Jun 2026 20:13:13 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-013.html",
-      "transaction_type": "Acquisition",
-      "article_type": null,
-      "market": "Menifee, CA",
-      "narrative": "Southwest Traders, a Temecula-based logistics and distribution company, acquired Gateway at Menifee, a 229,934-square-foot industrial facility in Menifee, CA, for $40.5 million. The acquisition, which closed rapidly after escrow opened in May 2026, will enable Southwest Traders to expand its regional logistics footprint. The company plans an additional $25 million investment to convert a portion of the building into a refrigerated distribution center.",
+      "title": "Andrew Heiberger, Howard Lev jump on boutique condo boom with Flatiron townhouse",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/06/20/andrew-heiberger-howard-lev-jump-on-boutique-condo-boom/",
+      "published": "Sat, 20 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-21-002.html",
+      "transaction_type": null,
+      "article_type": "Development",
+      "market": "New York City, NY",
+      "narrative": "Developers Andrew Heiberger and Howard Lev are planning a three-unit luxury condominium project in New York City's Flatiron District, capitalizing on the growing demand for boutique new developments and move-in-ready townhouses. The project, dubbed the London Clay Townhouse, is expected to launch sales in the summer with a projected sellout exceeding $20 million. This development aligns with a broader market trend where smaller, high-end projects are increasingly attracting wealthy buyers, as evidenced by recent high-priced penthouse sales and townhouse transactions in desirable Manhattan and Brooklyn neighborhoods.",
       "data_points": {
-        "property_type": "industrial",
-        "property_name": "Gateway at Menifee, Building 3",
-        "address": "33520 Zeiders Rd, Menifee, CA",
-        "address_sourced_separately": false,
-        "size_sf": 229934.0,
-        "size_units": null,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": 40500000.0,
-        "loan_amount": null,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": null,
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": null,
-        "project_notes": "The property was formerly known as Scott Road Commerce Center, Building 3 within a five-building industrial complex. The buyer plans to invest an additional $25 million to retrofit a portion of the building into a refrigerated distribution center."
-      },
-      "companies_people": [
-        {
-          "label": "BUYER",
-          "firm_name": "Southwest Traders",
-          "people": [
-            {
-              "name": "Terry Walsh",
-              "title": "President"
-            }
-          ]
-        },
-        {
-          "label": "SELLER",
-          "firm_name": "Scott Road Property, LLC",
-          "people": []
-        },
-        {
-          "label": "BUYER BROKER",
-          "firm_name": "Colliers",
-          "people": [
-            {
-              "name": "Rick Nunez",
-              "title": "EVP, SIOR"
-            },
-            {
-              "name": "Mateo Mobilia",
-              "title": "Associate"
-            },
-            {
-              "name": "Michael Romero",
-              "title": "Senior Client Services Specialist"
-            }
-          ]
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Basis Industrial Closes on Construction Loan for Wayne, NJ Self-Storage",
-      "source": "Connect CRE",
-      "link": "https://www.connectcre.com/stories/basis-industrial-closes-on-construction-loan-for-wayne-nj-self-storage/",
-      "published": "Fri, 19 Jun 2026 20:00:58 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-014.html",
-      "transaction_type": "Loan",
-      "article_type": null,
-      "market": "Wayne, NJ",
-      "narrative": "Basis Industrial has secured a $24 million construction loan for a new self-storage development in Wayne, NJ. The project, which will feature 85,330 square feet and 586 climate-controlled units, is expected to break ground in August 2026 and be delivered in February 2028. This development addresses the high demand for self-storage in a supply-constrained Northern New Jersey market with strong demographics.",
-      "data_points": {
-        "property_type": "self-storage",
-        "property_name": null,
-        "address": "555 Hamburg Tpke., Wayne, NJ",
+        "property_type": "condo",
+        "property_name": "London Clay Townhouse",
+        "address": "32 East 22nd Street, New York City, NY",
         "address_sourced_separately": false,
         "size_sf": null,
-        "size_units": 586,
-        "size_beds": null,
-        "size_keys": null,
-        "rental_rate": null,
-        "sale_price": null,
-        "loan_amount": 24000000.0,
-        "total_project_cost": null,
-        "occupancy": null,
-        "year_built": null,
-        "completion": "February 2028",
-        "phase_1": null,
-        "total_project_all_phases": null,
-        "original_plan": null,
-        "land_area_acres": null,
-        "multi_asset_purchase": false,
-        "notable_features": "Climate-controlled storage units.",
-        "project_notes": "Construction is expected to begin in August 2026. The approval process took over three years."
-      },
-      "companies_people": [
-        {
-          "label": "SPONSOR",
-          "firm_name": "Basis Industrial",
-          "people": [
-            {
-              "name": "Anthony Scavo",
-              "title": "President and Managing Partner"
-            }
-          ]
-        },
-        {
-          "label": "LENDER",
-          "firm_name": "NexBank",
-          "people": []
-        },
-        {
-          "label": "LENDER",
-          "firm_name": "NexPoint",
-          "people": []
-        }
-      ],
-      "tenants": [],
-      "financing": null,
-      "market_intelligence": null
-    },
-    {
-      "title": "Netflix To Buy Storied Hollywood Studio At 78% Price Cut",
-      "source": "Bisnow News Feed",
-      "link": "https://www.bisnow.com/los-angeles/news/capital-markets/netflix-to-buy-storied-studio-at-78-discount-to-previous-valuation-135093",
-      "published": "Fri, 19 Jun 2026 09:38:07 -0400",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-20-015.html",
-      "transaction_type": "Acquisition",
-      "article_type": null,
-      "market": "Los Angeles, CA",
-      "narrative": "Netflix is under contract to acquire the historic Radford Studio Center in Los Angeles for approximately $400 million from a group of lenders led by Goldman Sachs. This acquisition represents a significant discount from its 2021 appraisal of $1.8 billion, reflecting the challenges faced by studio owners due to rising interest rates and reduced production activity. The streaming giant, which has historically leased studio space, is consolidating its productions into a single owned facility.",
-      "data_points": {
-        "property_type": "studio",
-        "property_name": "Radford Studio Center",
-        "address": "4024 Radford Ave, Studio City, CA",
-        "address_sourced_separately": true,
-        "size_sf": 1100000.0,
-        "size_units": null,
+        "size_units": 3,
         "size_beds": null,
         "size_keys": null,
         "rental_rate": null,
@@ -938,36 +85,174 @@
         "phase_1": null,
         "total_project_all_phases": null,
         "original_plan": null,
-        "land_area_acres": 55.0,
+        "land_area_acres": null,
         "multi_asset_purchase": false,
-        "notable_features": "Historic studio lot famous for hosting productions including Seinfeld and Gilligan\u2019s Island.",
-        "project_notes": "The property was previously owned by Hackman Capital Partners, which defaulted on its loan last year after failing to reach a restructuring or refinancing deal with bondholders. The studio was appraised at $1.8 billion in 2021."
+        "notable_features": "Features a garden parlor unit, an upper parlor apartment with a private terrace, and a penthouse duplex with a private rooftop.",
+        "project_notes": "Projected sellout of more than $20 million."
       },
       "companies_people": [
         {
-          "label": "BUYER",
-          "firm_name": "Netflix",
-          "people": []
-        },
-        {
-          "label": "SELLER",
-          "firm_name": "Goldman Sachs",
-          "people": []
-        },
-        {
-          "label": "OWNER",
-          "firm_name": "Hackman Capital Partners",
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Buttonwood Real Estate",
           "people": [
             {
-              "name": "Michael Hackman",
-              "title": "CEO"
+              "name": "Andrew Heiberger",
+              "title": null
             }
           ]
         },
         {
-          "label": "TENANT",
-          "firm_name": "Hudson Pacific Properties",
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Wheelhouse Property",
+          "people": [
+            {
+              "name": "Howard Lev",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Cote Luxury Real Estate",
           "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "Luxury buyers in New York City are increasingly favoring boutique new developments and move-in-ready townhouses. Buildings with fewer than 40 units now account for 32% of new units coming to market, up from 14% between 2016 and 2020. Newly renovated townhouses and new developments are commanding top-dollar in Downtown Manhattan and Brownstone Brooklyn."
+    },
+    {
+      "title": "Lawsuit casts Riverside, Nussbaum Lowinger as architects of sprawling scheme",
+      "source": "The Real Deal \u2014 New York",
+      "link": "https://therealdeal.com/new-york/2026/06/20/lawsuit-cast-riverside-nussbaum-lowinger-as-schemers/",
+      "published": "Sat, 20 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-21-003.html",
+      "transaction_type": null,
+      "article_type": "CRE Legal / Regulatory",
+      "market": "New York City, NY",
+      "narrative": "A federal lawsuit has been filed against Riverside Abstract and the defunct law firm Nussbaum Lowinger, alleging a multi-year real estate fraud scheme involving fraudulent property flips, misappropriated escrow funds, and concealed kickbacks. The plaintiffs, Blueberry Funding and EADMK, are seeking to recover $87.5 million in escrow funds. The lawsuit claims the defendants orchestrated dozens of sham transactions since 2018, using inflated valuations to secure larger loans and pocket the difference, with one example cited being the Park at Crestview apartment complex in Austin.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "LENDER",
+          "firm_name": "Blueberry Funding",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "EADMK",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Riverside Abstract",
+          "people": []
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Nussbaum Lowinger",
+          "people": [
+            {
+              "name": "Mark Nussbaum",
+              "title": null
+            },
+            {
+              "name": "Samuel Lowinger",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "OTHER",
+          "firm_name": "Simry Realty Corporation",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Forget cash. These Bay Area sellers want AI stock",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/20/bay-area-sellers-seek-pre-ipo-ai-stock-for-their-homes/",
+      "published": "Sat, 20 Jun 2026 12:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-21-004.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "San Francisco, CA",
+      "narrative": "This article explores the emerging trend of Bay Area homeowners attempting to sell luxury residential properties in exchange for pre-IPO shares of artificial intelligence companies like OpenAI and Anthropic. While several high-profile listings have garnered significant attention, the article highlights the challenges and complexities of such transactions, including valuation discrepancies, capital gains tax implications, and the unpredictable nature of IPOs. Despite the difficulties, some sellers are genuinely seeking to tap into the anticipated wealth creation from the AI boom, even if it means ultimately pursuing traditional cash deals or separate stock transactions.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "Storm Duncan",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "Vijay Chattha",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "Nima Gabbay",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass",
+          "people": [
+            {
+              "name": "Rachel Swann",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Individual",
+          "people": [
+            {
+              "name": "David Hargreaves",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass",
+          "people": [
+            {
+              "name": "Erin Thompson",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "The Oldham Group",
+          "people": [
+            {
+              "name": "Andrew Oldham",
+              "title": null
+            }
+          ]
         }
       ],
       "tenants": [],
