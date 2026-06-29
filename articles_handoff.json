@@ -1,63 +1,286 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "articles": [
     {
-      "title": "Rent freeze redraws math for New York landlords",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/06/27/rent-freeze-redraws-math-for-new-york-landlords/",
-      "published": "Sat, 27 Jun 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-28-001.html",
+      "title": "Freddie Mac Underwriting Tightening in 2026",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/freddie-mac-underwriting-tightening-2026/",
+      "published": "Mon, 29 Jun 2026 13:01:37 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-001.html",
       "transaction_type": null,
       "article_type": "Opinion / Market Commentary",
-      "market": "New York City, NY",
-      "narrative": "New York City\u2019s Rent Guidelines Board (RGB) voted 7-1 to freeze rents on both one- and two-year rent-stabilized leases, a decision that marks a significant political victory for Mayor Zohran Mamdani and a departure from previous years' modest increases. This unprecedented freeze on two-year leases is expected to intensify financial pressure on landlords, who are already facing rising operating costs and tighter financing conditions, potentially leading to deferred capital projects and increased scrutiny of maintenance spending. The decision is likely to prompt legal challenges from industry groups, with litigation anticipated within weeks, and could reshape investment decisions across the city's stabilized housing stock, potentially accelerating sales or restructurings for distressed assets.",
+      "market": null,
+      "narrative": "Freddie Mac's multifamily securitizations in early 2026 show a decisive tightening in underwriting, characterized by a weighted-average debt service coverage ratio (DSCR) of 1.41x and a 63.9% loan-to-value (LTV). This coverage is largely manufactured through interest-only (IO) structures, with approximately 95% of the balance featuring full-term or partial IO, allowing leverage to remain consistent with historical discipline while pricing adjusts. The floating-rate pools, particularly KF172, represent the highest concentration of risk due to thinner DSCRs and higher LTVs, making them vulnerable to sustained elevated SOFR rates. Acquisition activity is showing a healthy return, comprising about 40% of K series balance, indicating that transaction volume is recovering as borrowers adapt to higher costs of capital.",
       "data_points": null,
       "companies_people": [
         {
-          "label": "GOVERNMENT",
-          "firm_name": "Rent Guidelines Board",
+          "label": "OWNER",
+          "firm_name": "CRED iQ",
+          "people": [
+            {
+              "name": "Mike Haas",
+              "title": "Founder and CEO"
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Freddie Mac",
           "people": []
         },
         {
-          "label": "GOVERNMENT",
-          "firm_name": "City of New York",
-          "people": [
-            {
-              "name": "Zohran Mamdani",
-              "title": "Mayor"
-            }
-          ]
+          "label": "LENDER",
+          "firm_name": "CBRE Capital Markets",
+          "people": []
         },
         {
-          "label": "LEGAL COUNSEL",
-          "firm_name": "Blank Rome",
-          "people": [
-            {
-              "name": "Massimo D\u2019Angelo",
-              "title": "Real Estate Attorney"
-            }
-          ]
+          "label": "LENDER",
+          "firm_name": "Berkadia",
+          "people": []
         },
         {
-          "label": "ASSOCIATION",
-          "firm_name": "REBNY",
+          "label": "LENDER",
+          "firm_name": "Walker & Dunlop",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "J.P. Morgan Chase",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "JLL",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "PNC Bank",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Capital One",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Lument",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "KeyBank",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "PGIM",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Frances Katzen of Douglas Elliman: 5 Questions",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/frances-katzen-of-douglas-elliman-5-questions/",
+      "published": "Mon, 29 Jun 2026 12:00:21 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-002.html",
+      "transaction_type": null,
+      "article_type": "Feature / Profile",
+      "market": "New York City, NY",
+      "narrative": "This article profiles Frances Katzen, a prominent real estate broker and founder of the Katzen Team at Douglas Elliman, who transitioned from a career as a professional dancer to become a top-producing agent with over $3.5 billion in career sales. Katzen attributes her success to her consumer-centric perspective, her ability to reposition properties, and her vision for transforming overlooked assets into desirable offerings. She highlights her work on projects like 15 Renwick and 60 White Street, where creative marketing and sustainable practices led to strong sales and premium pricing. Katzen also expresses strong concerns about New York City's proposed pied-\u00e0-terre tax, viewing it as counterproductive to the city's economic vitality and potentially detrimental to the real estate market.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Douglas Elliman",
           "people": [
             {
-              "name": "Carl Hum",
-              "title": "Senior Vice President and General Counsel"
+              "name": "Frances Katzen",
+              "title": "Founder and Leader of the Katzen Team"
             }
           ]
         },
         {
           "label": "OWNER",
-          "firm_name": "The Soloviev Group",
+          "firm_name": "Sorgente Group of America",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Truist Bank Supplies $300M Credit Facility for JIOS\u2019s Expanding IOS Portfolio",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/jios-truist-cooper-horowitz/",
+      "published": "Mon, 29 Jun 2026 12:00:07 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-003.html",
+      "transaction_type": "Loan",
+      "article_type": null,
+      "market": null,
+      "narrative": "Jadian IOS (JIOS), an affiliate of Jadian Capital, has secured a $300 million acquisition credit facility from Truist Bank to support its continued expansion in the industrial outdoor storage (IOS) sector. The financing, arranged by Cooper-Horowitz, is initially seeded by 11 IOS properties and provides capital for JIOS to acquire additional assets nationwide. This facility highlights the growing maturity of the IOS debt market and institutional lenders' appetite for strong sponsors in this specialized real estate sector.",
+      "data_points": {
+        "property_type": "industrial outdoor storage",
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": 300000000.0,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "The facility is seeded by 11 industrial outdoor storage properties."
+      },
+      "companies_people": [
+        {
+          "label": "SPONSOR",
+          "firm_name": "Jadian IOS (JIOS)",
+          "people": []
+        },
+        {
+          "label": "SPONSOR",
+          "firm_name": "Jadian Capital",
           "people": [
             {
-              "name": "Stefan Soloviev",
+              "name": "Dan Schuchinsky",
+              "title": "Managing Director"
+            },
+            {
+              "name": "Jarret Cohen",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Truist Bank",
+          "people": [
+            {
+              "name": "Alex Rownd",
+              "title": "Director, Real Estate Corporate Banking Group"
+            }
+          ]
+        },
+        {
+          "label": "MORTGAGE BROKER",
+          "firm_name": "Cooper-Horowitz",
+          "people": [
+            {
+              "name": "Justin Horowitz",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": "JIOS has acquired more than 70 properties so far in 2026. The platform currently has around $2 billion in assets across 30 markets. Truist Bank provided a $344 million loan facility to Alterra IOS in July 2025 and a $100 million refinancing for a portfolio owned by Triten and TPG Angelo Gordon in October 2025. Jadian Capital raised over $2 billion for its second opportunistic equity fund in March 2025, exceeding its target by 40%."
+    },
+    {
+      "title": "Harrison Street Asset Management CEO Christopher Merrill Owns the Alternatives Space",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/harrison-street-asset-management-ceo-christopher-merrill-interview/",
+      "published": "Mon, 29 Jun 2026 10:30:43 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-004.html",
+      "transaction_type": null,
+      "article_type": "Feature / Profile",
+      "market": null,
+      "narrative": "Christopher Merrill, co-founder and CEO of Harrison Street Asset Management, discusses his career trajectory from an intern at Heitman to leading a global investment firm. He highlights his early experience in Central and Eastern Europe, where he identified unique real estate investment opportunities post-Berlin Wall, leading to the launch of the first investment fund in the region. Merrill then explains his strategic decision to focus on alternative real estate assets like student housing, senior housing, medical office, and self-storage in the U.S., founding Harrison Street in 2005 with a demand-driven investment philosophy. This approach has propelled the firm to manage $109 billion in assets, doubling its AUM in the last year, and becoming the investment management arm for Colliers International after its 2018 acquisition of a 75% stake.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Harrison Street Asset Management",
+          "people": [
+            {
+              "name": "Christopher Merrill",
+              "title": "Co-founder and CEO"
+            }
+          ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Colliers International",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Galvin family",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Heitman",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Inside Prospect Acquisitions\u2019 Investment Strategy",
+      "source": "Commercial Observer",
+      "link": "https://commercialobserver.com/2026/06/inside-prospect-acquisitions-investment-strategy/",
+      "published": "Mon, 29 Jun 2026 04:00:20 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-005.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "New York City, NY",
+      "narrative": "Prospect Acquisitions, a New York City-based investment firm, specializes in sourcing off-market multifamily and mixed-use properties in prime Manhattan and Brooklyn neighborhoods. The firm's strategy focuses on direct owner outreach and relationships to identify opportunities before they are publicly listed, as exemplified by its recent acquisition of 129 West 85th Street. Prospect's investment philosophy centers on acquiring well-located, value-add assets with potential for renovation, rent increases in free-market units, and operational improvements. The firm launched a $100 million fund in 2024 to pursue these opportunities, with an additional funding round now open due to strong investor demand.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": "129 West 85th Street, New York City, NY",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 10,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Free market multifamily building located on Manhattan's Upper West Side.",
+        "project_notes": "Acquired off-market without a formal marketing process or bidding war."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Prospect Acquisitions",
+          "people": [
+            {
+              "name": "Ilya Tolmasov",
               "title": null
             },
             {
-              "name": "Sheldon Solow",
+              "name": "Danny Arnel",
               "title": null
             }
           ]
@@ -68,42 +291,364 @@
       "market_intelligence": null
     },
     {
-      "title": "NY Dirt: Mamdani-backed sweep, rent freeze set up Albany fight",
-      "source": "The Real Deal \u2014 New York",
-      "link": "https://therealdeal.com/new-york/2026/06/27/ny-dirt-pols-to-bring-rent-freeze-primary-momentum-to-albany/",
-      "published": "Sat, 27 Jun 2026 11:30:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-28-002.html",
-      "transaction_type": null,
-      "article_type": "Opinion / Market Commentary",
-      "market": "New York City, NY",
-      "narrative": "This article reports on the political fallout and market implications of a recent rent freeze vote in New York City, which approved 0% increases for one- and two-year leases in rent-stabilized units. The decision, cheered by tenant activists and progressive politicians, is seen as a significant win for tenant power and a step towards broader housing goals, including a potential rent rollback and expansion of rent stabilization statewide. The article highlights the increased influence of leftist lawmakers in Albany, who are expected to push for legislation like the Tenant Opportunity to Purchase Act (TOPA) and the Rent Emergency Stabilization for Tenants (REST) Act, further dimming hopes for real estate industry-favorable policies and potentially leading to legal challenges from property owners.",
-      "data_points": null,
+      "title": "Marcus & Millichap Brokers $6.5M Sale of Cambridge Apartment Building",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/marcus-millichap-brokers-6-5m-sale-of-cambridge-apartment-building/",
+      "published": "Mon, 29 Jun 2026 13:10:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-006.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Cambridge, MA",
+      "narrative": "Marcus & Millichap has brokered the sale of a 10-unit apartment building in Cambridge, Massachusetts, for $6.5 million. The 13,000-square-foot property, located across from Harvard University, was originally built in 1925 and features a mix of one-, two-, and five-bedroom apartments. Both the seller and buyer chose to remain anonymous in the transaction.",
+      "data_points": {
+        "property_type": "multifamily",
+        "property_name": null,
+        "address": "23-25 Hammond St, Cambridge, MA",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 10,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 6500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 1925,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Located across from Harvard University.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Marcus & Millichap",
+          "people": [
+            {
+              "name": "Evan Griffith",
+              "title": null
+            },
+            {
+              "name": "Tony Pepdjonovic",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Marcus & Millichap",
+          "people": [
+            {
+              "name": "Evan Griffith",
+              "title": null
+            },
+            {
+              "name": "Tony Pepdjonovic",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Cushman & Wakefield Arranges Financing for IOS Facility in South Plainfield, New Jersey",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/cushman-wakefield-arranges-financing-for-ios-facility-in-south-plainfield-new-jersey/",
+      "published": "Mon, 29 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-007.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "South Plainfield, NJ",
+      "narrative": "Cushman & Wakefield has arranged acquisition financing and joint venture equity for Ridgecut Road to acquire an 8-acre industrial outdoor storage (IOS) facility in South Plainfield, New Jersey. The property includes two maintenance facilities totaling 30,000 square feet. This transaction highlights continued investor interest in the IOS sector, driven by its critical role in logistics and supply chain operations.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": null,
+        "address": "200 Saint Nicholas Ave, South Plainfield, NJ",
+        "address_sourced_separately": false,
+        "size_sf": 30000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": 8.0,
+        "multi_asset_purchase": true,
+        "notable_features": "Industrial outdoor storage (IOS) facility with two maintenance buildings.",
+        "project_notes": "Acquisition financing and joint venture equity were arranged."
+      },
+      "companies_people": [
+        {
+          "label": "SPONSOR",
+          "firm_name": "Ridgecut Road",
+          "people": []
+        },
+        {
+          "label": "MORTGAGE BROKER",
+          "firm_name": "Cushman & Wakefield",
+          "people": [
+            {
+              "name": "John Alascio",
+              "title": null
+            },
+            {
+              "name": "T.J. Sullivan",
+              "title": null
+            },
+            {
+              "name": "Chris Meloni",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Gilbane, CBRE Investment Begin Leasing 703-Bed Student Housing Development Near University of Florida",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/gilbane-cbre-investment-begin-leasing-703-bed-student-housing-development-near-university-of-florida/",
+      "published": "Mon, 29 Jun 2026 12:26:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-008.html",
+      "transaction_type": "Development",
+      "article_type": null,
+      "market": "Gainesville, FL",
+      "narrative": "Gilbane Development and CBRE Investment Management have commenced leasing for Zaya, a 703-bed student housing development in Gainesville, FL. The project, which broke ground last year, is scheduled for completion in fall 2027 and is located less than one mile from the University of Florida campus. Zaya will feature 352 units with bed-to-bath parity and a comprehensive amenity package.",
+      "data_points": {
+        "property_type": "student housing",
+        "property_name": "Zaya",
+        "address": "3600 S.W. 20th Ave, Gainesville, FL",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": 352,
+        "size_beds": 703,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": "fall 2027",
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Located less than one mile from the University of Florida campus and Butler Center, a retail destination. Amenities include three courtyards, study rooms on each floor, a coworking lounge, rooftop resort-style pool, pickleball court, clubhouse, 24-hour fitness center, yoga studio, and an indoor sauna.",
+        "project_notes": null
+      },
       "companies_people": [
         {
           "label": "DEVELOPER/SPONSOR",
-          "firm_name": "The Witkoff Group",
+          "firm_name": "Gilbane Development",
+          "people": []
+        },
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "CBRE Investment Management",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Real Capital Solutions Acquires 101 Marietta Office Tower in Downtown Atlanta for $49.5M",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/real-capital-solutions-acquires-101-marietta-office-tower-in-downtown-atlanta-for-49-5m/",
+      "published": "Mon, 29 Jun 2026 12:24:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-009.html",
+      "transaction_type": "Acquisition",
+      "article_type": null,
+      "market": "Atlanta, GA",
+      "narrative": "Real Capital Solutions has acquired the 36-story 101 Marietta office tower in downtown Atlanta for $49.5 million. The 673,819-square-foot building was 54 percent leased at the time of sale and is situated adjacent to the Centennial Yards development. The new owner plans to continue investing in capital improvements to enhance leasing and the tenant experience.",
+      "data_points": {
+        "property_type": "office",
+        "property_name": "101 Marietta",
+        "address": "101 Marietta St. NW, Atlanta, GA",
+        "address_sourced_separately": false,
+        "size_sf": 673819.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 49500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": 54.0,
+        "year_built": 1975,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "36-story office tower adjacent to Centennial Yards.",
+        "project_notes": "Originally constructed in 1975 and renovated in 1999 and 2016, with over $12 million in capital improvements by prior ownership."
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Real Capital Solutions",
+          "people": []
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Undisclosed",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "Atlanta Hawks",
+        "The Federal Defender Program",
+        "YKK AP America",
+        "Industrious",
+        "U.S. Small Business Administration (SBA)"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Matthews Brokers $8.5M Sale of Retail Strip Center in East Nashville",
+      "source": "REBusinessOnline",
+      "link": "https://rebusinessonline.com/matthews-brokers-8-5m-sale-of-retail-strip-center-in-east-nashville/",
+      "published": "Mon, 29 Jun 2026 12:22:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-010.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Nashville, TN",
+      "narrative": "Matthews has brokered the $8.5 million sale of a recently built retail strip center in East Nashville's Five Points district. The property, constructed in 2023, features a strong tenant mix with long-term triple-net leases. A locally based private investor acquired the asset as part of a 1031 exchange, securing a five-year acquisition loan from a local lender.",
+      "data_points": {
+        "property_type": "retail",
+        "property_name": null,
+        "address": "1000 Woodland St, Nashville, TN",
+        "address_sourced_separately": false,
+        "size_sf": 8207.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 8500000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": 2023,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Located in East Nashville's Five Points district; features two tenants on 10-year triple-net leases with annual rent escalations.",
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Private Investor",
           "people": []
         },
         {
           "label": "SELLER BROKER",
-          "firm_name": "Corcoran",
+          "firm_name": "Matthews",
           "people": [
             {
-              "name": "Deborah Kern",
-              "title": null
-            },
-            {
-              "name": "Steve Gold",
+              "name": "Ben Burnett",
               "title": null
             }
           ]
         },
         {
-          "label": "ARCHITECT",
-          "firm_name": "Fischer + Makooi Architects",
+          "label": "MORTGAGE BROKER",
+          "firm_name": "Matthews Capital Markets",
+          "people": []
+        },
+        {
+          "label": "LENDER",
+          "firm_name": "Locally based lender",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "Bartaco",
+        "Edley's Bar-B-Que"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Lee & Associates closes 32,375-square-foot industrial lease in Frisco",
+      "source": "REJournals",
+      "link": "https://rejournals.com/lee-associates-closes-32375-square-foot-industrial-lease-in-frisco/?utm_source=rss&utm_medium=rss&utm_campaign=lee-associates-closes-32375-square-foot-industrial-lease-in-frisco",
+      "published": "Mon, 29 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-011.html",
+      "transaction_type": "Lease",
+      "article_type": null,
+      "market": "Frisco, TX",
+      "narrative": "Lee & Associates Dallas-Fort Worth recently facilitated a new lease for a 32,375-square-foot industrial property at Frisco Trade Center in Frisco, Texas. The transaction involved Dalfen Industrial as the landlord.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": "Frisco Trade Center",
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": 32375.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "LANDLORD",
+          "firm_name": "Dalfen Industrial",
+          "people": []
+        },
+        {
+          "label": "LEASING AGENT",
+          "firm_name": "Lee & Associates Dallas-Fort Worth",
           "people": [
             {
-              "name": "Fariba Makooi",
+              "name": "Brett Lewis",
+              "title": null
+            },
+            {
+              "name": "Taylor Stell",
+              "title": null
+            },
+            {
+              "name": "George Tanghongs",
               "title": null
             }
           ]
@@ -114,26 +659,394 @@
       "market_intelligence": null
     },
     {
-      "title": "Court appoints receiver for Golub, BlueFive\u2019s Mag Mile office",
-      "source": "The Real Deal \u2014 Chicago",
-      "link": "https://therealdeal.com/chicago/2026/06/27/receiver-appointed-in-625-n-michigan-ave-foreclosure/",
-      "published": "Sat, 27 Jun 2026 13:00:00 +0000",
-      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-28-003.html",
-      "transaction_type": "Promotion",
+      "title": "The Missner Group celebrates completion of 180,000-square-foot industrial development in Chicago\u2019s Fuller Park neighborhood",
+      "source": "REJournals",
+      "link": "https://rejournals.com/the-missner-group-celebrates-completion-of-180000-square-foot-industrial-development-in-chicagos-fuller-park-neighborhood/?utm_source=rss&utm_medium=rss&utm_campaign=the-missner-group-celebrates-completion-of-180000-square-foot-industrial-development-in-chicagos-fuller-park-neighborhood",
+      "published": "Mon, 29 Jun 2026 10:49:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-012.html",
+      "transaction_type": "Construction",
       "article_type": null,
+      "market": "Chicago, IL",
+      "narrative": "The Missner Group, in partnership with Thackeray Partners, has completed a 180,000-square-foot speculative industrial development in Chicago's Fuller Park neighborhood. The project, located within the Chicago Stockyards Industrial Park, is designed to accommodate up to four tenants and is pursuing LEED Silver certification. This development addresses the ongoing demand for modern industrial and logistics space on Chicago's South Side, leveraging the area's established infrastructure and labor pool.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": null,
+        "address": "4002 S. Princeton Ave., Chicago, IL",
+        "address_sourced_separately": false,
+        "size_sf": 180000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": "Designed to accommodate up to four tenants; pursuing LEED Silver certification; located within Chicago Stockyards Industrial Park.",
+        "project_notes": "Speculative development."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "The Missner Group",
+          "people": [
+            {
+              "name": "Barry Missner",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Thackeray Partners",
+          "people": [
+            {
+              "name": "Jackson Williams",
+              "title": "Director"
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Even as retail spending hits new heights, consumers are more selective with what they\u2019re buying",
+      "source": "REJournals",
+      "link": "https://rejournals.com/even-as-retail-spending-hits-new-heights-consumers-are-more-selective-with-what-theyre-buying/?utm_source=rss&utm_medium=rss&utm_campaign=even-as-retail-spending-hits-new-heights-consumers-are-more-selective-with-what-theyre-buying",
+      "published": "Mon, 29 Jun 2026 09:51:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-013.html",
+      "transaction_type": null,
+      "article_type": "Market Research / Retail Report",
       "market": null,
-      "narrative": "",
+      "narrative": "Colliers' May U.S. Retail Foot Traffic & Sales Analysis indicates that while overall retail sales increased by 5.2% year-over-year in May, much of this growth was driven by inflation, particularly in gas station sales. Consumers are becoming more selective, prioritizing value-oriented purchases, apparel, and experiences like theaters and music venues, which saw significant foot traffic increases. Conversely, spending on larger discretionary items like furniture and home improvement, as well as visits to fast-food restaurants and banks, saw more modest gains or declines, reflecting increasing financial pressure on households.",
       "data_points": null,
       "companies_people": [
         {
-          "label": "PROMOTED",
-          "firm_name": "Friedman Real Estate Management",
+          "label": "OWNER",
+          "firm_name": "Colliers",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Placer.ai",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Texas Icon Mat Volz: Building a real estate firm from the ground up",
+      "source": "REJournals",
+      "link": "https://rejournals.com/texas-icon-mat-volz-building-a-real-estate-firm-from-the-ground-up/?utm_source=rss&utm_medium=rss&utm_campaign=texas-icon-mat-volz-building-a-real-estate-firm-from-the-ground-up",
+      "published": "Mon, 29 Jun 2026 09:40:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-014.html",
+      "transaction_type": null,
+      "article_type": "Feature / Profile",
+      "market": "Houston, TX",
+      "narrative": "This article profiles Mat Volz, a managing partner at Pagewood, a Houston-based real estate owner-operator and investment firm. Volz, alongside founder Paul Coonrod, has grown the firm to manage over 80 properties totaling approximately $350 million in assets across industrial, housing, retail, and office sectors within the Houston metropolitan area. The firm's growth has been deliberate and self-funded, a strategic choice that has shaped its operational philosophy and emphasizes relationships, shared accountability, and a sustainable approach to development.",
+      "data_points": {
+        "property_type": null,
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "OWNER",
+          "firm_name": "Pagewood",
           "people": [
             {
-              "name": "Scott Shefman",
-              "title": "Receiver"
+              "name": "Mat Volz",
+              "title": "Managing Partner"
+            },
+            {
+              "name": "Paul Coonrod",
+              "title": "Founder"
             }
           ]
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Stream Realty Partners",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "America\u2019s biggest housing push in decades sits in political limbo",
+      "source": "The Real Deal \u2014 National",
+      "link": "https://therealdeal.com/national/2026/06/28/housing-bill-sits-in-limbo/",
+      "published": "Sun, 28 Jun 2026 13:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-015.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": null,
+      "narrative": "The article discusses the bipartisan 21st Century ROAD to Housing Act, a federal legislative effort aimed at addressing the national housing shortage and affordability crisis. The bill seeks to streamline environmental reviews, incentivize local housing production, expand manufactured housing definitions, and support accessory dwelling units. While the legislation faces political delays, its potential impact includes gradually increasing housing inventory and providing greater certainty for builders, developers, and investors by removing a controversial forced-sale provision for build-to-rent investors. The industry broadly supports the bill as a crucial step toward increasing housing supply, despite acknowledging that its effects will be gradual and local obstacles will persist.",
+      "data_points": null,
+      "companies_people": [],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "South Florida\u2019s top deals: Bal Harbour spec home sells for $43M",
+      "source": "The Real Deal \u2014 Miami",
+      "link": "https://therealdeal.com/miami/2026/06/29/south-florida-top-real-estate-deals-june-26-2026/",
+      "published": "Mon, 29 Jun 2026 12:33:59 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-016.html",
+      "transaction_type": "Sale",
+      "article_type": null,
+      "market": "Miami, FL",
+      "narrative": "An industrial complex totaling approximately 51,000 square feet in Miami traded for $12.8 million. The seller was an LLC managed by Mayra and Nella Martinez, and the buyer was an affiliate of Faropoint Ventures. This transaction represents the top commercial deal reported in South Florida for the period.",
+      "data_points": {
+        "property_type": "industrial",
+        "property_name": null,
+        "address": "8351, 8361, 8371, 8381 and 8391 Northwest 64th Street, Miami, FL",
+        "address_sourced_separately": false,
+        "size_sf": 51000.0,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 12800000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": true,
+        "notable_features": null,
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "SELLER",
+          "firm_name": "LLC managed by Mayra and Nella Martinez",
+          "people": [
+            {
+              "name": "Mayra Martinez",
+              "title": null
+            },
+            {
+              "name": "Nella Martinez",
+              "title": null
+            }
+          ]
+        },
+        {
+          "label": "BUYER",
+          "firm_name": "Faropoint Ventures",
+          "people": []
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Austin\u2019s top residential agent is in hot water",
+      "source": "The Real Deal \u2014 Texas",
+      "link": "https://therealdeal.com/texas/2026/06/28/austins-top-residential-agent-accused-of-withholding-offers/",
+      "published": "Sun, 28 Jun 2026 14:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-017.html",
+      "transaction_type": "Development",
+      "article_type": null,
+      "market": "Dallas, TX",
+      "narrative": "Morgan Stanley is partnering with Trammell Crow to develop a new built-to-suit office at 2401 McKinney Avenue in Dallas, with the bank committing $700 million and Trammell Crow contributing $650 million. The city of Dallas has approved an $18.5 million incentive package for the project, which is expected to open in 2031. In the interim, Morgan Stanley has signed a 255,000-square-foot lease at Fountain Place downtown, providing a temporary boost to the area.",
+      "data_points": {
+        "property_type": "office",
+        "property_name": null,
+        "address": "2401 McKinney Avenue, Dallas, TX",
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": null,
+        "loan_amount": null,
+        "total_project_cost": 1350000000.0,
+        "occupancy": null,
+        "year_built": null,
+        "completion": "2031",
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": "City of Dallas approved an $18.5 million incentive package for the project."
+      },
+      "companies_people": [
+        {
+          "label": "DEVELOPER/SPONSOR",
+          "firm_name": "Trammell Crow",
+          "people": []
+        },
+        {
+          "label": "TENANT",
+          "firm_name": "Morgan Stanley",
+          "people": []
+        }
+      ],
+      "tenants": [
+        "Morgan Stanley"
+      ],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "California\u2019s transfer tax fight just got upended. And Bay Area sellers want to be paid in AI stock",
+      "source": "The Real Deal \u2014 San Francisco",
+      "link": "https://therealdeal.com/san-francisco/2026/06/28/california-transfer-tax-fight-shifts-as-ballot-measure-pulled/",
+      "published": "Sun, 28 Jun 2026 15:00:00 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-018.html",
+      "transaction_type": null,
+      "article_type": "Opinion / Market Commentary",
+      "market": "California",
+      "narrative": "California recently experienced significant legislative activity regarding real estate transfer taxes, with a citizen-led initiative to cap taxes at 0.11% qualifying for the November ballot. Assemblymember Buffy Wicks introduced AB 736, proposing caps of 1.5% for most jurisdictions and 3% for cities like San Francisco and Culver City, aiming to address developer concerns about high taxes hindering commercial-to-housing conversions. However, the citizen initiative was withdrawn after a deal with state lawmakers, leaving the future of Wicks' bill uncertain. Meanwhile, the Bay Area housing market is experiencing a frenzy driven by the AI industry boom, with some luxury home sellers attempting to trade properties for pre-IPO stock in AI companies like Anthropic and OpenAI, reflecting a broader scramble to capitalize on the AI gold rush.",
+      "data_points": null,
+      "companies_people": [
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Compass",
+          "people": [
+            {
+              "name": "Rachel Swann",
+              "title": null
+            }
+          ]
+        }
+      ],
+      "tenants": [],
+      "financing": null,
+      "market_intelligence": null
+    },
+    {
+      "title": "Bridgepoint to Acquire Kayne Anderson Real Estate in U.S. CRE Push",
+      "source": "Connect CRE",
+      "link": "https://www.connectcre.com/stories/bridgepoint-to-acquire-kayne-anderson-real-estate-in-u-s-cre-push/",
+      "published": "Mon, 29 Jun 2026 11:26:44 +0000",
+      "page_url": "https://altmanr91.github.io/CRE-News-Reader/articles/2026-06-29-019.html",
+      "transaction_type": null,
+      "article_type": "Non-CRE / Business News",
+      "market": "Boca Raton, FL",
+      "narrative": "London-based private equity firm Bridgepoint Group has agreed to acquire Kayne Anderson Real Estate (KARE) from Kayne Anderson Capital Advisors in a cash-and-stock deal valued at $1.393 billion. This acquisition is a strategic move for Bridgepoint to expand its U.S. real estate presence and diversify its private markets platform. KARE, headquartered in Boca Raton, FL, manages approximately $22 billion in assets and will become Bridgepoint's fifth investment vertical, complementing its existing private equity, credit, infrastructure, and secondaries strategies. The partnership is expected to leverage limited overlap in investor networks to enhance fundraising and capitalize on growth opportunities in alternative real estate sectors.",
+      "data_points": {
+        "property_type": null,
+        "property_name": null,
+        "address": null,
+        "address_sourced_separately": false,
+        "size_sf": null,
+        "size_units": null,
+        "size_beds": null,
+        "size_keys": null,
+        "rental_rate": null,
+        "sale_price": 1393000000.0,
+        "loan_amount": null,
+        "total_project_cost": null,
+        "occupancy": null,
+        "year_built": null,
+        "completion": null,
+        "phase_1": null,
+        "total_project_all_phases": null,
+        "original_plan": null,
+        "land_area_acres": null,
+        "multi_asset_purchase": false,
+        "notable_features": null,
+        "project_notes": null
+      },
+      "companies_people": [
+        {
+          "label": "BUYER",
+          "firm_name": "Bridgepoint Group",
+          "people": [
+            {
+              "name": "Raoul Hughes",
+              "title": "CEO"
+            }
+          ]
+        },
+        {
+          "label": "SELLER",
+          "firm_name": "Kayne Anderson Capital Advisors",
+          "people": []
+        },
+        {
+          "label": "OWNER",
+          "firm_name": "Kayne Anderson Real Estate (KARE)",
+          "people": [
+            {
+              "name": "Al Rabil",
+              "title": "Co-founder and CEO"
+            }
+          ]
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Moelis & Company",
+          "people": []
+        },
+        {
+          "label": "BUYER BROKER",
+          "firm_name": "Goldman Sachs",
+          "people": []
+        },
+        {
+          "label": "SELLER BROKER",
+          "firm_name": "Evercore",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "BNP Paribas",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "JP Morgan",
+          "people": []
+        },
+        {
+          "label": "EQUITY/FINANCING",
+          "firm_name": "Morgan Stanley",
+          "people": []
         }
       ],
       "tenants": [],
